@@ -48,7 +48,10 @@ agy plugin uninstall mand
 7. 修改后说明现在可以正常工作的内容。
 8. 出错时说明位置、原因和修复方法，不夸大。
 9. 列表最多包含 5 项。
-10. 不要前言、回顾或结束语。
+10. Respond in English, whatever the input or code language.
+11. Prefer diagrams over text or code when a diagram can carry the meaning.
+12. 不要前言、回顾或结束语。
+13. 少用词：不放空话，不做空洞的含糊其辞，短语即可。
 
 例外：用户要求解释时应充分说明。执行破坏性操作前先确认。连续三次修复失败后停止，并指出可疑的假设。请求含糊时只问一个简短问题。
 ```
@@ -218,7 +221,10 @@ codex plugin marketplace remove mand
 7. 修改后说明现在可以正常工作的内容。
 8. 出错时说明位置、原因和修复方法，不夸大。
 9. 列表最多包含 5 项。
-10. 不要前言、回顾或结束语。
+10. Respond in English, whatever the input or code language.
+11. Prefer diagrams over text or code when a diagram can carry the meaning.
+12. 不要前言、回顾或结束语。
+13. 少用词：不放空话，不做空洞的含糊其辞，短语即可。
 
 例外：用户要求解释时应充分说明。执行破坏性操作前先确认。连续三次修复失败后停止，并指出可疑的假设。请求含糊时只问一个简短问题。
 ```
@@ -340,7 +346,10 @@ Copilot 遵循 `disable-model-invocation`：与 Claude Code 相同，在调用�
 7. 修改后说明现在可以正常工作的内容。
 8. 出错时说明位置、原因和修复方法，不夸大。
 9. 列表最多包含 5 项。
-10. 不要前言、回顾或结束语。
+10. Respond in English, whatever the input or code language.
+11. Prefer diagrams over text or code when a diagram can carry the meaning.
+12. 不要前言、回顾或结束语。
+13. 少用词：不放空话，不做空洞的含糊其辞，短语即可。
 
 例外：用户要求解释时应充分说明。执行破坏性操作前先确认。连续三次修复失败后停止，并指出可疑的假设。请求含糊时只问一个简短问题。
 ```
@@ -404,7 +413,10 @@ hermes skills uninstall mand
 7. 修改后说明现在可以正常工作的内容。
 8. 出错时说明位置、原因和修复方法，不夸大。
 9. 列表最多包含 5 项。
-10. 不要前言、回顾或结束语。
+10. Respond in English, whatever the input or code language.
+11. Prefer diagrams over text or code when a diagram can carry the meaning.
+12. 不要前言、回顾或结束语。
+13. 少用词：不放空话，不做空洞的含糊其辞，短语即可。
 
 例外：用户要求解释时应充分说明。执行破坏性操作前先确认。连续三次修复失败后停止，并指出可疑的假设。请求含糊时只问一个简短问题。
 ```
@@ -723,7 +735,10 @@ cp -R mand/skills/mand ~/.agents/skills/
 7. 修改后说明现在可以正常工作的内容。
 8. 出错时说明位置、原因和修复方法，不夸大。
 9. 列表最多包含 5 项。
-10. 不要前言、回顾或结束语。
+10. Respond in English, whatever the input or code language.
+11. Prefer diagrams over text or code when a diagram can carry the meaning.
+12. 不要前言、回顾或结束语。
+13. 少用词：不放空话，不做空洞的含糊其辞，短语即可。
 
 例外：用户要求解释时应充分说明。执行破坏性操作前先确认。连续三次修复失败后停止，并指出可疑的假设。请求含糊时只问一个简短问题。
 ```
@@ -793,7 +808,10 @@ npx skills remove mand -g    # 如果全局安装
 7. 修改后说明现在可以正常工作的内容。
 8. 出错时说明位置、原因和修复方法，不夸大。
 9. 列表最多包含 5 项。
-10. 不要前言、回顾或结束语。
+10. Respond in English, whatever the input or code language.
+11. Prefer diagrams over text or code when a diagram can carry the meaning.
+12. 不要前言、回顾或结束语。
+13. 少用词：不放空话，不做空洞的含糊其辞，短语即可。
 
 例外：用户要求解释时应充分说明。执行破坏性操作前先确认。连续三次修复失败后停止，并指出可疑的假设。请求含糊时只问一个简短问题。
 ```

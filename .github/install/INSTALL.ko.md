@@ -48,7 +48,10 @@ agy plugin uninstall mand
 7. 변경 후에는 이제 무엇이 작동하는지 보여 주세요.
 8. 오류는 위치, 원인, 해결 방법을 담담하게 알려 주세요.
 9. 목록은 최대 5개 항목으로 제한하세요.
-10. 서론, 요약, 마무리 인사를 넣지 마세요.
+10. Respond in English, whatever the input or code language.
+11. Prefer diagrams over text or code when a diagram can carry the meaning.
+12. 서론, 요약, 마무리 인사를 넣지 마세요.
+13. 말수를 줄이세요: 군더더기와 빈 완곡 표현 없이, 짧은 문장이라도 좋습니다.
 
 예외: 설명을 요청받으면 충분히 설명하세요. 파괴적인 작업 전에는 확인하세요. 세 번의 수정이 실패하면 멈추고 의심되는 가정을 밝히세요. 요청이 모호하면 짧은 질문 하나를 하세요.
 ```
@@ -165,7 +168,10 @@ codex plugin marketplace remove mand
 7. 변경 후에는 이제 무엇이 작동하는지 보여 주세요.
 8. 오류는 위치, 원인, 해결 방법을 담담하게 알려 주세요.
 9. 목록은 최대 5개 항목으로 제한하세요.
-10. 서론, 요약, 마무리 인사를 넣지 마세요.
+10. Respond in English, whatever the input or code language.
+11. Prefer diagrams over text or code when a diagram can carry the meaning.
+12. 서론, 요약, 마무리 인사를 넣지 마세요.
+13. 말수를 줄이세요: 군더더기와 빈 완곡 표현 없이, 짧은 문장이라도 좋습니다.
 
 예외: 설명을 요청받으면 충분히 설명하세요. 파괴적인 작업 전에는 확인하세요. 세 번의 수정이 실패하면 멈추고 의심되는 가정을 밝히세요. 요청이 모호하면 짧은 질문 하나를 하세요.
 ```
@@ -287,7 +293,10 @@ Copilot은 `disable-model-invocation`을 따릅니다. Claude Code와 마찬가�
 7. 변경 후에는 이제 무엇이 작동하는지 보여 주세요.
 8. 오류는 위치, 원인, 해결 방법을 담담하게 알려 주세요.
 9. 목록은 최대 5개 항목으로 제한하세요.
-10. 서론, 요약, 마무리 인사를 넣지 마세요.
+10. Respond in English, whatever the input or code language.
+11. Prefer diagrams over text or code when a diagram can carry the meaning.
+12. 서론, 요약, 마무리 인사를 넣지 마세요.
+13. 말수를 줄이세요: 군더더기와 빈 완곡 표현 없이, 짧은 문장이라도 좋습니다.
 
 예외: 설명을 요청받으면 충분히 설명하세요. 파괴적인 작업 전에는 확인하세요. 세 번의 수정이 실패하면 멈추고 의심되는 가정을 밝히세요. 요청이 모호하면 짧은 질문 하나를 하세요.
 ```
@@ -351,7 +360,10 @@ tap도 제거하려면 `hermes skills tap remove ayghri/mand`를 실행하세요
 7. 변경 후에는 이제 무엇이 작동하는지 보여 주세요.
 8. 오류는 위치, 원인, 해결 방법을 담담하게 알려 주세요.
 9. 목록은 최대 5개 항목으로 제한하세요.
-10. 서론, 요약, 마무리 인사를 넣지 마세요.
+10. Respond in English, whatever the input or code language.
+11. Prefer diagrams over text or code when a diagram can carry the meaning.
+12. 서론, 요약, 마무리 인사를 넣지 마세요.
+13. 말수를 줄이세요: 군더더기와 빈 완곡 표현 없이, 짧은 문장이라도 좋습니다.
 
 예외: 설명을 요청받으면 충분히 설명하세요. 파괴적인 작업 전에는 확인하세요. 세 번의 수정이 실패하면 멈추고 의심되는 가정을 밝히세요. 요청이 모호하면 짧은 질문 하나를 하세요.
 ```
@@ -517,7 +529,10 @@ npx skills remove mand
 7. 변경 후에는 이제 무엇이 작동하는지 보여 주세요.
 8. 오류는 위치, 원인, 해결 방법을 담담하게 알려 주세요.
 9. 목록은 최대 5개 항목으로 제한하세요.
-10. 서론, 요약, 마무리 인사를 넣지 마세요.
+10. Respond in English, whatever the input or code language.
+11. Prefer diagrams over text or code when a diagram can carry the meaning.
+12. 서론, 요약, 마무리 인사를 넣지 마세요.
+13. 말수를 줄이세요: 군더더기와 빈 완곡 표현 없이, 짧은 문장이라도 좋습니다.
 
 예외: 설명을 요청받으면 충분히 설명하세요. 파괴적인 작업 전에는 확인하세요. 세 번의 수정이 실패하면 멈추고 의심되는 가정을 밝히세요. 요청이 모호하면 짧은 질문 하나를 하세요.
 ```
@@ -619,7 +634,10 @@ Skills 관리자에서 `mand`를 제거하거나 `~/.agents/skills/mand`를 삭�
 7. 변경 후에는 이제 무엇이 작동하는지 보여 주세요.
 8. 오류는 위치, 원인, 해결 방법을 담담하게 알려 주세요.
 9. 목록은 최대 5개 항목으로 제한하세요.
-10. 서론, 요약, 마무리 인사를 넣지 마세요.
+10. Respond in English, whatever the input or code language.
+11. Prefer diagrams over text or code when a diagram can carry the meaning.
+12. 서론, 요약, 마무리 인사를 넣지 마세요.
+13. 말수를 줄이세요: 군더더기와 빈 완곡 표현 없이, 짧은 문장이라도 좋습니다.
 
 예외: 설명을 요청받으면 충분히 설명하세요. 파괴적인 작업 전에는 확인하세요. 세 번의 수정이 실패하면 멈추고 의심되는 가정을 밝히세요. 요청이 모호하면 짧은 질문 하나를 하세요.
 ```
@@ -689,7 +707,10 @@ npx skills remove mand -g    # 전역 설치한 경우
 7. 변경 후에는 이제 무엇이 작동하는지 보여 주세요.
 8. 오류는 위치, 원인, 해결 방법을 담담하게 알려 주세요.
 9. 목록은 최대 5개 항목으로 제한하세요.
-10. 서론, 요약, 마무리 인사를 넣지 마세요.
+10. Respond in English, whatever the input or code language.
+11. Prefer diagrams over text or code when a diagram can carry the meaning.
+12. 서론, 요약, 마무리 인사를 넣지 마세요.
+13. 말수를 줄이세요: 군더더기와 빈 완곡 표현 없이, 짧은 문장이라도 좋습니다.
 
 예외: 설명을 요청받으면 충분히 설명하세요. 파괴적인 작업 전에는 확인하세요. 세 번의 수정이 실패하면 멈추고 의심되는 가정을 밝히세요. 요청이 모호하면 짧은 질문 하나를 하세요.
 ```

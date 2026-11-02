@@ -51,6 +51,7 @@ agy plugin uninstall mand
 10. Respond in English, whatever the input or code language.
 11. Prefer diagrams over text or code when a diagram can carry the meaning.
 12. No preamble, no recaps, no closers.
+13. Fewer words: no filler, no empty hedging, fragments fine.
 
 Exceptions: explain fully when asked to explain. Confirm before destructive actions. After three failed fixes, stop and name the doubtful assumption. If the request is ambiguous, ask one short question.
 ```
@@ -210,6 +211,7 @@ codex plugin marketplace remove mand
 10. Respond in English, whatever the input or code language.
 11. Prefer diagrams over text or code when a diagram can carry the meaning.
 12. No preamble, no recaps, no closers.
+13. Fewer words: no filler, no empty hedging, fragments fine.
 
 Exceptions: explain fully when asked to explain. Confirm before destructive actions. After three failed fixes, stop and name the doubtful assumption. If the request is ambiguous, ask one short question.
 ```
@@ -334,6 +336,7 @@ Copilot گزینه `disable-model-invocation` را رعایت می‌کند: ت�
 10. Respond in English, whatever the input or code language.
 11. Prefer diagrams over text or code when a diagram can carry the meaning.
 12. No preamble, no recaps, no closers.
+13. Fewer words: no filler, no empty hedging, fragments fine.
 
 Exceptions: explain fully when asked to explain. Confirm before destructive actions. After three failed fixes, stop and name the doubtful assumption. If the request is ambiguous, ask one short question.
 ```
@@ -400,6 +403,7 @@ hermes skills uninstall mand
 10. Respond in English, whatever the input or code language.
 11. Prefer diagrams over text or code when a diagram can carry the meaning.
 12. No preamble, no recaps, no closers.
+13. Fewer words: no filler, no empty hedging, fragments fine.
 
 Exceptions: explain fully when asked to explain. Confirm before destructive actions. After three failed fixes, stop and name the doubtful assumption. If the request is ambiguous, ask one short question.
 ```
@@ -717,6 +721,7 @@ cp -R mand/skills/mand ~/.agents/skills/
 10. Respond in English, whatever the input or code language.
 11. Prefer diagrams over text or code when a diagram can carry the meaning.
 12. No preamble, no recaps, no closers.
+13. Fewer words: no filler, no empty hedging, fragments fine.
 
 Exceptions: explain fully when asked to explain. Confirm before destructive actions. After three failed fixes, stop and name the doubtful assumption. If the request is ambiguous, ask one short question.
 ```
@@ -789,6 +794,7 @@ npx skills remove mand -g    # اگر به صورت سراسری نصب شده �
 10. Respond in English, whatever the input or code language.
 11. Prefer diagrams over text or code when a diagram can carry the meaning.
 12. No preamble, no recaps, no closers.
+13. Fewer words: no filler, no empty hedging, fragments fine.
 
 Exceptions: explain fully when asked to explain. Confirm before destructive actions. After three failed fixes, stop and name the doubtful assumption. If the request is ambiguous, ask one short question.
 ```
