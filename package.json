@@ -1,16 +1,12 @@
 {
   "name": "mand",
-  "version": "0.4.1",
-  "description": "Shape output terse and action-first: lead with the next action, number multi-step work, restate state across turns, suppress tangents, give specific time estimates, make wins visible.",
+  "version": "0.5.0",
+  "description": "Terse, action-first output: lead with the next action, number multi-step work, prefer diagrams, fewer words. English output regardless of input language.",
   "license": "MIT",
-  "homepage": "https://github.com/crooy/i-have-adhd",
+  "homepage": "https://github.com/crooy/mand",
   "private": true,
   "keywords": ["pi-package"],
-  "omp": {
-    "extensions": ["./extensions/mand.ts"]
-  },
   "pi": {
-    "extensions": ["./extensions/mand.ts"],
     "skills": ["./skills"]
   }
 }

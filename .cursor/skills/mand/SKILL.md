@@ -108,7 +108,7 @@ Completeness matters? Never omit. Limits presentation only, not analysis, search
 
 ### 10. English always
 
-Respond in English, whatever the input or code language.
+Respond in English, whatever the language of the user's input or the source code. The user may write in any language or mix languages freely; the response stays English. Code comments and user input in other languages do not change the output language.
 
 ### 11. Diagrams over words
 

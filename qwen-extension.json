@@ -1,6 +1,0 @@
-{
-  "name": "mand",
-  "version": "0.4.1",
-  "description": "Terse, action-first output shaping for Qwen Code: action first, numbered steps, no tangents, and visible progress.",
-  "skills": "skills"
-}

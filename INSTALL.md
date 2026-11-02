@@ -6,7 +6,7 @@
 ### Install
 
 ```bash
-agy plugin install https://github.com/crooy/i-have-adhd
+agy plugin install https://github.com/crooy/mand
 ```
 
 ### Verify
@@ -19,7 +19,7 @@ agy plugin list
 
 ```bash
 agy plugin uninstall mand
-agy plugin install https://github.com/crooy/i-have-adhd
+agy plugin install https://github.com/crooy/mand
 ```
 
 ### Uninstall
@@ -48,7 +48,7 @@ Answer terse and action-first. Shape every response so it can be acted on:
 7. After a change, show what now works.
 8. Errors: state location, cause, and fix. No drama.
 9. Cap lists to 5 items.
-10. Respond in English, whatever the input or code language.
+10. Respond in English, whatever the input or code language. The user may write in any language or mix languages; the response stays English.
 11. Prefer diagrams over text or code when a diagram can carry the meaning.
 12. No preamble, no recaps, no closers.
 13. Fewer words: no filler, no empty hedging, fragments fine.
@@ -70,7 +70,7 @@ this skill. Check the exported instructions before enabling it.
 
 ### Install
 
-1. Download the [canonical SKILL.md](https://raw.githubusercontent.com/crooy/i-have-adhd/main/skills/mand/SKILL.md) and save it as `SKILL.md`. Review its contents before uploading.
+1. Download the [canonical SKILL.md](https://raw.githubusercontent.com/crooy/mand/main/skills/mand/SKILL.md) and save it as `SKILL.md`. Review its contents before uploading.
 2. In AstronClaw, open **我的技能 (My skills)**, choose **新建 (New)**, and upload that `.md` file.
 3. Check that the imported skill is named `mand`. Use **启用/禁用 (Enable/Disable)** to control its availability.
 
@@ -122,7 +122,7 @@ new conversation. To keep the imported copy for later, choose **Disable** instea
 ### Install
 
 ```bash
-claude plugin marketplace add crooy/i-have-adhd
+claude plugin marketplace add crooy/mand
 claude plugin install mand@mand
 ```
 
@@ -185,7 +185,7 @@ The hook only fires when the flag file exists, so installing the plugin changes 
 ### Install
 
 ```bash
-codex plugin marketplace add crooy/i-have-adhd --ref main
+codex plugin marketplace add crooy/mand --ref main
 codex plugin add mand@mand
 ```
 
@@ -231,7 +231,7 @@ Answer terse and action-first. Shape every response so it can be acted on:
 7. After a change, show what now works.
 8. Errors: state location, cause, and fix. No drama.
 9. Cap lists to 5 items.
-10. Respond in English, whatever the input or code language.
+10. Respond in English, whatever the input or code language. The user may write in any language or mix languages; the response stays English.
 11. Prefer diagrams over text or code when a diagram can carry the meaning.
 12. No preamble, no recaps, no closers.
 13. Fewer words: no filler, no empty hedging, fragments fine.
@@ -250,7 +250,7 @@ Grok loads the repository's existing plugin and skill files; no separate Grok ma
 ### Install
 
 ```bash
-grok plugin install crooy/i-have-adhd --trust
+grok plugin install crooy/mand --trust
 grok plugin enable mand
 ```
 
@@ -297,7 +297,7 @@ Answer terse and action-first. Shape every response so it can be acted on:
 7. After a change, show what now works.
 8. Errors: state location, cause, and fix. No drama.
 9. Cap lists to 5 items.
-10. Respond in English, whatever the input or code language.
+10. Respond in English, whatever the input or code language. The user may write in any language or mix languages; the response stays English.
 11. Prefer diagrams over text or code when a diagram can carry the meaning.
 12. No preamble, no recaps, no closers.
 13. Fewer words: no filler, no empty hedging, fragments fine.
@@ -310,47 +310,34 @@ Exceptions: explain fully when asked to explain. Confirm before destructive acti
 <details>
 <summary><strong>Gemini CLI</strong></summary>
 
-Gemini CLI has no plugin marketplace, so there are two native routes: a **custom command** (opt-in, off until you invoke it) or an **extension** (always-on once installed). The command route matches this skill's default posture; pick it unless you want the rules on every session.
+Gemini CLI has no plugin marketplace, so there are two native routes: a **custom command** (opt-in, off until you invoke it) or an **extension** (always-on once installed). The command route matches this skill's default posture; use it.
 
 ### Install (command, opt-in)
 
 ```bash
 mkdir -p ~/.gemini/commands
-curl -fsSL https://raw.githubusercontent.com/crooy/i-have-adhd/main/skills/mand/agents/gemini.toml \
+curl -fsSL https://raw.githubusercontent.com/crooy/mand/main/skills/mand/agents/gemini.toml \
   -o ~/.gemini/commands/mand.toml
 ```
 
 Start a new session, type `/mand`. It stays on for that session.
 
-### Install (extension, always-on)
-
-```bash
-gemini extensions install https://github.com/crooy/i-have-adhd
-```
-
-The extension loads `GEMINI.md`, which imports the full skill, so the rules apply from message one. `git` must be installed.
-
 ### Verify
 
 ```bash
-gemini extensions list          # extension route
-ls ~/.gemini/commands           # command route: mand.toml present
+ls ~/.gemini/commands           # mand.toml present
 ```
 
 Or type `/` in a session and confirm `mand` is listed.
 
 ### Update
 
-```bash
-gemini extensions update mand    # extension route
-# command route: re-run the curl above
-```
+Re-run the curl command above.
 
 ### Uninstall
 
 ```bash
-gemini extensions uninstall mand    # extension route
-rm ~/.gemini/commands/mand.toml     # command route
+rm ~/.gemini/commands/mand.toml
 ```
 
 </details>
@@ -363,14 +350,14 @@ Copilot reads Agent Skills natively: the same `SKILL.md`, no conversion. It scan
 ### Install
 
 ```bash
-npx skills add crooy/i-have-adhd -a github-copilot        # this project
-npx skills add crooy/i-have-adhd -a github-copilot -g     # all projects
+npx skills add crooy/mand -a github-copilot        # this project
+npx skills add crooy/mand -a github-copilot -g     # all projects
 ```
 
 Without the CLI, copy the skill folder into any directory Copilot scans:
 
 ```bash
-git clone https://github.com/crooy/i-have-adhd
+git clone https://github.com/crooy/mand
 mkdir -p ~/.copilot/skills
 cp -R mand/skills/mand ~/.copilot/skills/
 ```
@@ -422,7 +409,7 @@ Answer terse and action-first. Shape every response so it can be acted on:
 7. After a change, show what now works.
 8. Errors: state location, cause, and fix. No drama.
 9. Cap lists to 5 items.
-10. Respond in English, whatever the input or code language.
+10. Respond in English, whatever the input or code language. The user may write in any language or mix languages; the response stays English.
 11. Prefer diagrams over text or code when a diagram can carry the meaning.
 12. No preamble, no recaps, no closers.
 13. Fewer words: no filler, no empty hedging, fragments fine.
@@ -439,7 +426,7 @@ Exceptions: explain fully when asked to explain. Confirm before destructive acti
 ### Install
 
 ```bash
-hermes skills install crooy/i-have-adhd/skills/mand
+hermes skills install crooy/mand/skills/mand
 ```
 
 Type `/mand`. The skill installs into `~/.hermes/skills/` and is exposed as a slash command at the next session start.
@@ -447,9 +434,9 @@ Type `/mand`. The skill installs into `~/.hermes/skills/` and is exposed as a sl
 Prefer to browse first? Add this repo as a skill source (a "tap"), then search and install:
 
 ```bash
-hermes skills tap add crooy/i-have-adhd
+hermes skills tap add crooy/mand
 hermes skills search mand
-hermes skills install crooy/i-have-adhd/skills/mand
+hermes skills install crooy/mand/skills/mand
 ```
 
 ### Verify
@@ -470,7 +457,7 @@ hermes skills update mand
 hermes skills uninstall mand
 ```
 
-Or remove the tap too: `hermes skills tap remove crooy/i-have-adhd`.
+Or remove the tap too: `hermes skills tap remove crooy/mand`.
 
 ### Always-on (optional)
 
@@ -490,7 +477,7 @@ Answer terse and action-first. Shape every response so it can be acted on:
 7. After a change, show what now works.
 8. Errors: state location, cause, and fix. No drama.
 9. Cap lists to 5 items.
-10. Respond in English, whatever the input or code language.
+10. Respond in English, whatever the input or code language. The user may write in any language or mix languages; the response stays English.
 11. Prefer diagrams over text or code when a diagram can carry the meaning.
 12. No preamble, no recaps, no closers.
 13. Fewer words: no filler, no empty hedging, fragments fine.
@@ -509,7 +496,7 @@ Start a Kimi Code session, then:
 
 1. Run `/plugins`.
 2. Choose **Custom**.
-3. Paste `https://github.com/crooy/i-have-adhd` and press `Enter`.
+3. Paste `https://github.com/crooy/mand` and press `Enter`.
 4. Choose **Trust and install**.
 
 Use slash command `/skill:mand` to invoke the skill explicitly.
@@ -535,7 +522,7 @@ The plugin supports OpenCode V1 **1.18.29+** and V2. It registers the skill and 
 For use across projects:
 
 ```bash
-git clone https://github.com/crooy/i-have-adhd ~/.config/opencode/vendor/mand
+git clone https://github.com/crooy/mand ~/.config/opencode/vendor/mand
 mkdir -p ~/.config/opencode/plugins
 cat > ~/.config/opencode/plugins/mand.js <<'EOF'
 export { default } from '../vendor/mand/.opencode/plugins/mand.mjs';
@@ -593,12 +580,12 @@ If `XDG_CONFIG_HOME` is set, replace `~/.config` in these paths with that direct
 <details>
 <summary><strong>Pi</strong></summary>
 
-Pi discovers this repository as a native package: `extensions/` provides the session-persistent mode and `skills/` keeps the Agent Skills entry point available.
+Pi discovers this repository as a native package: `skills/` keeps the Agent Skills entry point available.
 
 ### Install
 
 ```bash
-pi install https://github.com/crooy/i-have-adhd
+pi install https://github.com/crooy/mand
 ```
 
 Start a new Pi session. Toggle mand output for the current session:
@@ -640,7 +627,7 @@ Confirm the GitHub package is listed, then type `/mand` and check that `● MAND
 ### Update
 
 ```bash
-pi update https://github.com/crooy/i-have-adhd
+pi update https://github.com/crooy/mand
 ```
 
 Or update every unpinned Pi package with `pi update --extensions`.
@@ -648,7 +635,7 @@ Or update every unpinned Pi package with `pi update --extensions`.
 ### Uninstall
 
 ```bash
-pi remove https://github.com/crooy/i-have-adhd
+pi remove https://github.com/crooy/mand
 ```
 
 ### Always-on (optional)
@@ -694,7 +681,7 @@ If `PI_CODING_AGENT_DIR` is set, put `.mand-always` in that directory instead. R
 ### Install
 
 ```bash
-omp plugin marketplace add crooy/i-have-adhd
+omp plugin marketplace add crooy/mand
 omp plugin install --scope user mand@mand
 ```
 
@@ -723,7 +710,7 @@ omp plugin marketplace remove mand
 ### Install
 
 ```bash
-qwen extensions install crooy/i-have-adhd
+qwen extensions install crooy/mand
 ```
 
 Qwen Code supports the GitHub shorthand and installs the repository as a
@@ -770,7 +757,7 @@ Zed's Agent reads Agent Skills natively using the same SKILL.md format without c
 In the Agent Panel, open the Skills manager and choose **Create skill from URL** (also in the command palette as `agent: create skill from url`), then paste:
 
 ```
-https://github.com/crooy/i-have-adhd/blob/main/skills/mand/SKILL.md
+https://github.com/crooy/mand/blob/main/skills/mand/SKILL.md
 ```
 
 Save it in **User** scope for every project, or **Project** scope for one. Then type `/mand` in the Agent Panel.
@@ -778,7 +765,7 @@ Save it in **User** scope for every project, or **Project** scope for one. Then 
 Prefer the filesystem? Clone the repo and drop the skill folder into your user skills directory:
 
 ```bash
-git clone https://github.com/crooy/i-have-adhd
+git clone https://github.com/crooy/mand
 mkdir -p ~/.agents/skills
 cp -R mand/skills/mand ~/.agents/skills/
 ```
@@ -813,7 +800,7 @@ Answer terse and action-first. Shape every response so it can be acted on:
 7. After a change, show what now works.
 8. Errors: state location, cause, and fix. No drama.
 9. Cap lists to 5 items.
-10. Respond in English, whatever the input or code language.
+10. Respond in English, whatever the input or code language. The user may write in any language or mix languages; the response stays English.
 11. Prefer diagrams over text or code when a diagram can carry the meaning.
 12. No preamble, no recaps, no closers.
 13. Fewer words: no filler, no empty hedging, fragments fine.
@@ -831,10 +818,10 @@ Works with any harness that reads agent skills. Swap `-a <agent>` for yours.
 ### Install
 
 ```bash
-npx skills add crooy/i-have-adhd                  # this workspace
-npx skills add crooy/i-have-adhd -g               # all projects
-npx skills add crooy/i-have-adhd -a cursor -y     # one agent only
-npx skills add crooy/i-have-adhd -a opencode -y
+npx skills add crooy/mand                  # this workspace
+npx skills add crooy/mand -g               # all projects
+npx skills add crooy/mand -a cursor -y     # one agent only
+npx skills add crooy/mand -a opencode -y
 ```
 
 New agent chat, type `/mand`.
@@ -842,7 +829,7 @@ New agent chat, type `/mand`.
 Without the CLI, copy the skill folder into whatever path your agent scans:
 
 ```bash
-git clone https://github.com/crooy/i-have-adhd
+git clone https://github.com/crooy/mand
 mkdir -p ~/.cursor/skills     # Cursor. Use .agents/skills for OpenCode, or your agent's own path
 cp -R mand/skills/mand ~/.cursor/skills/
 ```
@@ -886,7 +873,7 @@ Answer terse and action-first. Shape every response so it can be acted on:
 7. After a change, show what now works.
 8. Errors: state location, cause, and fix. No drama.
 9. Cap lists to 5 items.
-10. Respond in English, whatever the input or code language.
+10. Respond in English, whatever the input or code language. The user may write in any language or mix languages; the response stays English.
 11. Prefer diagrams over text or code when a diagram can carry the meaning.
 12. No preamble, no recaps, no closers.
 13. Fewer words: no filler, no empty hedging, fragments fine.

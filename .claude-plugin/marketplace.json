@@ -3,7 +3,8 @@
   "name": "mand",
   "description": "Shape Claude Code output terse and action-first. Numbered steps, no tangents.",
   "owner": {
-    "name": "Ayoub G."
+    "name": "Ronald Crooy",
+    "url": "https://github.com/crooy/mand"
   },
   "plugins": [
     {

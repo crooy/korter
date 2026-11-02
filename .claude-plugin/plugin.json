@@ -1,9 +1,9 @@
 {
   "name": "mand",
-  "version": "0.4.1",
+  "version": "0.5.0",
   "description": "Shape Claude Code output terse and action-first: lead with the next action, number steps, suppress tangents, restate state, make wins visible.",
   "author": {
-    "name": "Ayoub G.",
-    "url": "https://github.com/crooy/i-have-adhd"
+    "name": "Ronald Crooy",
+    "url": "https://github.com/crooy/mand"
   }
 }

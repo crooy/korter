@@ -5,7 +5,7 @@
   <strong align="center">Terse, action-first outputs. No diagnosis needed!</strong>
 </p>
 <p align="center">
-  <a href="LICENSE"><img src="https://img.shields.io/github/license/crooy/i-have-adhd?style=flat" alt="License"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/github/license/crooy/mand?style=flat" alt="License"></a>
 </p>
 
 <p align="center">
@@ -28,7 +28,7 @@
 Copy/paste into your CLI prompt:
 
 ```text
-Install the mand skill/plugin from https://github.com/crooy/i-have-adhd, refer to the repo's AGENTS.md for instructions.
+Install the mand skill/plugin from https://github.com/crooy/mand, refer to the repo's AGENTS.md for instructions.
 ```
 
 Or 🔗 [check the installation instructions](INSTALL.md).
@@ -81,7 +81,7 @@ A skill for your coding assistant that stops it from burying the answer. Action 
 7. Make wins visible.
 8. Matter-of-fact errors.
 9. Cap lists to 5 items.
-10. English always, whatever the input or code language.
+10. English always: user may write in any language or mix languages; response stays English.
 11. Diagrams over text or code whenever a diagram fits.
 12. No preamble. No recap. No closers.
 13. Fewer words: no filler, no empty hedging, fragments fine.
@@ -101,7 +101,14 @@ Restart your coding assistant, then re-invoke `/mand`.
 
 ## Credits
 
-Based on ideas from J. Russell Ramsay and Anthony L. Rostain's work on practical, action-first working habits; adapted for how an LLM should respond, not how a human should organize their day.
+Derived work. Two skills, merged and reshaped:
+
+- **i-have-adhd** by **Ayoub Ghriss** ([@ayghri](https://github.com/ayghri)) — [github.com/ayghri/i-have-adhd](https://github.com/ayghri/i-have-adhd) (MIT). Source of the action-first response rules (1–9), the persistence model, and this fork's starting structure.
+- **caveman** by **Julius Brussee** ([@JuliusBrussee](https://github.com/JuliusBrussee)) — [github.com/JuliusBrussee/caveman](https://github.com/JuliusBrussee/caveman) (Apache-2.0). Source of the compression mechanics behind rule 13: drop filler, fragments fine, never drop negations, numbers/units/code verbatim, and "compression never grows output".
+
+mand's additions on top: rule 10 (English always for multilingual users), rule 11 (diagrams over words), rule 13's merge with action-first structure, and the "Why terse helps" framing.
+
+Also based on ideas from J. Russell Ramsay and Anthony L. Rostain's work on practical, action-first working habits; adapted for how an LLM should respond, not how a human should organize their day.
 
 ## License
 

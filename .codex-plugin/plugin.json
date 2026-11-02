@@ -1,13 +1,13 @@
 {
   "name": "mand",
-  "version": "0.4.1",
+  "version": "0.5.0",
   "description": "Terse, action-first output shaping for Codex: numbered steps, no tangents, and visible progress.",
   "author": {
-    "name": "Ayoub G.",
-    "url": "https://github.com/crooy/i-have-adhd"
+    "name": "Ronald Crooy",
+    "url": "https://github.com/crooy/mand"
   },
-  "homepage": "https://github.com/crooy/i-have-adhd",
-  "repository": "https://github.com/crooy/i-have-adhd",
+  "homepage": "https://github.com/crooy/mand",
+  "repository": "https://github.com/crooy/mand",
   "license": "MIT",
   "keywords": [
     "output-style",
@@ -20,12 +20,12 @@
     "displayName": "mand",
     "shortDescription": "Terse, action-first output",
     "longDescription": "Shape Codex responses terse and action-first by leading with the next action, numbering multi-step work, suppressing tangents, restating state, and making progress visible.",
-    "developerName": "Ayoub G.",
+    "developerName": "Ronald Crooy",
     "category": "Productivity",
     "capabilities": [
       "Instructions"
     ],
-    "websiteURL": "https://github.com/crooy/i-have-adhd",
+    "websiteURL": "https://github.com/crooy/mand",
     "defaultPrompt": [
       "Use mand for this task.",
       "Make this answer action-first and easy to execute.",
