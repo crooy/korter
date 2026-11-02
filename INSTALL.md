@@ -310,7 +310,7 @@ Exceptions: explain fully when asked to explain. Confirm before destructive acti
 <details>
 <summary><strong>Gemini CLI</strong></summary>
 
-Gemini CLI has no plugin marketplace, so there are two native routes: a **custom command** (opt-in, off until you invoke it) or an **extension** (always-on once installed). The command route matches this skill's default posture; use it.
+Install as a **custom command** (opt-in, off until you invoke it). The command route matches this skill's default posture; use it.
 
 ### Install (command, opt-in)
 
@@ -707,43 +707,41 @@ omp plugin marketplace remove mand
 <details>
 <summary><strong>Qwen Code</strong></summary>
 
+Qwen Code reads Agent Skills natively from `~/.qwen/skills/` (or `~/.agents/skills/`).
+
 ### Install
 
 ```bash
-qwen extensions install crooy/mand
+npx skills add crooy/mand -a qwen-code -y      # all projects
 ```
 
-Qwen Code supports the GitHub shorthand and installs the repository as a
-native extension. The extension discovers the skill under `skills/`.
+Without the CLI:
 
-Type `/mand` to invoke the skill explicitly. Installing the extension
-does not change output until the skill is invoked.
+```bash
+git clone https://github.com/crooy/mand
+mkdir -p ~/.qwen/skills
+cp -R mand/skills/mand ~/.qwen/skills/
+```
 
 ### Verify
 
-```bash
-qwen extensions list
-```
-
-Then start a new Qwen Code session and run:
-
-```text
-/skills
-```
-
-Confirm that `mand` appears in the list.
+Start a new Qwen Code session, run `/skills` and confirm `mand` is listed. Type `/mand` to invoke it explicitly; installing does not change output until then.
 
 ### Update
 
 ```bash
-qwen extensions update mand
+npx skills update mand
 ```
+
+Or re-copy the folder after `git pull`.
 
 ### Uninstall
 
 ```bash
-qwen extensions uninstall mand
+npx skills remove mand
 ```
+
+Or remove `~/.qwen/skills/mand/`.
 
 </details>
 
