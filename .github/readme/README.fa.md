@@ -1,11 +1,11 @@
 <p align="center">
-  <img src="../../logo.png" alt="i-have-adhd" width="140" />
+  <img src="../../logo.png" alt="mand" width="140" />
 </p>
 <p align="center">
-  <strong align="center">خروجی‌های سازگار با ADHD. نیازی به تشخیص پزشکی نیست!</strong>
+  <strong align="center">خروجی کوتاه و کنش‌محور. نیازی به تشخیص نیست!</strong>
 </p>
 <p align="center">
-  <a href="../../LICENSE"><img src="https://img.shields.io/github/license/ayghri/i-have-adhd?style=flat" alt="مجوز"></a>
+  <a href="../../LICENSE"><img src="https://img.shields.io/github/license/ayghri/mand?style=flat" alt="مجوز"></a>
 </p>
 
 <p align="center">
@@ -27,7 +27,7 @@
 به طور خلاصه، در اکثر ابزارها می‌توانید با دستور زیر شروع کنید:
 
 ```text
-Install the i-have-adhd skill/plugin from https://github.com/ayghri/i-have-adhd, refer to the repo's AGENTS.md for instructions.
+Install the mand skill/plugin from https://github.com/ayghri/mand, refer to the repo's AGENTS.md for instructions.
 ```
 
 🔗 [مشاهده راهنمای نصب](../install/INSTALL.fa.md)
@@ -69,7 +69,7 @@ Install the i-have-adhd skill/plugin from https://github.com/ayghri/i-have-adhd,
 
 ## قوانین
 
-۱۰ قانون ساده. متن کامل در [SKILL.md](../../skills/i-have-adhd/SKILL.md).
+۱۰ قانون ساده. متن کامل در [SKILL.md](../../skills/mand/SKILL.md).
 
 1. همیشه با اقدام بعدی شروع کن.
 2. کارهای چندمرحله‌ای را شماره‌گذاری کن.
@@ -85,21 +85,21 @@ Install the i-have-adhd skill/plugin from https://github.com/ayghri/i-have-adhd,
 
 ## شخصی‌سازی
 
-ریپو را فورک کنید، فایل `skills/i-have-adhd/SKILL.md` را ویرایش کنید، سپس نسخه خودتان را جایگزین کنید:
+ریپو را فورک کنید، فایل `skills/mand/SKILL.md` را ویرایش کنید، سپس نسخه خودتان را جایگزین کنید:
 
 ```bash
-claude plugin uninstall i-have-adhd            # اول نسخه اصلی رو حذف کن:
-claude plugin marketplace remove i-have-adhd   # فورک و نسخه اصلی اسم مشترک دارند
-claude plugin marketplace add <your-username>/i-have-adhd
-claude plugin install i-have-adhd@i-have-adhd
+claude plugin uninstall mand            # اول نسخه اصلی رو حذف کن:
+claude plugin marketplace remove mand   # فورک و نسخه اصلی اسم مشترک دارند
+claude plugin marketplace add <your-username>/mand
+claude plugin install mand@mand
 ```
 
-Claude Code را ری‌استارت کنید و دوباره `/i-have-adhd` را صدا بزنید.
+Claude Code را ری‌استارت کنید و دوباره `/mand` را صدا بزنید.
 
 
 ## اعتبارها
 
-برگرفته از کتاب *The Adult ADHD Tool Kit* نوشته J. Russell Ramsay و Anthony L. Rostain. این مهارت برای نحوه پاسخ‌دهی مدل‌های زبانی طراحی شده، نه برای سازمان‌دهی زندگی روزمره افراد.
+برگرفته از ایده‌های J. Russell Ramsay و Anthony L. Rostain درباره عادت‌های عملی و کنش‌محور. این مهارت برای نحوه پاسخ‌دهی مدل‌های زبانی طراحی شده، نه برای سازمان‌دهی زندگی روزمره افراد.
 
 
 ## مجوز

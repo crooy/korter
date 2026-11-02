@@ -1,11 +1,11 @@
 <p align="center">
-  <img src="../../logo.png" alt="i-have-adhd" width="140" />
+  <img src="../../logo.png" alt="mand" width="140" />
 </p>
 <p align="center">
-  <strong align="center">Respons yang ramah bagi kamu yang memiliki ADHD. Tanpa perlu diagnosis!</strong>
+  <strong align="center">Respons ringkas dan langsung ke tindakan. Tanpa perlu diagnosis!</strong>
 </p>
 <p align="center">
-  <a href="../../LICENSE"><img src="https://img.shields.io/github/license/ayghri/i-have-adhd?style=flat" alt="Lisensi"></a>
+  <a href="../../LICENSE"><img src="https://img.shields.io/github/license/ayghri/mand?style=flat" alt="Lisensi"></a>
 </p>
 
 <p align="center">
@@ -61,7 +61,7 @@ Sebuah skill untuk asisten coding-mu yang mencegahnya mengubur jawaban di tengah
 
 ## Aturannya
 
-10 aturan. Teks lengkap ada di [SKILL.md](../../skills/i-have-adhd/SKILL.md).
+10 aturan. Teks lengkap ada di [SKILL.md](../../skills/mand/SKILL.md).
 
 1. Mulai dengan langkah selanjutnya.
 2. Beri nomor pada tugas yang memiliki beberapa langkah.
@@ -76,20 +76,20 @@ Sebuah skill untuk asisten coding-mu yang mencegahnya mengubur jawaban di tengah
 
 ## Sesuaikan (Kustomisasi)
 
-Lakukan fork, edit `skills/i-have-adhd/SKILL.md`, dan ganti dengan salinan Anda sendiri:
+Lakukan fork, edit `skills/mand/SKILL.md`, dan ganti dengan salinan Anda sendiri:
 
 ```bash
-claude plugin uninstall i-have-adhd            # hapus salinan upstream terlebih dahulu:
-claude plugin marketplace remove i-have-adhd   # fork dan upstream menggunakan nama yang sama
-claude plugin marketplace add <username-anda>/i-have-adhd
-claude plugin install i-have-adhd@i-have-adhd
+claude plugin uninstall mand            # hapus salinan upstream terlebih dahulu:
+claude plugin marketplace remove mand   # fork dan upstream menggunakan nama yang sama
+claude plugin marketplace add <username-anda>/mand
+claude plugin install mand@mand
 ```
 
-Mulai ulang Claude Code dan panggil `/i-have-adhd` lagi.
+Mulai ulang Claude Code dan panggil `/mand` lagi.
 
 ## Kredit
 
-Terinspirasi secara bebas dari *The Adult ADHD Tool Kit* karya J. Russell Ramsay dan Anthony L. Rostain. Diadaptasi untuk cara LLM seharusnya merespons, bukan untuk cara seseorang mengatur harinya.
+Terinspirasi secara bebas dari ide-ide J. Russell Ramsay dan Anthony L. Rostain tentang kebiasaan praktis dan berorientasi tindakan. Diadaptasi untuk cara LLM seharusnya merespons, bukan untuk cara seseorang mengatur harinya.
 
 ## Lisensi
 

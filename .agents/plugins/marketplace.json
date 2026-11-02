@@ -1,14 +1,14 @@
 {
-  "name": "i-have-adhd",
+  "name": "mand",
   "interface": {
-    "displayName": "I Have ADHD"
+    "displayName": "mand"
   },
   "plugins": [
     {
-      "name": "i-have-adhd",
+      "name": "mand",
       "source": {
         "source": "url",
-        "url": "https://github.com/ayghri/i-have-adhd.git",
+        "url": "https://github.com/ayghri/mand.git",
         "ref": "main"
       },
       "policy": {

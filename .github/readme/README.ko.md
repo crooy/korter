@@ -1,11 +1,11 @@
 <p align="center">
-  <img src="../../logo.png" alt="i-have-adhd" width="140" />
+  <img src="../../logo.png" alt="mand" width="140" />
 </p>
 <p align="center">
-  <strong align="center">ADHD 친화적인 출력. ADHD 진단은 필요 없어요!</strong>
+  <strong align="center">간결하고 행동 중심인 출력. 진단은 필요 없어요!</strong>
 </p>
 <p align="center">
-  <a href="../../LICENSE"><img src="https://img.shields.io/github/license/ayghri/i-have-adhd?style=flat" alt="License"></a>
+  <a href="../../LICENSE"><img src="https://img.shields.io/github/license/ayghri/mand?style=flat" alt="License"></a>
 </p>
 
 <p align="center">
@@ -64,7 +64,7 @@
 
 ## 규칙
 
-10가지 규칙. 전문은 [SKILL.md](../../skills/i-have-adhd/SKILL.md)에 있습니다.
+10가지 규칙. 전문은 [SKILL.md](../../skills/mand/SKILL.md)에 있습니다.
 
 1. 다음 행동부터 말하기.
 2. 다단계 작업은 번호로.
@@ -79,20 +79,20 @@
 
 ## 커스터마이즈
 
-저장소를 포크해 `skills/i-have-adhd/SKILL.md`를 수정한 다음, 본인 복사본으로 교체하세요:
+저장소를 포크해 `skills/mand/SKILL.md`를 수정한 다음, 본인 복사본으로 교체하세요:
 
 ```bash
-claude plugin uninstall i-have-adhd            # 먼저 업스트림 버전 제거
-claude plugin marketplace remove i-have-adhd   # 포크와 업스트림이 같은 이름을 씁니다
-claude plugin marketplace add <your-username>/i-have-adhd
-claude plugin install i-have-adhd@i-have-adhd
+claude plugin uninstall mand            # 먼저 업스트림 버전 제거
+claude plugin marketplace remove mand   # 포크와 업스트림이 같은 이름을 씁니다
+claude plugin marketplace add <your-username>/mand
+claude plugin install mand@mand
 ```
 
-Claude Code를 재시작한 뒤 `/i-have-adhd`를 다시 호출하세요.
+Claude Code를 재시작한 뒤 `/mand`를 다시 호출하세요.
 
 ## 크레딧
 
-J. Russell Ramsay와 Anthony L. Rostain의 *The Adult ADHD Tool Kit*을 느슨하게 참고했습니다. 사람이 하루를 어떻게 꾸려야 하는가가 아니라 **LLM이 어떻게 응답해야 하는가**에 맞춰 재해석했습니다.
+J. Russell Ramsay와 Anthony L. Rostain의 실천·행동 중심 습관 아이디어를 느슨하게 참고했습니다. 사람이 하루를 어떻게 꾸려야 하는가가 아니라 **LLM이 어떻게 응답해야 하는가**에 맞춰 재해석했습니다.
 
 ## 라이선스
 

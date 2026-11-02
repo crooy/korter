@@ -1,11 +1,11 @@
 <p align="center">
-  <img src="./logo.png" alt="i-have-adhd" width="140" />
+  <img src="./logo.png" alt="mand" width="140" />
 </p>
 <p align="center">
-  <strong align="center">ADHD-friendly outputs. No ADHD diagnosis needed!</strong>
+  <strong align="center">Terse, action-first outputs. No diagnosis needed!</strong>
 </p>
 <p align="center">
-  <a href="LICENSE"><img src="https://img.shields.io/github/license/ayghri/i-have-adhd?style=flat" alt="License"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/github/license/ayghri/mand?style=flat" alt="License"></a>
 </p>
 
 <p align="center">
@@ -28,7 +28,7 @@
 Copy/paste into your CLI prompt:
 
 ```text
-Install the i-have-adhd skill/plugin from https://github.com/ayghri/i-have-adhd, refer to the repo's AGENTS.md for instructions.
+Install the mand skill/plugin from https://github.com/ayghri/mand, refer to the repo's AGENTS.md for instructions.
 ```
 
 Or 🔗 [check the installation instructions](INSTALL.md).
@@ -70,7 +70,7 @@ A skill for your coding assistant that stops it from burying the answer. Action 
 
 ## The rules
 
-12 rules. Full text in [SKILL.md](./skills/i-have-adhd/SKILL.md).
+13 rules. Full text in [SKILL.md](./skills/mand/SKILL.md).
 
 1. Lead with the next action.
 2. Number multi-step tasks.
@@ -84,23 +84,24 @@ A skill for your coding assistant that stops it from burying the answer. Action 
 10. English always, whatever the input or code language.
 11. Diagrams over text or code whenever a diagram fits.
 12. No preamble. No recap. No closers.
+13. Fewer words: no filler, no empty hedging, fragments fine.
 
 ## Tune it
 
-Fork, edit `skills/i-have-adhd/SKILL.md`, then swap your copy in:
+Fork, edit `skills/mand/SKILL.md`, then swap your copy in:
 
 ```bash
-claude plugin uninstall i-have-adhd            # drop the upstream copy first:
-claude plugin marketplace remove i-have-adhd   # fork and upstream share both names
-claude plugin marketplace add <your-username>/i-have-adhd
-claude plugin install i-have-adhd@i-have-adhd
+claude plugin uninstall mand            # drop the upstream copy first:
+claude plugin marketplace remove mand   # fork and upstream share both names
+claude plugin marketplace add <your-username>/mand
+claude plugin install mand@mand
 ```
 
-Restart your coding assistant, then re-invoke `/i-have-adhd`.
+Restart your coding assistant, then re-invoke `/mand`.
 
 ## Credits
 
-Loosely based on *The Adult ADHD Tool Kit* by J. Russell Ramsay and Anthony L. Rostain. Adapted for how an LLM should respond, not how a human should organize their day.
+Based on ideas from J. Russell Ramsay and Anthony L. Rostain's work on practical, action-first working habits; adapted for how an LLM should respond, not how a human should organize their day.
 
 ## License
 

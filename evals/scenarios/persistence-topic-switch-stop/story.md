@@ -25,12 +25,12 @@ model, budget, and trial number. For example (each invocation allows up to $1):
 python3 scripts/run_scenario_eval.py run \
   --scenario evals/scenarios/persistence-topic-switch-stop \
   --condition baseline --model <model-id> --trial 1 --budget-usd 1 \
-  --output /tmp/adhd-baseline.jsonl
+  --output /tmp/mand-baseline.jsonl
 python3 scripts/run_scenario_eval.py run \
   --scenario evals/scenarios/persistence-topic-switch-stop \
-  --condition candidate --condition-skill skills/i-have-adhd/SKILL.md \
+  --condition candidate --condition-skill skills/mand/SKILL.md \
   --model <model-id> --trial 1 --budget-usd 1 \
-  --output /tmp/adhd-candidate.jsonl
+  --output /tmp/mand-candidate.jsonl
 ```
 
 Output paths must be new. Each successful run saves one response row containing

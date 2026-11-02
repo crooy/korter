@@ -1,11 +1,11 @@
 <p align="center">
-  <img src="../../logo.png" alt="i-have-adhd" width="140" />
+  <img src="../../logo.png" alt="mand" width="140" />
 </p>
 <p align="center">
   <strong align="center">Respostas amigáveis para quem tem TDAH. Sem precisar de diagnóstico!</strong>
 </p>
 <p align="center">
-  <a href="../../LICENSE"><img src="https://img.shields.io/github/license/ayghri/i-have-adhd?style=flat" alt="Licença"></a>
+  <a href="../../LICENSE"><img src="https://img.shields.io/github/license/ayghri/mand?style=flat" alt="Licença"></a>
 </p>
 
 <p align="center">
@@ -64,7 +64,7 @@ Uma skill para o seu assistente de código que impede que ele enterre a resposta
 
 ## As regras
 
-10 regras. Texto completo no [SKILL.md](../../skills/i-have-adhd/SKILL.md).
+10 regras. Texto completo no [SKILL.md](../../skills/mand/SKILL.md).
 
 1. Comece pela próxima ação.
 2. Numere tarefas de múltiplos passos.
@@ -79,20 +79,20 @@ Uma skill para o seu assistente de código que impede que ele enterre a resposta
 
 ## Personalize
 
-Faça um fork, edite `skills/i-have-adhd/SKILL.md` e troque pela sua cópia:
+Faça um fork, edite `skills/mand/SKILL.md` e troque pela sua cópia:
 
 ```bash
-claude plugin uninstall i-have-adhd            # remova a cópia do upstream primeiro:
-claude plugin marketplace remove i-have-adhd   # fork e upstream compartilham o mesmo nome
-claude plugin marketplace add <seu-usuario>/i-have-adhd
-claude plugin install i-have-adhd@i-have-adhd
+claude plugin uninstall mand            # remova a cópia do upstream primeiro:
+claude plugin marketplace remove mand   # fork e upstream compartilham o mesmo nome
+claude plugin marketplace add <seu-usuario>/mand
+claude plugin install mand@mand
 ```
 
-Reinicie o Claude Code e invoque `/i-have-adhd` de novo.
+Reinicie o Claude Code e invoque `/mand` de novo.
 
 ## Créditos
 
-Baseado livremente em *The Adult ADHD Tool Kit*, de J. Russell Ramsay e Anthony L. Rostain. Adaptado para como um LLM deveria responder, não para como uma pessoa deveria organizar o dia.
+Baseado livremente em ideias de J. Russell Ramsay e Anthony L. Rostain sobre hábitos práticos e orientados a ação. Adaptado para como um LLM deveria responder, não para como uma pessoa deveria organizar o dia.
 
 ## Licença
 

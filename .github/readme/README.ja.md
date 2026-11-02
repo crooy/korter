@@ -1,11 +1,11 @@
 <p align="center">
-  <img src="../../logo.png" alt="i-have-adhd" width="140" />
+  <img src="../../logo.png" alt="mand" width="140" />
 </p>
 <p align="center">
-  <strong align="center">ADHDに配慮した簡潔な出力。（診断済みかは関係なく、誰でも気軽に使えます！）</strong>
+  <strong align="center">簡潔で行動優先の出力。（診断は関係なく、誰でも使えます！）</strong>
 </p>
 <p align="center">
-  <a href="../../LICENSE"><img src="https://img.shields.io/github/license/ayghri/i-have-adhd?style=flat" alt="ライセンス"></a>
+  <a href="../../LICENSE"><img src="https://img.shields.io/github/license/ayghri/mand?style=flat" alt="ライセンス"></a>
 </p>
 
 <p align="center">
@@ -27,7 +27,7 @@
 CLIのプロンプトに以下をコピー＆ペーストしてください：
 
 ```text
-Install the i-have-adhd skill/plugin from https://github.com/ayghri/i-have-adhd, refer to the repo's AGENTS.md for instructions.
+Install the mand skill/plugin from https://github.com/ayghri/mand, refer to the repo's AGENTS.md for instructions.
 ```
 
 または、🔗 [インストール手順を確認する](../install/INSTALL.ja.md)。
@@ -66,7 +66,7 @@ Install the i-have-adhd skill/plugin from https://github.com/ayghri/i-have-adhd,
 
 ## 10のルール
 
-ルールは10個。全文は [SKILL.md](../../skills/i-have-adhd/SKILL.md) を参照してください。
+ルールは10個。全文は [SKILL.md](../../skills/mand/SKILL.md) を参照してください。
 
 1. 次に取る行動から始める。
 2. 複数ステップの作業には番号を付ける。
@@ -81,20 +81,20 @@ Install the i-have-adhd skill/plugin from https://github.com/ayghri/i-have-adhd,
 
 ## カスタマイズ
 
-リポジトリをForkし、`skills/i-have-adhd/SKILL.md` を編集してから自分のコピーに差し替えます。
+リポジトリをForkし、`skills/mand/SKILL.md` を編集してから自分のコピーに差し替えます。
 
 ```bash
-claude plugin uninstall i-have-adhd            # 先に本家のコピーを削除
-claude plugin marketplace remove i-have-adhd   # Fork版と本家で名前が重複するため
-claude plugin marketplace add <your-username>/i-have-adhd
-claude plugin install i-have-adhd@i-have-adhd
+claude plugin uninstall mand            # 先に本家のコピーを削除
+claude plugin marketplace remove mand   # Fork版と本家で名前が重複するため
+claude plugin marketplace add <your-username>/mand
+claude plugin install mand@mand
 ```
 
-Claude Code を再起動し、`/i-have-adhd` をもう一度呼び出してください。
+Claude Code を再起動し、`/mand` をもう一度呼び出してください。
 
 ## クレジット
 
-J. Russell Ramsay と Anthony L. Rostain による著書『*The Adult ADHD Tool Kit*』に着想を得ています。人間の一日のスケジュール管理ではなく、LLMがどう返答すべきかに合わせて最適化しています。
+J. Russell Ramsay と Anthony L. Rostain による実践的・行動優先の習慣に関する着想を得ています。人間の一日のスケジュール管理ではなく、LLMがどう返答すべきかに合わせて最適化しています。
 
 ## ライセンス
 

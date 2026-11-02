@@ -1,11 +1,11 @@
 <p align="center">
-  <img src="../../logo.png" alt="i-have-adhd" width="140" />
+  <img src="../../logo.png" alt="mand" width="140" />
 </p>
 <p align="center">
-  <strong align="center">对 ADHD 友好的输出。无需确诊 ADHD！</strong>
+  <strong align="center">简洁、行动优先的输出。无需确诊！</strong>
 </p>
 <p align="center">
-  <a href="../../LICENSE"><img src="https://img.shields.io/github/license/ayghri/i-have-adhd?style=flat" alt="许可证"></a>
+  <a href="../../LICENSE"><img src="https://img.shields.io/github/license/ayghri/mand?style=flat" alt="许可证"></a>
 </p>
 
 <p align="center">
@@ -28,7 +28,7 @@
 复制粘贴到你的 CLI 对话框中：
 
 ```text
-Install the i-have-adhd skill/plugin from https://github.com/ayghri/i-have-adhd, refer to the repo's AGENTS.md for instructions.
+Install the mand skill/plugin from https://github.com/ayghri/mand, refer to the repo's AGENTS.md for instructions.
 ```
 
 或 🔗 [查看安装说明](../install/INSTALL.zh-CN.md)
@@ -70,7 +70,7 @@ Install the i-have-adhd skill/plugin from https://github.com/ayghri/i-have-adhd,
 
 ## 规则
 
-共 10 条规则。完整内容见 [SKILL.md](../../skills/i-have-adhd/SKILL.md)。
+共 10 条规则。完整内容见 [SKILL.md](../../skills/mand/SKILL.md)。
 
 1. 先说下一步行动。
 2. 多步骤任务使用编号。
@@ -85,20 +85,20 @@ Install the i-have-adhd skill/plugin from https://github.com/ayghri/i-have-adhd,
 
 ## 自定义
 
-Fork 此仓库，编辑 `skills/i-have-adhd/SKILL.md`，然后换成你的副本：
+Fork 此仓库，编辑 `skills/mand/SKILL.md`，然后换成你的副本：
 
 ```bash
-claude plugin uninstall i-have-adhd            # 先移除上游副本：
-claude plugin marketplace remove i-have-adhd   # fork 与上游使用相同名称
-claude plugin marketplace add <your-username>/i-have-adhd
-claude plugin install i-have-adhd@i-have-adhd
+claude plugin uninstall mand            # 先移除上游副本：
+claude plugin marketplace remove mand   # fork 与上游使用相同名称
+claude plugin marketplace add <your-username>/mand
+claude plugin install mand@mand
 ```
 
-重启 Claude Code，然后再次调用 `/i-have-adhd`。
+重启 Claude Code，然后再次调用 `/mand`。
 
 ## 致谢
 
-内容大致参考 J. Russell Ramsay 和 Anthony L. Rostain 所著的 *The Adult ADHD Tool Kit*。本技能针对 LLM 应如何回应进行了改编，而不是教人们如何安排日常生活。
+内容大致参考 J. Russell Ramsay 和 Anthony L. Rostain 关于实用、行动优先习惯的思路。本技能针对 LLM 应如何回应进行了改编，而不是教人们如何安排日常生活。
 
 ## 许可证
 

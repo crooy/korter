@@ -1,11 +1,11 @@
 <p align="center">
-  <img src="../../logo.png" alt="i-have-adhd" width="140" />
+  <img src="../../logo.png" alt="mand" width="140" />
 </p>
 <p align="center">
   <strong align="center">إجابات موجزة ومناسبة للمصابين باضطراب فرط الحركة وتشتت الانتباه. لا حاجة إلى تشخيص؛ يمكن للجميع استخدامها!</strong>
 </p>
 <p align="center">
-  <a href="../../LICENSE"><img src="https://img.shields.io/github/license/ayghri/i-have-adhd?style=flat" alt="الترخيص"></a>
+  <a href="../../LICENSE"><img src="https://img.shields.io/github/license/ayghri/mand?style=flat" alt="الترخيص"></a>
 </p>
 
 <p align="center">
@@ -26,7 +26,7 @@
 انسخ النص التالي والصقه في موجّه سطر الأوامر:
 
 ```text
-Install the i-have-adhd skill/plugin from https://github.com/ayghri/i-have-adhd, refer to the repo's AGENTS.md for instructions.
+Install the mand skill/plugin from https://github.com/ayghri/mand, refer to the repo's AGENTS.md for instructions.
 ```
 
 أو 🔗 [راجع تعليمات التثبيت](../install/INSTALL.ar.md).
@@ -65,7 +65,7 @@ Install the i-have-adhd skill/plugin from https://github.com/ayghri/i-have-adhd,
 
 ## القواعد العشر
 
-تتكوّن المهارة من عشر قواعد. تجد النص الكامل في [SKILL.md](../../skills/i-have-adhd/SKILL.md).
+تتكوّن المهارة من عشر قواعد. تجد النص الكامل في [SKILL.md](../../skills/mand/SKILL.md).
 
 1. ابدأ بالإجراء التالي.
 2. رقّم المهام متعددة الخطوات.
@@ -80,20 +80,20 @@ Install the i-have-adhd skill/plugin from https://github.com/ayghri/i-have-adhd,
 
 ## التخصيص
 
-أنشئ نسخة متفرعة من المستودع، وعدّل `skills/i-have-adhd/SKILL.md`، ثم استخدم نسختك بدلاً من النسخة الأصلية:
+أنشئ نسخة متفرعة من المستودع، وعدّل `skills/mand/SKILL.md`، ثم استخدم نسختك بدلاً من النسخة الأصلية:
 
 ```bash
-claude plugin uninstall i-have-adhd            # إزالة النسخة الأصلية أولاً
-claude plugin marketplace remove i-have-adhd   # النسخة المتفرعة والأصلية تحملان الاسم نفسه
-claude plugin marketplace add <your-username>/i-have-adhd
-claude plugin install i-have-adhd@i-have-adhd
+claude plugin uninstall mand            # إزالة النسخة الأصلية أولاً
+claude plugin marketplace remove mand   # النسخة المتفرعة والأصلية تحملان الاسم نفسه
+claude plugin marketplace add <your-username>/mand
+claude plugin install mand@mand
 ```
 
-أعد تشغيل Claude Code، ثم استدعِ `/i-have-adhd` مجددًا.
+أعد تشغيل Claude Code، ثم استدعِ `/mand` مجددًا.
 
 ## شكر وتقدير
 
-مستوحاة بصورة عامة من كتاب *The Adult ADHD Tool Kit* للمؤلفين J. Russell Ramsay وAnthony L. Rostain. وقد كُيّفت لتناسب طريقة استجابة نماذج اللغة الكبيرة، لا طريقة تنظيم الإنسان ليومه.
+مستوحاة بصورة عامة من أفكار J. Russell Ramsay وAnthony L. Rostain حول العادات العملية والمرتكزة على العمل. وقد كُيّفت لتناسب طريقة استجابة نماذج اللغة الكبيرة، لا طريقة تنظيم الإنسان ليومه.
 
 ## الترخيص
 

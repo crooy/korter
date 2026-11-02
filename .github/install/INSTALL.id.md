@@ -6,7 +6,7 @@
 ### Instalasi
 
 ```bash
-agy plugin install https://github.com/ayghri/i-have-adhd
+agy plugin install https://github.com/ayghri/mand
 ```
 
 ### Verifikasi
@@ -18,17 +18,17 @@ agy plugin list
 ### Pembaruan
 
 ```bash
-agy plugin uninstall i-have-adhd
-agy plugin install https://github.com/ayghri/i-have-adhd
+agy plugin uninstall mand
+agy plugin install https://github.com/ayghri/mand
 ```
 
 ### Uninstal
 
 ```bash
-agy plugin uninstall i-have-adhd
+agy plugin uninstall mand
 ```
 
-Atau biarkan terinstal tetapi nonaktifkan: `agy plugin disable i-have-adhd`.
+Atau biarkan terinstal tetapi nonaktifkan: `agy plugin disable mand`.
 
 ### Selalu Aktif (opsional)
 
@@ -37,7 +37,7 @@ Tambahkan ke `~/.gemini/GEMINI.md`:
 ```markdown
 ## Gaya Respons
 
-Pembaca ini memiliki ADHD. Susun setiap respons agar mudah ditindaklanjuti, jangan bertele-tele yaaa:
+Jawab dengan ringkas dan langsung ke tindakan. Susun setiap respons agar mudah ditindaklanjuti:
 
 1. Mulailah dengan jawaban atau langkah selanjutnya: perintah, jalur file, atau cuplikan kode terlebih dahulu.
 2. Beri nomor pada pekerjaan yang memiliki beberapa langkah; batasi satu tindakan jelas per langkah.
@@ -61,11 +61,11 @@ Pengecualian: jelaskan secara lengkap jika diminta. Konfirmasi sebelum melakukan
 ### Instalasi
 
 ```bash
-claude plugin marketplace add ayghri/i-have-adhd
-claude plugin install i-have-adhd@i-have-adhd
+claude plugin marketplace add ayghri/mand
+claude plugin install mand@mand
 ```
 
-Ketik `/i-have-adhd`.
+Ketik `/mand`.
 
 ### Verifikasi
 
@@ -76,40 +76,40 @@ claude plugin list
 ### Pembaruan
 
 ```bash
-claude plugin marketplace update i-have-adhd
-claude plugin update i-have-adhd@i-have-adhd
+claude plugin marketplace update mand
+claude plugin update mand@mand
 ```
 
 ### Uninstal
 
 ```bash
-claude plugin uninstall i-have-adhd
-claude plugin marketplace remove i-have-adhd
+claude plugin uninstall mand
+claude plugin marketplace remove mand
 ```
 
-Atau biarkan terinstal tetapi nonaktifkan: `claude plugin disable i-have-adhd`.
+Atau biarkan terinstal tetapi nonaktifkan: `claude plugin disable mand`.
 
 ### Selalu Aktif (opsional)
 
-Hook `SessionStart` akan memuat semua aturan di awal setiap sesi; Anda tidak perlu lagi mengetik `/i-have-adhd`:
+Hook `SessionStart` akan memuat semua aturan di awal setiap sesi; Anda tidak perlu lagi mengetik `/mand`:
 
 ```bash
-touch ~/.claude/.i-have-adhd-always
+touch ~/.claude/.mand-always
 ```
 
 Jika Anda menggunakan direktori konfigurasi kustom untuk Claude, buat file penanda (flag) di dalamnya:
 
 ```bash
-touch "$CLAUDE_CONFIG_DIR/.i-have-adhd-always"
+touch "$CLAUDE_CONFIG_DIR/.mand-always"
 ```
 
 Untuk kembali ke mode sesuai permintaan (on-demand):
 
 ```bash
-rm ~/.claude/.i-have-adhd-always
+rm ~/.claude/.mand-always
 ```
 
-Hook ini hanya berjalan ketika file penanda ada, jadi menginstal plugin saja tidak akan mengubah apa pun. Perintah "stop adhd mode" tetap akan menonaktifkannya di sesi saat ini.
+Hook ini hanya berjalan ketika file penanda ada, jadi menginstal plugin saja tidak akan mengubah apa pun. Perintah "stop mand" tetap akan menonaktifkannya di sesi saat ini.
 
 </details>
 
@@ -119,11 +119,11 @@ Hook ini hanya berjalan ketika file penanda ada, jadi menginstal plugin saja tid
 ### Instalasi
 
 ```bash
-codex plugin marketplace add ayghri/i-have-adhd --ref main
-codex plugin add i-have-adhd@i-have-adhd
+codex plugin marketplace add ayghri/mand --ref main
+codex plugin add mand@mand
 ```
 
-Aktifkan skill ini secara eksplisit dengan mengetik `$i-have-adhd`. Codex ga bakalan memanggilnya secara otomatis.
+Aktifkan skill ini secara eksplisit dengan mengetik `$mand`. Codex ga bakalan memanggilnya secara otomatis.
 
 ### Verifikasi
 
@@ -134,16 +134,16 @@ codex plugin list
 ### Pembaruan
 
 ```bash
-codex plugin marketplace upgrade i-have-adhd
-codex plugin remove i-have-adhd
-codex plugin add i-have-adhd@i-have-adhd
+codex plugin marketplace upgrade mand
+codex plugin remove mand
+codex plugin add mand@mand
 ```
 
 ### Uninstal
 
 ```bash
-codex plugin remove i-have-adhd
-codex plugin marketplace remove i-have-adhd
+codex plugin remove mand
+codex plugin marketplace remove mand
 ```
 
 ### Selalu Aktif (opsional)
@@ -153,7 +153,7 @@ Tambahkan ke `~/.codex/AGENTS.md`:
 ```markdown
 ## Gaya Respons
 
-Pembaca memiliki ADHD. Susun setiap respons agar mudah ditindaklanjuti:
+Jawab dengan ringkas dan langsung ke tindakan. Susun setiap respons agar mudah ditindaklanjuti:
 
 1. Mulailah dengan jawaban atau langkah selanjutnya: perintah, jalur file, atau cuplikan kode terlebih dahulu.
 2. Beri nomor pada pekerjaan yang memiliki beberapa langkah; batasi satu tindakan jelas per langkah.
@@ -180,16 +180,16 @@ Gemini CLI tidak memiliki marketplace plugin, jadi ada dua opsi bawaan: perintah
 
 ```bash
 mkdir -p ~/.gemini/commands
-curl -fsSL https://raw.githubusercontent.com/ayghri/i-have-adhd/main/skills/i-have-adhd/agents/gemini.toml \
-  -o ~/.gemini/commands/i-have-adhd.toml
+curl -fsSL https://raw.githubusercontent.com/ayghri/mand/main/skills/mand/agents/gemini.toml \
+  -o ~/.gemini/commands/mand.toml
 ```
 
-Mulai sesi baru dan ketik `/i-have-adhd`. Skill ini akan tetap aktif selama sesi tersebut.
+Mulai sesi baru dan ketik `/mand`. Skill ini akan tetap aktif selama sesi tersebut.
 
 ### Instalasi (ekstensi, always-on)
 
 ```bash
-gemini extensions install https://github.com/ayghri/i-have-adhd
+gemini extensions install https://github.com/ayghri/mand
 ```
 
 Ekstensi ini memuat `GEMINI.md`, yang mengimpor skill secara lengkap; dengan demikian, aturannya berlaku sejak pesan pertama. Git harus sudah terinstal.
@@ -198,23 +198,23 @@ Ekstensi ini memuat `GEMINI.md`, yang mengimpor skill secara lengkap; dengan dem
 
 ```bash
 gemini extensions list          # via ekstensi
-ls ~/.gemini/commands           # rute perintah: i-have-adhd.toml ada
+ls ~/.gemini/commands           # rute perintah: mand.toml ada
 ```
 
-Atau ketik `/` di dalam sesi dan pastikan `i-have-adhd` muncul dalam daftar.
+Atau ketik `/` di dalam sesi dan pastikan `mand` muncul dalam daftar.
 
 ### Pembaruan
 
 ```bash
-gemini extensions update i-have-adhd    # via ekstensi
+gemini extensions update mand    # via ekstensi
 # via perintah: jalankan ulang perintah curl di atas
 ```
 
 ### Uninstal
 
 ```bash
-gemini extensions uninstall i-have-adhd    # via ekstensi
-rm ~/.gemini/commands/i-have-adhd.toml     # rute perintah
+gemini extensions uninstall mand    # via ekstensi
+rm ~/.gemini/commands/mand.toml     # rute perintah
 ```
 
 </details>
@@ -227,21 +227,21 @@ Copilot membaca Agent Skills secara native: menggunakan file `SKILL.md` yang sam
 ### Instalasi
 
 ```bash
-npx skills add ayghri/i-have-adhd -a github-copilot        # proyek ini
-npx skills add ayghri/i-have-adhd -a github-copilot -g     # semua proyek
+npx skills add ayghri/mand -a github-copilot        # proyek ini
+npx skills add ayghri/mand -a github-copilot -g     # semua proyek
 ```
 
 Tanpa CLI, salin folder skill ke direktori mana pun yang diperiksa oleh Copilot:
 
 ```bash
-git clone https://github.com/ayghri/i-have-adhd
+git clone https://github.com/ayghri/mand
 mkdir -p ~/.copilot/skills
-cp -R i-have-adhd/skills/i-have-adhd ~/.copilot/skills/
+cp -R mand/skills/mand ~/.copilot/skills/
 ```
 
 ### Verifikasi
 
-Ketik `/` di kolom obrolan dan pastikan `i-have-adhd` muncul. Atau:
+Ketik `/` di kolom obrolan dan pastikan `mand` muncul. Atau:
 
 ```bash
 npx skills list
@@ -251,7 +251,7 @@ npx skills ls -g    # jika diinstal secara global
 ### Pembaruan
 
 ```bash
-npx skills update i-have-adhd
+npx skills update mand
 ```
 
 Atau salin ulang foldernya setelah `git pull`.
@@ -259,14 +259,14 @@ Atau salin ulang foldernya setelah `git pull`.
 ### Uninstal
 
 ```bash
-npx skills remove i-have-adhd
+npx skills remove mand
 ```
 
-Atau hapus folder `i-have-adhd` dari direktori skill tempat ia diinstal.
+Atau hapus folder `mand` dari direktori skill tempat ia diinstal.
 
 ### Catatan tentang aktivasi
 
-Copilot menghormati `disable-model-invocation`: tidak ada yang diterapkan sampai Anda memanggil skill tersebut, sama seperti di Claude Code (telah diuji pada [#60](https://github.com/ayghri/i-have-adhd/pull/60)).
+Copilot menghormati `disable-model-invocation`: tidak ada yang diterapkan sampai Anda memanggil skill tersebut, sama seperti di Claude Code (telah diuji pada [#60](https://github.com/ayghri/mand/pull/60)).
 
 ### Selalu Aktif (opsional)
 
@@ -275,7 +275,7 @@ Tambahkan blok di bawah ini ke `.github/copilot-instructions.md` pada proyek And
 ```markdown
 ## Gaya Respons
 
-Pembaca memiliki ADHD. Susun setiap respons agar mudah ditindaklanjuti:
+Jawab dengan ringkas dan langsung ke tindakan. Susun setiap respons agar mudah ditindaklanjuti:
 
 1. Mulailah dengan jawaban atau langkah selanjutnya: perintah, jalur file, atau cuplikan kode terlebih dahulu.
 2. Beri nomor pada pekerjaan yang memiliki beberapa langkah; batasi satu tindakan jelas per langkah.
@@ -299,17 +299,17 @@ Pengecualian: jelaskan secara lengkap jika diminta. Konfirmasi sebelum melakukan
 ### Instalasi
 
 ```bash
-hermes skills install ayghri/i-have-adhd/skills/i-have-adhd
+hermes skills install ayghri/mand/skills/mand
 ```
 
-Ketik `/i-have-adhd`. Skill ini akan diinstal ke `~/.hermes/skills/` dan tersedia sebagai perintah slash saat sesi berikutnya dimulai.
+Ketik `/mand`. Skill ini akan diinstal ke `~/.hermes/skills/` dan tersedia sebagai perintah slash saat sesi berikutnya dimulai.
 
 Lebih suka menjelajah dulu? Tambahkan repositori ini sebagai sumber skill (sebagai "tap"), lalu cari dan instal:
 
 ```bash
-hermes skills tap add ayghri/i-have-adhd
-hermes skills search adhd
-hermes skills install ayghri/i-have-adhd/skills/i-have-adhd
+hermes skills tap add ayghri/mand
+hermes skills search mand
+hermes skills install ayghri/mand/skills/mand
 ```
 
 ### Verifikasi
@@ -321,16 +321,16 @@ hermes skills list
 ### Pembaruan
 
 ```bash
-hermes skills update i-have-adhd
+hermes skills update mand
 ```
 
 ### Uninstal
 
 ```bash
-hermes skills uninstall i-have-adhd
+hermes skills uninstall mand
 ```
 
-Atau hapus juga tap-nya: `hermes skills tap remove ayghri/i-have-adhd`.
+Atau hapus juga tap-nya: `hermes skills tap remove ayghri/mand`.
 
 ### Selalu Aktif (opsional)
 
@@ -339,7 +339,7 @@ Tambahkan ke `AGENTS.md` di direktori kerja Anda (Hermes memuatnya per direktori
 ```markdown
 ## Gaya Respons
 
-Pembaca memiliki ADHD. Susun setiap respons agar mudah ditindaklanjuti:
+Jawab dengan ringkas dan langsung ke tindakan. Susun setiap respons agar mudah ditindaklanjuti:
 
 1. Mulailah dengan jawaban atau langkah selanjutnya: perintah, jalur file, atau cuplikan kode terlebih dahulu.
 2. Beri nomor pada pekerjaan yang memiliki beberapa langkah; batasi satu tindakan jelas per langkah.
@@ -366,80 +366,80 @@ Mulai sesi Kimi Code dan:
 
 1. Jalankan `/plugins`.
 2. Pilih **Custom**.
-3. Tempel `https://github.com/ayghri/i-have-adhd` dan tekan Enter.
+3. Tempel `https://github.com/ayghri/mand` dan tekan Enter.
 4. Pilih **Trust and install**.
 
-Gunakan perintah slash `/skill:i-have-adhd` untuk memanggil skill ini secara eksplisit.
+Gunakan perintah slash `/skill:mand` untuk memanggil skill ini secara eksplisit.
 
 ### Pembaruan
 
-Di dalam sesi Kimi Code, jalankan `/plugins`, arahkan kursor ke **I Have ADHD**, dan tekan `R`.
+Di dalam sesi Kimi Code, jalankan `/plugins`, arahkan kursor ke **mand**, dan tekan `R`.
 
 ### Uninstal
 
-Di dalam sesi Kimi Code, jalankan `/plugins`, arahkan kursor ke **I Have ADHD**, dan tekan `D`.
+Di dalam sesi Kimi Code, jalankan `/plugins`, arahkan kursor ke **mand**, dan tekan `D`.
 
 </details>
 
 <details>
 <summary><strong>OpenCode</strong></summary>
 
-Plugin mendukung OpenCode V1 **1.18.29 atau lebih baru** dan V2. Plugin mendaftarkan skill dan perintah `/i-have-adhd`, serta menyediakan mode selalu aktif opsional. Versi V1 yang lebih lama perlu diperbarui atau menggunakan plugin dari rilis skill sebelumnya.
+Plugin mendukung OpenCode V1 **1.18.29 atau lebih baru** dan V2. Plugin mendaftarkan skill dan perintah `/mand`, serta menyediakan mode selalu aktif opsional. Versi V1 yang lebih lama perlu diperbarui atau menggunakan plugin dari rilis skill sebelumnya.
 
 ### Instalasi
 
 Untuk digunakan di semua proyek:
 
 ```bash
-git clone https://github.com/ayghri/i-have-adhd ~/.config/opencode/vendor/i-have-adhd
+git clone https://github.com/ayghri/mand ~/.config/opencode/vendor/mand
 mkdir -p ~/.config/opencode/plugins
-cat > ~/.config/opencode/plugins/i-have-adhd.js <<'EOF'
-export { default } from '../vendor/i-have-adhd/.opencode/plugins/i-have-adhd.mjs';
+cat > ~/.config/opencode/plugins/mand.js <<'EOF'
+export { default } from '../vendor/mand/.opencode/plugins/mand.mjs';
 EOF
 ```
 
 Untuk instalasi V1 yang sudah ada, pertahankan entri `plugin` di `opencode.json`. Jika beralih ke pemuat di atas, hapus entri tersebut.
 
-Mulai sesi baru dan ketik `/i-have-adhd`. Aturan berlaku hingga Anda mengatakan `stop adhd mode` atau `normal mode`.
+Mulai sesi baru dan ketik `/mand`. Aturan berlaku hingga Anda mengatakan `stop mand` atau `normal mode`.
 
 #### Hanya skill dan perintah (tanpa mode selalu aktif)
 
 Sebagai alternatif, salin skill dan perintah dari repositori ke direktori global OpenCode:
 
 ```bash
-mkdir -p ~/.config/opencode/skills/i-have-adhd ~/.config/opencode/commands
-cp skills/i-have-adhd/SKILL.md ~/.config/opencode/skills/i-have-adhd/SKILL.md
-cp .opencode/command/i-have-adhd.md ~/.config/opencode/commands/i-have-adhd.md
+mkdir -p ~/.config/opencode/skills/mand ~/.config/opencode/commands
+cp skills/mand/SKILL.md ~/.config/opencode/skills/mand/SKILL.md
+cp .opencode/command/mand.md ~/.config/opencode/commands/mand.md
 ```
 
 ### Verifikasi
 
-Jalankan OpenCode, ketik `/`, dan pastikan `i-have-adhd` muncul dalam daftar perintah.
+Jalankan OpenCode, ketik `/`, dan pastikan `mand` muncul dalam daftar perintah.
 
 ### Pembaruan
 
 ```bash
-git -C ~/.config/opencode/vendor/i-have-adhd pull
+git -C ~/.config/opencode/vendor/mand pull
 ```
 
 Untuk instalasi dengan menyalin, perbarui repositori lalu salin kembali kedua file.
 
 ### Uninstal
 
-Hapus `~/.config/opencode/plugins/i-have-adhd.js`. Untuk instalasi dengan menyalin, hapus `~/.config/opencode/skills/i-have-adhd/` dan `~/.config/opencode/commands/i-have-adhd.md`. Untuk instalasi V1 dengan konfigurasi yang sudah ada, hapus entri `plugin` terkait.
+Hapus `~/.config/opencode/plugins/mand.js`. Untuk instalasi dengan menyalin, hapus `~/.config/opencode/skills/mand/` dan `~/.config/opencode/commands/mand.md`. Untuk instalasi V1 dengan konfigurasi yang sudah ada, hapus entri `plugin` terkait.
 
 ### Selalu Aktif (opsional)
 
 Memerlukan plugin. Membuat file penanda menambahkan seluruh aturan ke prompt sistem pada setiap giliran:
 
 ```bash
-touch ~/.config/opencode/.i-have-adhd-always
+touch ~/.config/opencode/.mand-always
 ```
 
-`stop adhd mode` atau `normal mode` meminta agen kembali ke gaya respons biasa untuk sesi saat ini. Hapus file penanda untuk menghentikan penyisipan otomatis:
+`stop mand` atau `normal mode` meminta agen kembali ke gaya respons biasa untuk sesi saat ini. Hapus file penanda untuk menghentikan penyisipan otomatis:
 
 ```bash
-rm ~/.config/opencode/.i-have-adhd-always
+rm ~/.config/opencode/.mand-always
 ```
 
 Jika `XDG_CONFIG_HOME` diatur, ganti `~/.config` dalam jalur ini dengan direktori tersebut.
@@ -454,15 +454,15 @@ Pi mengimplementasikan standar Agent Skills, sehingga file `SKILL.md` yang sama 
 ### Instalasi
 
 ```bash
-npx skills add ayghri/i-have-adhd -a pi -y
+npx skills add ayghri/mand -a pi -y
 ```
 
 Lebih suka menggunakan sistem file? Pi menemukan skill di `~/.pi/agent/skills/` dan `~/.agents/skills/` (global), serta di `.pi/skills/` dan `.agents/skills/` (proyek):
 
 ```bash
-git clone https://github.com/ayghri/i-have-adhd
+git clone https://github.com/ayghri/mand
 mkdir -p ~/.pi/agent/skills
-cp -R i-have-adhd/skills/i-have-adhd ~/.pi/agent/skills/
+cp -R mand/skills/mand ~/.pi/agent/skills/
 ```
 
 Aktifkan perintah slash untuk skill di `settings.json` Pi:
@@ -471,7 +471,7 @@ Aktifkan perintah slash untuk skill di `settings.json` Pi:
 { "enableSkillCommands": true }
 ```
 
-Mulai sesi baru dan ketik `/skill:i-have-adhd`.
+Mulai sesi baru dan ketik `/skill:mand`.
 
 ### Verifikasi
 
@@ -479,12 +479,12 @@ Mulai sesi baru dan ketik `/skill:i-have-adhd`.
 npx skills list
 ```
 
-Atau ketik `/skill:` di dalam sesi dan pastikan `i-have-adhd` muncul dalam daftar.
+Atau ketik `/skill:` di dalam sesi dan pastikan `mand` muncul dalam daftar.
 
 ### Pembaruan
 
 ```bash
-npx skills update i-have-adhd
+npx skills update mand
 ```
 
 Atau salin ulang foldernya setelah `git pull`.
@@ -492,10 +492,10 @@ Atau salin ulang foldernya setelah `git pull`.
 ### Uninstal
 
 ```bash
-npx skills remove i-have-adhd
+npx skills remove mand
 ```
 
-Atau hapus `~/.pi/agent/skills/i-have-adhd`.
+Atau hapus `~/.pi/agent/skills/mand`.
 
 ### Selalu Aktif (opsional)
 
@@ -504,7 +504,7 @@ Tambahkan ke `AGENTS.md` pada proyek Anda:
 ```markdown
 ## Gaya Respons
 
-Pembaca memiliki ADHD. Susun setiap respons agar mudah ditindaklanjuti:
+Jawab dengan ringkas dan langsung ke tindakan. Susun setiap respons agar mudah ditindaklanjuti:
 
 1. Mulailah dengan jawaban atau langkah selanjutnya: perintah, jalur file, atau cuplikan kode terlebih dahulu.
 2. Beri nomor pada pekerjaan yang memiliki beberapa langkah; batasi satu tindakan jelas per langkah.
@@ -528,12 +528,12 @@ Pengecualian: jelaskan secara lengkap jika diminta. Konfirmasi sebelum melakukan
 ### Instalasi
 
 ```bash
-qwen extensions install ayghri/i-have-adhd
+qwen extensions install ayghri/mand
 ```
 
 Qwen Code menerima format singkat GitHub dan menginstal repositori sebagai ekstensi native. Ekstensi ini akan menemukan skill di dalam `skills/`.
 
-Ketik `/i-have-adhd` untuk memanggil skill ini secara eksplisit. Menginstal ekstensi gak bakal mengubah keluaran sampai skill tersebut dipanggil.
+Ketik `/mand` untuk memanggil skill ini secara eksplisit. Menginstal ekstensi gak bakal mengubah keluaran sampai skill tersebut dipanggil.
 
 ### Verifikasi
 
@@ -547,18 +547,18 @@ Selanjutnya, mulai sesi baru Qwen Code dan jalankan:
 /skills
 ```
 
-Pastikan `i-have-adhd` muncul dalam daftar.
+Pastikan `mand` muncul dalam daftar.
 
 ### Pembaruan
 
 ```bash
-qwen extensions update i-have-adhd
+qwen extensions update mand
 ```
 
 ### Uninstal
 
 ```bash
-qwen extensions uninstall i-have-adhd
+qwen extensions uninstall mand
 ```
 
 </details>
@@ -573,22 +573,22 @@ Zed Agent membaca Agent Skills secara native: menggunakan file `SKILL.md` yang s
 Di Agent Panel, buka pengelola Skills, pilih **Create skill from URL** (juga tersedia di palet sebagai `agent: create skill from url`) dan tempel:
 
 ```
-https://github.com/ayghri/i-have-adhd/blob/main/skills/i-have-adhd/SKILL.md
+https://github.com/ayghri/mand/blob/main/skills/mand/SKILL.md
 ```
 
-Simpan dengan cakupan **User** untuk semua proyek, atau **Project** untuk satu proyek tertentu. Setelah itu, ketik `/i-have-adhd` di Agent Panel.
+Simpan dengan cakupan **User** untuk semua proyek, atau **Project** untuk satu proyek tertentu. Setelah itu, ketik `/mand` di Agent Panel.
 
 Lebih suka menggunakan sistem file? Klon repositori dan letakkan folder skill di direktori skill pengguna:
 
 ```bash
-git clone https://github.com/ayghri/i-have-adhd
+git clone https://github.com/ayghri/mand
 mkdir -p ~/.agents/skills
-cp -R i-have-adhd/skills/i-have-adhd ~/.agents/skills/
+cp -R mand/skills/mand ~/.agents/skills/
 ```
 
 ### Verifikasi
 
-Buka pengelola Skills di Agent Panel dan pastikan `i-have-adhd` muncul. Atau ketik `/` dan periksa.
+Buka pengelola Skills di Agent Panel dan pastikan `mand` muncul. Atau ketik `/` dan periksa.
 
 ### Pembaruan
 
@@ -596,7 +596,7 @@ Impor ulang menggunakan URL yang sama (akan menimpa) atau salin ulang foldernya 
 
 ### Uninstal
 
-Hapus `i-have-adhd` dari pengelola Skills atau hapus folder `~/.agents/skills/i-have-adhd`.
+Hapus `mand` dari pengelola Skills atau hapus folder `~/.agents/skills/mand`.
 
 ### Selalu Aktif (opsional)
 
@@ -605,7 +605,7 @@ Tambahkan ke file `~/.config/zed/AGENTS.md` pribadi Anda:
 ```markdown
 ## Gaya Respons
 
-Pembaca memiliki ADHD. Susun setiap respons agar mudah ditindaklanjuti:
+Jawab dengan ringkas dan langsung ke tindakan. Susun setiap respons agar mudah ditindaklanjuti:
 
 1. Mulailah dengan jawaban atau langkah selanjutnya: perintah, jalur file, atau cuplikan kode terlebih dahulu.
 2. Beri nomor pada pekerjaan yang memiliki beberapa langkah; batasi satu tindakan jelas per langkah.
@@ -631,20 +631,20 @@ Berfungsi di lingkungan apa pun yang mendukung pembacaan Agent Skills. Ganti `-a
 ### Instalasi
 
 ```bash
-npx skills add ayghri/i-have-adhd                  # workspace ini
-npx skills add ayghri/i-have-adhd -g               # semua proyek
-npx skills add ayghri/i-have-adhd -a cursor -y     # satu agen saja
-npx skills add ayghri/i-have-adhd -a opencode -y
+npx skills add ayghri/mand                  # workspace ini
+npx skills add ayghri/mand -g               # semua proyek
+npx skills add ayghri/mand -a cursor -y     # satu agen saja
+npx skills add ayghri/mand -a opencode -y
 ```
 
-Buka obrolan agen baru dan ketik `/i-have-adhd`.
+Buka obrolan agen baru dan ketik `/mand`.
 
 Tanpa CLI, salin folder skill ke jalur yang diperiksa oleh agen Anda:
 
 ```bash
-git clone https://github.com/ayghri/i-have-adhd
+git clone https://github.com/ayghri/mand
 mkdir -p ~/.cursor/skills     # Cursor. Gunakan .agents/skills di OpenCode atau jalur khusus agen Anda
-cp -R i-have-adhd/skills/i-have-adhd ~/.cursor/skills/
+cp -R mand/skills/mand ~/.cursor/skills/
 ```
 
 ### Verifikasi
@@ -657,15 +657,15 @@ npx skills ls -g    # jika diinstal secara global
 ### Pembaruan
 
 ```bash
-npx skills update i-have-adhd
+npx skills update mand
 npx skills update -g    # jika diinstal secara global
 ```
 
 ### Uninstal
 
 ```bash
-npx skills remove i-have-adhd
-npx skills remove i-have-adhd -g    # jika diinstal secara global
+npx skills remove mand
+npx skills remove mand -g    # jika diinstal secara global
 ```
 
 ### Selalu Aktif (opsional)
@@ -675,7 +675,7 @@ Tempel ini ke file aturan agen yang persisten. Cursor: **Settings → Rules → 
 ```markdown
 ## Gaya Respons
 
-Pembaca memiliki ADHD. Susun setiap respons agar mudah ditindaklanjuti:
+Jawab dengan ringkas dan langsung ke tindakan. Susun setiap respons agar mudah ditindaklanjuti:
 
 1. Mulailah dengan jawaban atau langkah selanjutnya: perintah, jalur file, atau cuplikan kode terlebih dahulu.
 2. Beri nomor pada pekerjaan yang memiliki beberapa langkah; batasi satu tindakan jelas per langkah.
@@ -696,31 +696,31 @@ Pengecualian: jelaskan secara lengkap jika diminta. Konfirmasi sebelum melakukan
 ## Cara Kerja Aktivasi
 
 1. **Terinstal, tetapi tidak dipanggil.** Di Claude Code, Qwen Code, dan Codex, tidak ada yang terjadi sampai Anda memanggil skill ini secara eksplisit. Claude Code dan Qwen Code menghormati `disable-model-invocation: true` di `SKILL.md`; Codex menghormati `policy.allow_implicit_invocation: false` di `agents/openai.yaml`. Lingkungan lain mungkin memuat deskripsi setiap skill saat startup dan mengaktifkannya sendiri.
-2. **Anda memanggilnya secara eksplisit.** Ketik `/i-have-adhd` di Claude Code atau Qwen Code, atau `$i-have-adhd` di Codex. Aturan ini bakalan aktif di sesi tersebut. Perintah "stop adhd mode" atau "normal mode" bakal menonaktifkannya.
-3. **Anda membuat `~/.claude/.i-have-adhd-always`** (Claude Code). Hook `SessionStart` bakalan memuat (load) semua aturan sejak pesan pertama, di setiap sesi.
+2. **Anda memanggilnya secara eksplisit.** Ketik `/mand` di Claude Code atau Qwen Code, atau `$mand` di Codex. Aturan ini bakalan aktif di sesi tersebut. Perintah "stop mand" atau "normal mode" bakal menonaktifkannya.
+3. **Anda membuat `~/.claude/.mand-always`** (Claude Code). Hook `SessionStart` bakalan memuat (load) semua aturan sejak pesan pertama, di setiap sesi.
 4. **Anda menambahkan cuplikan "selalu aktif" di atas** (lingkungan lain). Ini akan menjaga aturan utama tetap berada dalam konteks agen yang persisten.
 
 Di Claude Code, Qwen Code, dan Codex gak ada jalan tengah: jikalau Anda tidak mengaktifkannya, maka skill ini nonaktif.
 
 ## Pemecahan Masalah (Troubleshooting)
 
-**`/i-have-adhd` tidak muncul di pelengkapan otomatis (autocomplete).** Mulai ulang agen Anda. Indeks plugin dibaca saat startup.
+**`/mand` tidak muncul di pelengkapan otomatis (autocomplete).** Mulai ulang agen Anda. Indeks plugin dibaca saat startup.
 
-**Flag selalu aktif tidak berfungsi.** Perbarui plugin (`claude plugin marketplace update i-have-adhd`, lalu `claude plugin update i-have-adhd@i-have-adhd`) dan mulai ulang. Hook dibaca saat startup, dan flag ini memerlukan versi yang menyertakan `hooks/hooks.json`.
+**Flag selalu aktif tidak berfungsi.** Perbarui plugin (`claude plugin marketplace update mand`, lalu `claude plugin update mand@mand`) dan mulai ulang. Hook dibaca saat startup, dan flag ini memerlukan versi yang menyertakan `hooks/hooks.json`.
 
 **`claude plugin marketplace add` gagal.** Gunakan format `owner/repo`. Jalur lokal harus mengarah ke root repositori, bukan ke `.claude-plugin/`.
 
-**Sudah diinstal, tetapi respons masih memiliki pembukaan (preambulo).** Buka sesi baru. Jika masih terus menyimpang, pertegas teks di `skills/i-have-adhd/SKILL.md`.
+**Sudah diinstal, tetapi respons masih memiliki pembukaan (preambulo).** Buka sesi baru. Jika masih terus menyimpang, pertegas teks di `skills/mand/SKILL.md`.
 
-**Ingin peraturan yang berbeda?.** Lakukan fork skill ini, edit `skills/i-have-adhd/SKILL.md` sesuai keinginan, lalu ganti dengan salinan Anda sendiri:
+**Ingin peraturan yang berbeda?.** Lakukan fork skill ini, edit `skills/mand/SKILL.md` sesuai keinginan, lalu ganti dengan salinan Anda sendiri:
 
 ```bash
-claude plugin uninstall i-have-adhd            # hapus dulu salinan upstream:
-claude plugin marketplace remove i-have-adhd   # fork dan upstream menggunakan nama yang sama
-claude plugin marketplace add <username-anda>/i-have-adhd
-claude plugin install i-have-adhd@i-have-adhd
+claude plugin uninstall mand            # hapus dulu salinan upstream:
+claude plugin marketplace remove mand   # fork dan upstream menggunakan nama yang sama
+claude plugin marketplace add <username-anda>/mand
+claude plugin install mand@mand
 ```
 
-Mulai ulang dan panggillah `/i-have-adhd` lagi.
+Mulai ulang dan panggillah `/mand` lagi.
 
 **Skill tidak muncul setelah `npx skills add`.** Buka obrolan agen baru. Skill diindeks di awal sesi. Pastikan folder telah diinstal di lokasi yang dicari oleh agen (`~/.cursor/skills/` di Cursor, `.agents/skills/` di OpenCode) dan bahwa `name` di frontmatter sesuai dengan nama folder.

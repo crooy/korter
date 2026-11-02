@@ -1,6 +1,6 @@
 # Contributing
 
-Thanks for improving **i-have-adhd**. Contributions from humans and coding agents are welcome. Keep changes understandable, reviewable, safe to run, and compatible with existing users.
+Thanks for improving **mand**. Contributions from humans and coding agents are welcome. Keep changes understandable, reviewable, safe to run, and compatible with existing users.
 
 ## Authorship and provenance
 
@@ -47,7 +47,7 @@ Skill changes must stay focused on response structure and usability. Do not add 
 - modify shell profiles, global Git configuration, editor settings, or unrelated agent configuration;
 - bypass confirmation for destructive, privileged, production, or externally visible actions;
 - silently install software, fetch and execute remote code, or create persistence;
-- misrepresent medical information or imply that this skill diagnoses ADHD.
+- misrepresent medical information or imply that this skill makes any medical diagnosis.
 
 Installation, activation, validation, tests, and evaluations must be narrowly scoped and predictable. By default, repository code must not modify files outside the repository or a documented temporary directory, alter user configuration or credentials, publish or send data, require elevated privileges, perform irreversible actions, or leave background processes behind. Intentional writes outside the repository require explicit opt-in, documentation, a specific path, and an easy undo path.
 
@@ -65,16 +65,16 @@ Preserve existing installation methods, invocation names, file locations, opt-in
 
 A breaking change requires an issue, migration path, updated documentation, and a compatibility or deprecation plan. Prefer additive, staged changes.
 
-`skills/i-have-adhd/SKILL.md` is canonical. When it changes, synchronize the Cursor copy:
+`skills/mand/SKILL.md` is canonical. When it changes, synchronize the Cursor copy:
 
 ```sh
-cp skills/i-have-adhd/SKILL.md .cursor/skills/i-have-adhd/SKILL.md
-cmp skills/i-have-adhd/SKILL.md .cursor/skills/i-have-adhd/SKILL.md
+cp skills/mand/SKILL.md .cursor/skills/mand/SKILL.md
+cmp skills/mand/SKILL.md .cursor/skills/mand/SKILL.md
 ```
 
 Review platform-specific manifests and documentation whenever shared names, descriptions, paths, or behavior change.
 
-Keep `.opencode/command/i-have-adhd.md` frontmatter as a JSON object between the `---` delimiters. JSON is valid YAML, so OpenCode's native loader and the global plugin can share the same command metadata without an additional parser dependency.
+Keep `.opencode/command/mand.md` frontmatter as a JSON object between the `---` delimiters. JSON is valid YAML, so OpenCode's native loader and the global plugin can share the same command metadata without an additional parser dependency.
 
 ## Verification
 
