@@ -5,7 +5,7 @@
   <strong align="center">ตอบได้ใจความ ไม่ยืดเยื้อ จะสมาธิสั้นหรือไม่ก็เข้าใจได้!</strong>
 </p>
 <p align="center">
-  <a href="../../LICENSE"><img src="https://img.shields.io/github/license/ayghri/mand?style=flat" alt="สัญญาอนุญาต"></a>
+  <a href="../../LICENSE"><img src="https://img.shields.io/github/license/crooy/i-have-adhd?style=flat" alt="สัญญาอนุญาต"></a>
 </p>
 
 <p align="center">
@@ -27,7 +27,7 @@
 คัดลอกข้อความนี้ไปวางในพรอมต์ของ CLI:
 
 ```text
-Install the mand skill/plugin from https://github.com/ayghri/mand, refer to the repo's AGENTS.md for instructions.
+Install the mand skill/plugin from https://github.com/crooy/i-have-adhd, refer to the repo's AGENTS.md for instructions.
 ```
 
 หรือ 🔗 [ดูวิธีติดตั้ง](../../INSTALL.md) (ภาษาอังกฤษ)

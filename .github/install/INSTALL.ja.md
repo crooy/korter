@@ -6,7 +6,7 @@
 ### インストール
 
 ```bash
-agy plugin install https://github.com/ayghri/mand
+agy plugin install https://github.com/crooy/i-have-adhd
 ```
 
 ### 確認
@@ -19,7 +19,7 @@ agy plugin list
 
 ```bash
 agy plugin uninstall mand
-agy plugin install https://github.com/ayghri/mand
+agy plugin install https://github.com/crooy/i-have-adhd
 ```
 
 ### アンインストール
@@ -64,7 +64,7 @@ agy plugin uninstall mand
 ### インストール
 
 ```bash
-claude plugin marketplace add ayghri/mand
+claude plugin marketplace add crooy/i-have-adhd
 claude plugin install mand@mand
 ```
 
@@ -123,7 +123,7 @@ rm ~/.claude/.mand-always
 ### インストール
 
 ```bash
-codex plugin marketplace add ayghri/mand --ref main
+codex plugin marketplace add crooy/i-have-adhd --ref main
 codex plugin add mand@mand
 ```
 
@@ -187,7 +187,7 @@ Gemini CLI にはプラグインマーケットプレイスがないため、公
 
 ```bash
 mkdir -p ~/.gemini/commands
-curl -fsSL https://raw.githubusercontent.com/ayghri/mand/main/skills/mand/agents/gemini.toml \
+curl -fsSL https://raw.githubusercontent.com/crooy/i-have-adhd/main/skills/mand/agents/gemini.toml \
   -o ~/.gemini/commands/mand.toml
 ```
 
@@ -196,7 +196,7 @@ curl -fsSL https://raw.githubusercontent.com/ayghri/mand/main/skills/mand/agents
 ### インストール（拡張機能方式、常時有効）
 
 ```bash
-gemini extensions install https://github.com/ayghri/mand
+gemini extensions install https://github.com/crooy/i-have-adhd
 ```
 
 拡張機能が `GEMINI.md` を読み込み、そこから完全なスキルがインポートされるため、最初のメッセージからルールが適用されます。`git` のインストールが必要です。
@@ -234,14 +234,14 @@ Copilot は Agent Skills をネイティブに読み込むため、変換不要�
 ### インストール
 
 ```bash
-npx skills add ayghri/mand -a github-copilot        # このプロジェクトのみ
-npx skills add ayghri/mand -a github-copilot -g     # 全プロジェクト共通
+npx skills add crooy/i-have-adhd -a github-copilot        # このプロジェクトのみ
+npx skills add crooy/i-have-adhd -a github-copilot -g     # 全プロジェクト共通
 ```
 
 CLI を使わない場合は、Copilot がスキャンするいずれかのディレクトリにスキルフォルダーをコピーします：
 
 ```bash
-git clone https://github.com/ayghri/mand
+git clone https://github.com/crooy/i-have-adhd
 mkdir -p ~/.copilot/skills
 cp -R mand/skills/mand ~/.copilot/skills/
 ```
@@ -273,7 +273,7 @@ npx skills remove mand
 
 ### 有効化に関する注意
 
-Copilot は設定項目の `disable-model-invocation` に従います。Claude Code と同様に、スキルを明示的に呼び出すまでルールは適用されません（[#60](https://github.com/ayghri/mand/pull/60) で検証済み）。
+Copilot は設定項目の `disable-model-invocation` に従います。Claude Code と同様に、スキルを明示的に呼び出すまでルールは適用されません（[#60](https://github.com/crooy/i-have-adhd/pull/60) で検証済み）。
 
 ### 常時有効（任意）
 
@@ -309,7 +309,7 @@ Copilot は設定項目の `disable-model-invocation` に従います。Claude C
 ### インストール
 
 ```bash
-hermes skills install ayghri/mand/skills/mand
+hermes skills install crooy/i-have-adhd/skills/mand
 ```
 
 `/mand` と入力します。スキルは `~/.hermes/skills/` にインストールされ、次回のセッション開始時からスラッシュコマンドとして利用可能になります。
@@ -317,9 +317,9 @@ hermes skills install ayghri/mand/skills/mand
 先に内容を確認したい場合は、このリポジトリをスキルソース（「tap」）として追加してから検索・インストールすることもできます：
 
 ```bash
-hermes skills tap add ayghri/mand
+hermes skills tap add crooy/i-have-adhd
 hermes skills search mand
-hermes skills install ayghri/mand/skills/mand
+hermes skills install crooy/i-have-adhd/skills/mand
 ```
 
 ### 確認
@@ -340,7 +340,7 @@ hermes skills update mand
 hermes skills uninstall mand
 ```
 
-tap も削除する場合：`hermes skills tap remove ayghri/mand`
+tap も削除する場合：`hermes skills tap remove crooy/i-have-adhd`
 
 ### 常時有効（任意）
 
@@ -379,7 +379,7 @@ Kimi Code のセッションを開始し、以下の手順を実行します：
 
 1. `/plugins` を実行する。
 2. **Custom** を選択する。
-3. `https://github.com/ayghri/mand` を貼り付けて `Enter` を押す。
+3. `https://github.com/crooy/i-have-adhd` を貼り付けて `Enter` を押す。
 4. **Trust and install** を選択する。
 
 スラッシュコマンド `/skill:mand` を使用することで、スキルを明示的に呼び出します。
@@ -404,7 +404,7 @@ Kimi Code セッション内で `/plugins` を実行し、**mand** にカーソ�
 すべてのプロジェクトで使用する場合：
 
 ```bash
-git clone https://github.com/ayghri/mand ~/.config/opencode/vendor/mand
+git clone https://github.com/crooy/i-have-adhd ~/.config/opencode/vendor/mand
 mkdir -p ~/.config/opencode/plugins
 cat > ~/.config/opencode/plugins/mand.js <<'EOF'
 export { default } from '../vendor/mand/.opencode/plugins/mand.mjs';
@@ -468,7 +468,7 @@ Pi はこのリポジトリをネイティブパッケージとして認識し�
 ### インストール
 
 ```bash
-pi install https://github.com/ayghri/mand
+pi install https://github.com/crooy/i-have-adhd
 ```
 
 新しい Pi セッションを開始し、現在のセッションで簡潔で行動優先の出力に切り替えます：
@@ -510,7 +510,7 @@ GitHub パッケージが一覧にあることを確認し、`/mand` と入力�
 ### 更新
 
 ```bash
-pi update https://github.com/ayghri/mand
+pi update https://github.com/crooy/i-have-adhd
 ```
 
 または、`pi update --extensions` で固定されていない全 Pi パッケージを一括更新します。
@@ -518,7 +518,7 @@ pi update https://github.com/ayghri/mand
 ### アンインストール
 
 ```bash
-pi remove https://github.com/ayghri/mand
+pi remove https://github.com/crooy/i-have-adhd
 ```
 
 ### 常時有効（任意）
@@ -564,7 +564,7 @@ Pi のエージェント設定ディレクトリに `~/.pi/agent/mand.json` を�
 ### インストール
 
 ```bash
-omp plugin marketplace add ayghri/mand
+omp plugin marketplace add crooy/i-have-adhd
 omp plugin install --scope user mand@mand
 ```
 
@@ -593,7 +593,7 @@ omp plugin marketplace remove mand
 ### インストール
 
 ```bash
-qwen extensions install ayghri/mand
+qwen extensions install crooy/i-have-adhd
 ```
 
 Qwen Code は GitHub の短縮記法に対応しており、このリポジトリをネイティブ拡張機能としてインストール可能です。拡張機能は `skills/` 配下のスキルを自動検出します。
@@ -638,7 +638,7 @@ Zed の Agent は Agent Skills をネイティブに読み込むため、変換�
 Agent Panel で Skills マネージャーを開き、**Create skill from URL**（コマンドパレットでは `agent: create skill from url`）を選択して、以下を貼り付けます：
 
 ```
-https://github.com/ayghri/mand/blob/main/skills/mand/SKILL.md
+https://github.com/crooy/i-have-adhd/blob/main/skills/mand/SKILL.md
 ```
 
 全プロジェクト共通で使う場合は **User** スコープ、現在のプロジェクトのみなら **Project** スコープで保存します。その後、Agent Panel で `/mand` と入力します。
@@ -646,7 +646,7 @@ https://github.com/ayghri/mand/blob/main/skills/mand/SKILL.md
 ファイルシステムを直接使う場合は、リポジトリをクローンしてユーザースキルディレクトリにスキルフォルダーを配置：
 
 ```bash
-git clone https://github.com/ayghri/mand
+git clone https://github.com/crooy/i-have-adhd
 mkdir -p ~/.agents/skills
 cp -R mand/skills/mand ~/.agents/skills/
 ```
@@ -699,10 +699,10 @@ agent-skills を読み込めるすべての環境で動作します。`-a <agent
 ### インストール
 
 ```bash
-npx skills add ayghri/mand                  # このプロジェクトのみ
-npx skills add ayghri/mand -g               # 全プロジェクト共通
-npx skills add ayghri/mand -a cursor -y     # 特定のエージェントのみ
-npx skills add ayghri/mand -a opencode -y
+npx skills add crooy/i-have-adhd                  # このプロジェクトのみ
+npx skills add crooy/i-have-adhd -g               # 全プロジェクト共通
+npx skills add crooy/i-have-adhd -a cursor -y     # 特定のエージェントのみ
+npx skills add crooy/i-have-adhd -a opencode -y
 ```
 
 新しいエージェントチャットで `/mand` と入力します。
@@ -710,7 +710,7 @@ npx skills add ayghri/mand -a opencode -y
 CLI を使わない場合は、エージェントがスキャンするパスにスキルフォルダーをコピー：
 
 ```bash
-git clone https://github.com/ayghri/mand
+git clone https://github.com/crooy/i-have-adhd
 mkdir -p ~/.cursor/skills     # Cursorの場合。OpenCodeなら .agents/skills、その他は各固有パス
 cp -R mand/skills/mand ~/.cursor/skills/
 ```

@@ -57,7 +57,7 @@ class GrokInstallPathTest(unittest.TestCase):
         self.assertIn("</details>", section)
         section = section.split("</details>", 1)[0]
 
-        self.assertIn("grok plugin install ayghri/mand --trust", section)
+        self.assertIn("grok plugin install crooy/i-have-adhd --trust", section)
         self.assertIn("grok plugin enable mand", section)
         self.assertIn("grok plugin update mand", section)
         self.assertIn("grok plugin uninstall mand --confirm", section)

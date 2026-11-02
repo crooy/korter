@@ -5,7 +5,7 @@
   <strong align="center">Respons ringkas dan langsung ke tindakan. Tanpa perlu diagnosis!</strong>
 </p>
 <p align="center">
-  <a href="../../LICENSE"><img src="https://img.shields.io/github/license/ayghri/mand?style=flat" alt="Lisensi"></a>
+  <a href="../../LICENSE"><img src="https://img.shields.io/github/license/crooy/i-have-adhd?style=flat" alt="Lisensi"></a>
 </p>
 
 <p align="center">

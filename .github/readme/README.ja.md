@@ -5,7 +5,7 @@
   <strong align="center">簡潔で行動優先の出力。（診断は関係なく、誰でも使えます！）</strong>
 </p>
 <p align="center">
-  <a href="../../LICENSE"><img src="https://img.shields.io/github/license/ayghri/mand?style=flat" alt="ライセンス"></a>
+  <a href="../../LICENSE"><img src="https://img.shields.io/github/license/crooy/i-have-adhd?style=flat" alt="ライセンス"></a>
 </p>
 
 <p align="center">
@@ -27,7 +27,7 @@
 CLIのプロンプトに以下をコピー＆ペーストしてください：
 
 ```text
-Install the mand skill/plugin from https://github.com/ayghri/mand, refer to the repo's AGENTS.md for instructions.
+Install the mand skill/plugin from https://github.com/crooy/i-have-adhd, refer to the repo's AGENTS.md for instructions.
 ```
 
 または、🔗 [インストール手順を確認する](../install/INSTALL.ja.md)。

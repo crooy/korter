@@ -5,7 +5,7 @@
   <strong align="center">简洁、行动优先的输出。无需确诊！</strong>
 </p>
 <p align="center">
-  <a href="../../LICENSE"><img src="https://img.shields.io/github/license/ayghri/mand?style=flat" alt="许可证"></a>
+  <a href="../../LICENSE"><img src="https://img.shields.io/github/license/crooy/i-have-adhd?style=flat" alt="许可证"></a>
 </p>
 
 <p align="center">
@@ -28,7 +28,7 @@
 复制粘贴到你的 CLI 对话框中：
 
 ```text
-Install the mand skill/plugin from https://github.com/ayghri/mand, refer to the repo's AGENTS.md for instructions.
+Install the mand skill/plugin from https://github.com/crooy/i-have-adhd, refer to the repo's AGENTS.md for instructions.
 ```
 
 或 🔗 [查看安装说明](../install/INSTALL.zh-CN.md)

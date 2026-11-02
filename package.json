@@ -3,7 +3,7 @@
   "version": "0.4.1",
   "description": "Shape output terse and action-first: lead with the next action, number multi-step work, restate state across turns, suppress tangents, give specific time estimates, make wins visible.",
   "license": "MIT",
-  "homepage": "https://github.com/ayghri/mand",
+  "homepage": "https://github.com/crooy/i-have-adhd",
   "private": true,
   "keywords": ["pi-package"],
   "omp": {

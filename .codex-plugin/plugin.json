@@ -4,10 +4,10 @@
   "description": "Terse, action-first output shaping for Codex: numbered steps, no tangents, and visible progress.",
   "author": {
     "name": "Ayoub G.",
-    "url": "https://github.com/ayghri"
+    "url": "https://github.com/crooy/i-have-adhd"
   },
-  "homepage": "https://github.com/ayghri/mand",
-  "repository": "https://github.com/ayghri/mand",
+  "homepage": "https://github.com/crooy/i-have-adhd",
+  "repository": "https://github.com/crooy/i-have-adhd",
   "license": "MIT",
   "keywords": [
     "output-style",
@@ -25,7 +25,7 @@
     "capabilities": [
       "Instructions"
     ],
-    "websiteURL": "https://github.com/ayghri/mand",
+    "websiteURL": "https://github.com/crooy/i-have-adhd",
     "defaultPrompt": [
       "Use mand for this task.",
       "Make this answer action-first and easy to execute.",

@@ -5,7 +5,7 @@
   <strong align="center">Des réponses adaptées au TDAH. Pas besoin de diagnostic TDAH !</strong>
 </p>
 <p align="center">
-  <a href="../../LICENSE"><img src="https://img.shields.io/github/license/ayghri/mand?style=flat" alt="License"></a>
+  <a href="../../LICENSE"><img src="https://img.shields.io/github/license/crooy/i-have-adhd?style=flat" alt="License"></a>
 </p>
 
 <p align="center">
@@ -28,7 +28,7 @@
 Copiez-collez dans le prompt de votre CLI :
 
 ```text
-Install the mand skill/plugin from https://github.com/ayghri/mand, refer to the repo's AGENTS.md for instructions.
+Install the mand skill/plugin from https://github.com/crooy/i-have-adhd, refer to the repo's AGENTS.md for instructions.
 ```
 
 Ou 🔗 [consultez les instructions d'installation](../../INSTALL.md) (en anglais).

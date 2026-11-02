@@ -6,7 +6,7 @@
 ### تثبيت
 
 ```bash
-agy plugin install https://github.com/ayghri/mand
+agy plugin install https://github.com/crooy/i-have-adhd
 ```
 
 ### تحقق
@@ -19,7 +19,7 @@ agy plugin list
 
 ```bash
 agy plugin uninstall mand
-agy plugin install https://github.com/ayghri/mand
+agy plugin install https://github.com/crooy/i-have-adhd
 ```
 
 ### إلغاء التثبيت
@@ -70,7 +70,7 @@ agy plugin uninstall mand
 
 ### تثبيت
 
-1. قم بتنزيل [SKILL.md](https://raw.githubusercontent.com/ayghri/mand/main/skills/mand/SKILL.md) الأساسي واحفظه باسم `SKILL.md`. قم بمراجعة محتوياته قبل التحميل.
+1. قم بتنزيل [SKILL.md](https://raw.githubusercontent.com/crooy/i-have-adhd/main/skills/mand/SKILL.md) الأساسي واحفظه باسم `SKILL.md`. قم بمراجعة محتوياته قبل التحميل.
 2. في AstronClaw، افتح **我的技能 (مهاراتي)**، واختر **新建 (جديد)**، وقم بتحميل ملف `.md`.
 3. تأكد من تسمية المهارة المستوردة `mand`. استخدم **启用/禁用 (تمكين/تعطيل)** للتحكم في مدى توفرها.
 
@@ -120,7 +120,7 @@ Use the mand skill for this conversation. Explain how to create an empty Git rep
 ### تثبيت
 
 ```bash
-claude plugin marketplace add ayghri/mand
+claude plugin marketplace add crooy/i-have-adhd
 claude plugin install mand@mand
 ```
 
@@ -179,7 +179,7 @@ rm ~/.claude/.mand-always
 ### تثبيت
 
 ```bash
-codex plugin marketplace add ayghri/mand --ref main
+codex plugin marketplace add crooy/i-have-adhd --ref main
 codex plugin add mand@mand
 ```
 
@@ -242,7 +242,7 @@ codex plugin marketplace remove mand
 ### تثبيت
 
 ```bash
-grok plugin install ayghri/mand --trust
+grok plugin install crooy/i-have-adhd --trust
 grok plugin enable mand
 ```
 
@@ -308,7 +308,7 @@ grok plugin uninstall mand --confirm
 
 ```bash
 mkdir -p ~/.gemini/commands
-curl -fsSL https://raw.githubusercontent.com/ayghri/mand/main/skills/mand/agents/gemini.toml \
+curl -fsSL https://raw.githubusercontent.com/crooy/i-have-adhd/main/skills/mand/agents/gemini.toml \
   -o ~/.gemini/commands/mand.toml
 ```
 
@@ -317,7 +317,7 @@ curl -fsSL https://raw.githubusercontent.com/ayghri/mand/main/skills/mand/agents
 ### التثبيت (امتداد، تشغيل دائم)
 
 ```bash
-gemini extensions install https://github.com/ayghri/mand
+gemini extensions install https://github.com/crooy/i-have-adhd
 ```
 
 يحمّل الامتداد ملف `GEMINI.md`، الذي يستورد المهارة الكاملة، وبالتالي يتم تطبيق القواعد من الرسالة الأولى. يجب تثبيت `git`.
@@ -355,14 +355,14 @@ rm ~/.gemini/commands/mand.toml     # طريقة الأمر
 ### تثبيت
 
 ```bash
-npx skills add ayghri/mand -a github-copilot        # هذا المشروع
-npx skills add ayghri/mand -a github-copilot -g     # جميع المشاريع
+npx skills add crooy/i-have-adhd -a github-copilot        # هذا المشروع
+npx skills add crooy/i-have-adhd -a github-copilot -g     # جميع المشاريع
 ```
 
 بدون واجهة سطر الأوامر (CLI)، انسخ مجلد المهارات إلى أي دليل يقوم Copilot بمسحه:
 
 ```bash
-git clone https://github.com/ayghri/mand
+git clone https://github.com/crooy/i-have-adhd
 mkdir -p ~/.copilot/skills
 cp -R mand/skills/mand ~/.copilot/skills/
 ```
@@ -394,7 +394,7 @@ npx skills remove mand
 
 ### مذكرة التنشيط
 
-يحترم Copilot `disable-model-invocation`: لا شيء ينطبق حتى تقوم باستدعاء المهارة، مثل Claude Code (تم اختباره في [#60](https://github.com/ayghri/mand/pull/60)).
+يحترم Copilot `disable-model-invocation`: لا شيء ينطبق حتى تقوم باستدعاء المهارة، مثل Claude Code (تم اختباره في [#60](https://github.com/crooy/i-have-adhd/pull/60)).
 
 ### تشغيل دائمًا (اختياري)
 
@@ -431,7 +431,7 @@ npx skills remove mand
 ### تثبيت
 
 ```bash
-hermes skills install ayghri/mand/skills/mand
+hermes skills install crooy/i-have-adhd/skills/mand
 ```
 
 اكتب `/mand`. يتم تثبيت المهارة في `~/.hermes/skills/` ويتم عرضها كأمر يبدأ بشرطة مائلة في بداية الجلسة التالية.
@@ -439,9 +439,9 @@ hermes skills install ayghri/mand/skills/mand
 هل تفضل التصفح أولا؟ أضف هذا المستودع كمصدر للمهارات (tap)، ثم ابحث وثبّت:
 
 ```bash
-hermes skills tap add ayghri/mand
+hermes skills tap add crooy/i-have-adhd
 hermes skills search mand
-hermes skills install ayghri/mand/skills/mand
+hermes skills install crooy/i-have-adhd/skills/mand
 ```
 
 ### تحقق
@@ -462,7 +462,7 @@ hermes skills update mand
 hermes skills uninstall mand
 ```
 
-ولإزالة مصدر المهارات أيضًا: `hermes skills tap remove ayghri/mand`.
+ولإزالة مصدر المهارات أيضًا: `hermes skills tap remove crooy/i-have-adhd`.
 
 ### تشغيل دائمًا (اختياري)
 
@@ -501,7 +501,7 @@ hermes skills uninstall mand
 
 1. قم بتشغيل `/plugins`.
 2. اختر **مخصص**.
-3. الصق `https://github.com/ayghri/mand` ثم اضغط على `Enter`.
+3. الصق `https://github.com/crooy/i-have-adhd` ثم اضغط على `Enter`.
 4. اختر **الثقة والتثبيت**.
 
 استخدم الأمر الذي يبدأ بشرطة مائلة `/skill:mand` لاستدعاء المهارة بشكل صريح.
@@ -527,7 +527,7 @@ hermes skills uninstall mand
 للاستخدام في جميع المشاريع:
 
 ```bash
-git clone https://github.com/ayghri/mand ~/.config/opencode/vendor/mand
+git clone https://github.com/crooy/i-have-adhd ~/.config/opencode/vendor/mand
 mkdir -p ~/.config/opencode/plugins
 cat > ~/.config/opencode/plugins/mand.js <<'EOF'
 export { default } from '../vendor/mand/.opencode/plugins/mand.mjs';
@@ -591,7 +591,7 @@ rm ~/.config/opencode/.mand-always
 ### تثبيت
 
 ```bash
-pi install https://github.com/ayghri/mand
+pi install https://github.com/crooy/i-have-adhd
 ```
 
 ابدأ جلسة Pi جديدة. بدّل الإخراج الموجز والموجه نحو العمل للجلسة الحالية:
@@ -633,7 +633,7 @@ pi list
 ### تحديث
 
 ```bash
-pi update https://github.com/ayghri/mand
+pi update https://github.com/crooy/i-have-adhd
 ```
 
 أو قم بتحديث كل حزمة Pi غير المثبّتة بإصدار محدد باستخدام `pi update --extensions`.
@@ -641,7 +641,7 @@ pi update https://github.com/ayghri/mand
 ### إلغاء التثبيت
 
 ```bash
-pi remove https://github.com/ayghri/mand
+pi remove https://github.com/crooy/i-have-adhd
 ```
 
 ### تشغيل دائمًا (اختياري)
@@ -687,7 +687,7 @@ rm ~/.pi/agent/.mand-always
 ### تثبيت
 
 ```bash
-omp plugin marketplace add ayghri/mand
+omp plugin marketplace add crooy/i-have-adhd
 omp plugin install --scope user mand@mand
 ```
 
@@ -716,7 +716,7 @@ omp plugin marketplace remove mand
 ### تثبيت
 
 ```bash
-qwen extensions install ayghri/mand
+qwen extensions install crooy/i-have-adhd
 ```
 
 يدعم Qwen Code اختصار GitHub ويثبّت المستودع كامتداد أصلي. يكتشف الامتداد المهارة تحت `skills/`.
@@ -762,7 +762,7 @@ qwen extensions uninstall mand
 في لوحة الوكيل، افتح مدير المهارات واختر **إنشاء مهارة من عنوان URL** (أيضًا في لوحة الأوامر باسم `agent: create skill from url`)، ثم الصق:
 
 ```
-https://github.com/ayghri/mand/blob/main/skills/mand/SKILL.md
+https://github.com/crooy/i-have-adhd/blob/main/skills/mand/SKILL.md
 ```
 
 احفظها في نطاق **المستخدم** لجميع المشاريع، أو في نطاق **المشروع** لمشروع واحد. ثم اكتب `/mand` في لوحة الوكيل.
@@ -770,7 +770,7 @@ https://github.com/ayghri/mand/blob/main/skills/mand/SKILL.md
 تفضل نظام الملفات؟ استنسخ المستودع وضَع مجلد المهارات في دليل مهارات المستخدم الخاص بك:
 
 ```bash
-git clone https://github.com/ayghri/mand
+git clone https://github.com/crooy/i-have-adhd
 mkdir -p ~/.agents/skills
 cp -R mand/skills/mand ~/.agents/skills/
 ```
@@ -823,10 +823,10 @@ cp -R mand/skills/mand ~/.agents/skills/
 ### تثبيت
 
 ```bash
-npx skills add ayghri/mand                  # مساحة العمل هذه
-npx skills add ayghri/mand -g               # جميع المشاريع
-npx skills add ayghri/mand -a cursor -y     # وكيل واحد فقط
-npx skills add ayghri/mand -a opencode -y
+npx skills add crooy/i-have-adhd                  # مساحة العمل هذه
+npx skills add crooy/i-have-adhd -g               # جميع المشاريع
+npx skills add crooy/i-have-adhd -a cursor -y     # وكيل واحد فقط
+npx skills add crooy/i-have-adhd -a opencode -y
 ```
 
 في محادثة جديدة مع الوكيل، اكتب `/mand`.
@@ -834,7 +834,7 @@ npx skills add ayghri/mand -a opencode -y
 بدون واجهة سطر الأوامر (CLI)، انسخ مجلد المهارات إلى أي مسار يفحصه وكيلك:
 
 ```bash
-git clone https://github.com/ayghri/mand
+git clone https://github.com/crooy/i-have-adhd
 mkdir -p ~/.cursor/skills     # استخدم .agents/skills مع OpenCode أو المسار الخاص بوكيلك
 cp -R mand/skills/mand ~/.cursor/skills/
 ```

@@ -6,7 +6,7 @@
 ### Instalasi
 
 ```bash
-agy plugin install https://github.com/ayghri/mand
+agy plugin install https://github.com/crooy/i-have-adhd
 ```
 
 ### Verifikasi
@@ -19,7 +19,7 @@ agy plugin list
 
 ```bash
 agy plugin uninstall mand
-agy plugin install https://github.com/ayghri/mand
+agy plugin install https://github.com/crooy/i-have-adhd
 ```
 
 ### Uninstal
@@ -64,7 +64,7 @@ Pengecualian: jelaskan secara lengkap jika diminta. Konfirmasi sebelum melakukan
 ### Instalasi
 
 ```bash
-claude plugin marketplace add ayghri/mand
+claude plugin marketplace add crooy/i-have-adhd
 claude plugin install mand@mand
 ```
 
@@ -122,7 +122,7 @@ Hook ini hanya berjalan ketika file penanda ada, jadi menginstal plugin saja tid
 ### Instalasi
 
 ```bash
-codex plugin marketplace add ayghri/mand --ref main
+codex plugin marketplace add crooy/i-have-adhd --ref main
 codex plugin add mand@mand
 ```
 
@@ -186,7 +186,7 @@ Gemini CLI tidak memiliki marketplace plugin, jadi ada dua opsi bawaan: perintah
 
 ```bash
 mkdir -p ~/.gemini/commands
-curl -fsSL https://raw.githubusercontent.com/ayghri/mand/main/skills/mand/agents/gemini.toml \
+curl -fsSL https://raw.githubusercontent.com/crooy/i-have-adhd/main/skills/mand/agents/gemini.toml \
   -o ~/.gemini/commands/mand.toml
 ```
 
@@ -195,7 +195,7 @@ Mulai sesi baru dan ketik `/mand`. Skill ini akan tetap aktif selama sesi terseb
 ### Instalasi (ekstensi, always-on)
 
 ```bash
-gemini extensions install https://github.com/ayghri/mand
+gemini extensions install https://github.com/crooy/i-have-adhd
 ```
 
 Ekstensi ini memuat `GEMINI.md`, yang mengimpor skill secara lengkap; dengan demikian, aturannya berlaku sejak pesan pertama. Git harus sudah terinstal.
@@ -233,14 +233,14 @@ Copilot membaca Agent Skills secara native: menggunakan file `SKILL.md` yang sam
 ### Instalasi
 
 ```bash
-npx skills add ayghri/mand -a github-copilot        # proyek ini
-npx skills add ayghri/mand -a github-copilot -g     # semua proyek
+npx skills add crooy/i-have-adhd -a github-copilot        # proyek ini
+npx skills add crooy/i-have-adhd -a github-copilot -g     # semua proyek
 ```
 
 Tanpa CLI, salin folder skill ke direktori mana pun yang diperiksa oleh Copilot:
 
 ```bash
-git clone https://github.com/ayghri/mand
+git clone https://github.com/crooy/i-have-adhd
 mkdir -p ~/.copilot/skills
 cp -R mand/skills/mand ~/.copilot/skills/
 ```
@@ -272,7 +272,7 @@ Atau hapus folder `mand` dari direktori skill tempat ia diinstal.
 
 ### Catatan tentang aktivasi
 
-Copilot menghormati `disable-model-invocation`: tidak ada yang diterapkan sampai Anda memanggil skill tersebut, sama seperti di Claude Code (telah diuji pada [#60](https://github.com/ayghri/mand/pull/60)).
+Copilot menghormati `disable-model-invocation`: tidak ada yang diterapkan sampai Anda memanggil skill tersebut, sama seperti di Claude Code (telah diuji pada [#60](https://github.com/crooy/i-have-adhd/pull/60)).
 
 ### Selalu Aktif (opsional)
 
@@ -308,7 +308,7 @@ Pengecualian: jelaskan secara lengkap jika diminta. Konfirmasi sebelum melakukan
 ### Instalasi
 
 ```bash
-hermes skills install ayghri/mand/skills/mand
+hermes skills install crooy/i-have-adhd/skills/mand
 ```
 
 Ketik `/mand`. Skill ini akan diinstal ke `~/.hermes/skills/` dan tersedia sebagai perintah slash saat sesi berikutnya dimulai.
@@ -316,9 +316,9 @@ Ketik `/mand`. Skill ini akan diinstal ke `~/.hermes/skills/` dan tersedia sebag
 Lebih suka menjelajah dulu? Tambahkan repositori ini sebagai sumber skill (sebagai "tap"), lalu cari dan instal:
 
 ```bash
-hermes skills tap add ayghri/mand
+hermes skills tap add crooy/i-have-adhd
 hermes skills search mand
-hermes skills install ayghri/mand/skills/mand
+hermes skills install crooy/i-have-adhd/skills/mand
 ```
 
 ### Verifikasi
@@ -339,7 +339,7 @@ hermes skills update mand
 hermes skills uninstall mand
 ```
 
-Atau hapus juga tap-nya: `hermes skills tap remove ayghri/mand`.
+Atau hapus juga tap-nya: `hermes skills tap remove crooy/i-have-adhd`.
 
 ### Selalu Aktif (opsional)
 
@@ -378,7 +378,7 @@ Mulai sesi Kimi Code dan:
 
 1. Jalankan `/plugins`.
 2. Pilih **Custom**.
-3. Tempel `https://github.com/ayghri/mand` dan tekan Enter.
+3. Tempel `https://github.com/crooy/i-have-adhd` dan tekan Enter.
 4. Pilih **Trust and install**.
 
 Gunakan perintah slash `/skill:mand` untuk memanggil skill ini secara eksplisit.
@@ -403,7 +403,7 @@ Plugin mendukung OpenCode V1 **1.18.29 atau lebih baru** dan V2. Plugin mendafta
 Untuk digunakan di semua proyek:
 
 ```bash
-git clone https://github.com/ayghri/mand ~/.config/opencode/vendor/mand
+git clone https://github.com/crooy/i-have-adhd ~/.config/opencode/vendor/mand
 mkdir -p ~/.config/opencode/plugins
 cat > ~/.config/opencode/plugins/mand.js <<'EOF'
 export { default } from '../vendor/mand/.opencode/plugins/mand.mjs';
@@ -466,13 +466,13 @@ Pi mengimplementasikan standar Agent Skills, sehingga file `SKILL.md` yang sama 
 ### Instalasi
 
 ```bash
-npx skills add ayghri/mand -a pi -y
+npx skills add crooy/i-have-adhd -a pi -y
 ```
 
 Lebih suka menggunakan sistem file? Pi menemukan skill di `~/.pi/agent/skills/` dan `~/.agents/skills/` (global), serta di `.pi/skills/` dan `.agents/skills/` (proyek):
 
 ```bash
-git clone https://github.com/ayghri/mand
+git clone https://github.com/crooy/i-have-adhd
 mkdir -p ~/.pi/agent/skills
 cp -R mand/skills/mand ~/.pi/agent/skills/
 ```
@@ -543,7 +543,7 @@ Pengecualian: jelaskan secara lengkap jika diminta. Konfirmasi sebelum melakukan
 ### Instalasi
 
 ```bash
-qwen extensions install ayghri/mand
+qwen extensions install crooy/i-have-adhd
 ```
 
 Qwen Code menerima format singkat GitHub dan menginstal repositori sebagai ekstensi native. Ekstensi ini akan menemukan skill di dalam `skills/`.
@@ -588,7 +588,7 @@ Zed Agent membaca Agent Skills secara native: menggunakan file `SKILL.md` yang s
 Di Agent Panel, buka pengelola Skills, pilih **Create skill from URL** (juga tersedia di palet sebagai `agent: create skill from url`) dan tempel:
 
 ```
-https://github.com/ayghri/mand/blob/main/skills/mand/SKILL.md
+https://github.com/crooy/i-have-adhd/blob/main/skills/mand/SKILL.md
 ```
 
 Simpan dengan cakupan **User** untuk semua proyek, atau **Project** untuk satu proyek tertentu. Setelah itu, ketik `/mand` di Agent Panel.
@@ -596,7 +596,7 @@ Simpan dengan cakupan **User** untuk semua proyek, atau **Project** untuk satu p
 Lebih suka menggunakan sistem file? Klon repositori dan letakkan folder skill di direktori skill pengguna:
 
 ```bash
-git clone https://github.com/ayghri/mand
+git clone https://github.com/crooy/i-have-adhd
 mkdir -p ~/.agents/skills
 cp -R mand/skills/mand ~/.agents/skills/
 ```
@@ -649,10 +649,10 @@ Berfungsi di lingkungan apa pun yang mendukung pembacaan Agent Skills. Ganti `-a
 ### Instalasi
 
 ```bash
-npx skills add ayghri/mand                  # workspace ini
-npx skills add ayghri/mand -g               # semua proyek
-npx skills add ayghri/mand -a cursor -y     # satu agen saja
-npx skills add ayghri/mand -a opencode -y
+npx skills add crooy/i-have-adhd                  # workspace ini
+npx skills add crooy/i-have-adhd -g               # semua proyek
+npx skills add crooy/i-have-adhd -a cursor -y     # satu agen saja
+npx skills add crooy/i-have-adhd -a opencode -y
 ```
 
 Buka obrolan agen baru dan ketik `/mand`.
@@ -660,7 +660,7 @@ Buka obrolan agen baru dan ketik `/mand`.
 Tanpa CLI, salin folder skill ke jalur yang diperiksa oleh agen Anda:
 
 ```bash
-git clone https://github.com/ayghri/mand
+git clone https://github.com/crooy/i-have-adhd
 mkdir -p ~/.cursor/skills     # Cursor. Gunakan .agents/skills di OpenCode atau jalur khusus agen Anda
 cp -R mand/skills/mand ~/.cursor/skills/
 ```

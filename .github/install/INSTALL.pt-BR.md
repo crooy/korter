@@ -6,7 +6,7 @@
 ### Instalar
 
 ```bash
-agy plugin install https://github.com/ayghri/mand
+agy plugin install https://github.com/crooy/i-have-adhd
 ```
 
 ### Verificar
@@ -19,7 +19,7 @@ agy plugin list
 
 ```bash
 agy plugin uninstall mand
-agy plugin install https://github.com/ayghri/mand
+agy plugin install https://github.com/crooy/i-have-adhd
 ```
 
 ### Desinstalar
@@ -64,7 +64,7 @@ Exceções: explique por completo quando pedirem. Confirme antes de ações dest
 ### Instalar
 
 ```bash
-claude plugin marketplace add ayghri/mand
+claude plugin marketplace add crooy/i-have-adhd
 claude plugin install mand@mand
 ```
 
@@ -123,7 +123,7 @@ O hook só é executado quando o arquivo de sinalização existe, portanto insta
 ### Instalar
 
 ```bash
-codex plugin marketplace add ayghri/mand --ref main
+codex plugin marketplace add crooy/i-have-adhd --ref main
 codex plugin add mand@mand
 ```
 
@@ -187,7 +187,7 @@ O Gemini CLI não tem marketplace de plugins, então há duas opções nativas: 
 
 ```bash
 mkdir -p ~/.gemini/commands
-curl -fsSL https://raw.githubusercontent.com/ayghri/mand/main/skills/mand/agents/gemini.toml \
+curl -fsSL https://raw.githubusercontent.com/crooy/i-have-adhd/main/skills/mand/agents/gemini.toml \
   -o ~/.gemini/commands/mand.toml
 ```
 
@@ -196,7 +196,7 @@ Inicie uma nova sessão e digite `/mand`. A skill permanecerá ativa durante ess
 ### Instalar (extension, always-on)
 
 ```bash
-gemini extensions install https://github.com/ayghri/mand
+gemini extensions install https://github.com/crooy/i-have-adhd
 ```
 
 A extensão carrega `GEMINI.md`, que importa a skill completa; assim, as regras valem desde a primeira mensagem. O `git` precisa estar instalado.
@@ -234,14 +234,14 @@ O Copilot lê Agent Skills nativamente: usa o mesmo `SKILL.md`, sem conversão. 
 ### Instalar
 
 ```bash
-npx skills add ayghri/mand -a github-copilot        # este projeto
-npx skills add ayghri/mand -a github-copilot -g     # todos os projetos
+npx skills add crooy/i-have-adhd -a github-copilot        # este projeto
+npx skills add crooy/i-have-adhd -a github-copilot -g     # todos os projetos
 ```
 
 Sem a CLI, copie a pasta da skill para qualquer diretório verificado pelo Copilot:
 
 ```bash
-git clone https://github.com/ayghri/mand
+git clone https://github.com/crooy/i-have-adhd
 mkdir -p ~/.copilot/skills
 cp -R mand/skills/mand ~/.copilot/skills/
 ```
@@ -273,7 +273,7 @@ Ou exclua a pasta `mand` do diretório de skills onde ela foi instalada.
 
 ### Observação sobre ativação
 
-O Copilot respeita `disable-model-invocation`: nada é aplicado até você invocar a skill, como no Claude Code (testado no [#60](https://github.com/ayghri/mand/pull/60)).
+O Copilot respeita `disable-model-invocation`: nada é aplicado até você invocar a skill, como no Claude Code (testado no [#60](https://github.com/crooy/i-have-adhd/pull/60)).
 
 ### Sempre ativo (opcional)
 
@@ -309,7 +309,7 @@ Exceções: explique por completo quando pedirem. Confirme antes de ações dest
 ### Instalar
 
 ```bash
-hermes skills install ayghri/mand/skills/mand
+hermes skills install crooy/i-have-adhd/skills/mand
 ```
 
 Digite `/mand`. The skill installs into `~/.hermes/skills/` and is exposed as a slash command at the next session start.
@@ -317,9 +317,9 @@ Digite `/mand`. The skill installs into `~/.hermes/skills/` and is exposed as a 
 Prefere explorar primeiro? Adicione este repositório como fonte de skills (um "tap"), depois pesquise e instale:
 
 ```bash
-hermes skills tap add ayghri/mand
+hermes skills tap add crooy/i-have-adhd
 hermes skills search mand
-hermes skills install ayghri/mand/skills/mand
+hermes skills install crooy/i-have-adhd/skills/mand
 ```
 
 ### Verificar
@@ -340,7 +340,7 @@ hermes skills update mand
 hermes skills uninstall mand
 ```
 
-Ou remova também o tap: `hermes skills tap remove ayghri/mand`.
+Ou remova também o tap: `hermes skills tap remove crooy/i-have-adhd`.
 
 ### Sempre ativo (opcional)
 
@@ -379,7 +379,7 @@ Inicie uma sessão do Kimi Code e:
 
 1. Execute `/plugins`.
 2. Selecione **Custom**.
-3. Cole `https://github.com/ayghri/mand` e pressione Enter.
+3. Cole `https://github.com/crooy/i-have-adhd` e pressione Enter.
 4. Selecione **Trust and install**.
 
 Use o comando slash `/skill:mand` para invocar a skill explicitamente.
@@ -405,7 +405,7 @@ O plugin suporta OpenCode V1 **1.18.29 ou superior** e V2. Registra a skill e o 
 Para usar em todos os projetos:
 
 ```bash
-git clone https://github.com/ayghri/mand ~/.config/opencode/vendor/mand
+git clone https://github.com/crooy/i-have-adhd ~/.config/opencode/vendor/mand
 mkdir -p ~/.config/opencode/plugins
 cat > ~/.config/opencode/plugins/mand.js <<'EOF'
 export { default } from '../vendor/mand/.opencode/plugins/mand.mjs';
@@ -468,13 +468,13 @@ O Pi implementa o padrão Agent Skills, portanto o mesmo `SKILL.md` é carregado
 ### Instalar
 
 ```bash
-npx skills add ayghri/mand -a pi -y
+npx skills add crooy/i-have-adhd -a pi -y
 ```
 
 Prefere usar o sistema de arquivos? O Pi encontra skills em `~/.pi/agent/skills/` e `~/.agents/skills/` (global), e em `.pi/skills/` e `.agents/skills/` (projeto):
 
 ```bash
-git clone https://github.com/ayghri/mand
+git clone https://github.com/crooy/i-have-adhd
 mkdir -p ~/.pi/agent/skills
 cp -R mand/skills/mand ~/.pi/agent/skills/
 ```
@@ -546,7 +546,7 @@ Exceções: explique por completo quando pedirem. Confirme antes de ações dest
 ### Instalar
 
 ```bash
-qwen extensions install ayghri/mand
+qwen extensions install crooy/i-have-adhd
 ```
 
 O Qwen Code aceita a forma abreviada do GitHub e instala o repositório como extensão nativa. A extensão encontra a skill em `skills/`.
@@ -591,7 +591,7 @@ O Agent do Zed lê Agent Skills nativamente: usa o mesmo `SKILL.md`, sem convers
 No Agent Panel, abra o gerenciador de Skills, escolha **Create skill from URL** (também disponível na paleta como `agent: create skill from url`) e cole:
 
 ```
-https://github.com/ayghri/mand/blob/main/skills/mand/SKILL.md
+https://github.com/crooy/i-have-adhd/blob/main/skills/mand/SKILL.md
 ```
 
 Salve no escopo **User** para todos os projetos ou **Project** para apenas um. Depois, digite `/mand` no Agent Panel.
@@ -599,7 +599,7 @@ Salve no escopo **User** para todos os projetos ou **Project** para apenas um. D
 Prefere o sistema de arquivos? Clone o repositório e coloque a pasta da skill no diretório de skills do usuário:
 
 ```bash
-git clone https://github.com/ayghri/mand
+git clone https://github.com/crooy/i-have-adhd
 mkdir -p ~/.agents/skills
 cp -R mand/skills/mand ~/.agents/skills/
 ```
@@ -652,10 +652,10 @@ Funciona com qualquer ambiente que leia Agent Skills. Troque `-a <agent>` pelo s
 ### Instalar
 
 ```bash
-npx skills add ayghri/mand                  # this workspace
-npx skills add ayghri/mand -g               # todos os projetos
-npx skills add ayghri/mand -a cursor -y     # one agent only
-npx skills add ayghri/mand -a opencode -y
+npx skills add crooy/i-have-adhd                  # this workspace
+npx skills add crooy/i-have-adhd -g               # todos os projetos
+npx skills add crooy/i-have-adhd -a cursor -y     # one agent only
+npx skills add crooy/i-have-adhd -a opencode -y
 ```
 
 Abra um novo chat do agente e digite `/mand`.
@@ -663,7 +663,7 @@ Abra um novo chat do agente e digite `/mand`.
 Sem a CLI, copie a pasta da skill para o caminho verificado pelo seu agente:
 
 ```bash
-git clone https://github.com/ayghri/mand
+git clone https://github.com/crooy/i-have-adhd
 mkdir -p ~/.cursor/skills     # Cursor. Use .agents/skills no OpenCode ou o caminho próprio do agente
 cp -R mand/skills/mand ~/.cursor/skills/
 ```

@@ -5,7 +5,7 @@
   <strong align="center">Terse, action-first outputs. No diagnosis needed!</strong>
 </p>
 <p align="center">
-  <a href="LICENSE"><img src="https://img.shields.io/github/license/ayghri/mand?style=flat" alt="License"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/github/license/crooy/i-have-adhd?style=flat" alt="License"></a>
 </p>
 
 <p align="center">
@@ -28,7 +28,7 @@
 Copy/paste into your CLI prompt:
 
 ```text
-Install the mand skill/plugin from https://github.com/ayghri/mand, refer to the repo's AGENTS.md for instructions.
+Install the mand skill/plugin from https://github.com/crooy/i-have-adhd, refer to the repo's AGENTS.md for instructions.
 ```
 
 Or 🔗 [check the installation instructions](INSTALL.md).

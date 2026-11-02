@@ -5,7 +5,7 @@
   <strong align="center">간결하고 행동 중심인 출력. 진단은 필요 없어요!</strong>
 </p>
 <p align="center">
-  <a href="../../LICENSE"><img src="https://img.shields.io/github/license/ayghri/mand?style=flat" alt="License"></a>
+  <a href="../../LICENSE"><img src="https://img.shields.io/github/license/crooy/i-have-adhd?style=flat" alt="License"></a>
 </p>
 
 <p align="center">

@@ -8,7 +8,7 @@
       "name": "mand",
       "source": {
         "source": "url",
-        "url": "https://github.com/ayghri/mand.git",
+        "url": "https://github.com/crooy/i-have-adhd.git",
         "ref": "main"
       },
       "policy": {

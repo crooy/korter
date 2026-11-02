@@ -6,7 +6,7 @@
 ### نصب
 
 ```bash
-agy plugin install https://github.com/ayghri/mand
+agy plugin install https://github.com/crooy/i-have-adhd
 ```
 
 ### بررسی صحت نصب
@@ -19,7 +19,7 @@ agy plugin list
 
 ```bash
 agy plugin uninstall mand
-agy plugin install https://github.com/ayghri/mand
+agy plugin install https://github.com/crooy/i-have-adhd
 ```
 
 ### حذف نصب
@@ -67,7 +67,7 @@ AstronClaw از وارد کردن فایل Markdown به عنوان یک مها�
 
 ### نصب
 
-1. فایل [SKILL.md اصلی](https://raw.githubusercontent.com/ayghri/mand/main/skills/mand/SKILL.md) را دانلود کرده و با نام `SKILL.md` ذخیره کنید. قبل از بارگذاری، محتوای آن را مرور کنید.
+1. فایل [SKILL.md اصلی](https://raw.githubusercontent.com/crooy/i-have-adhd/main/skills/mand/SKILL.md) را دانلود کرده و با نام `SKILL.md` ذخیره کنید. قبل از بارگذاری، محتوای آن را مرور کنید.
 2. در AstronClaw، بخش **我的技能 (My skills)** را باز کنید، **新建 (New)** را انتخاب کرده و آن فایل `.md` را بارگذاری کنید.
 3. مطمئن شوید نام مهارت واردشده `mand` است. برای کنترل در دسترس بودن آن، از گزینه **启用/禁用 (Enable/Disable)** استفاده کنید.
 
@@ -105,7 +105,7 @@ AstronClaw هم از درخواست‌های صریح و هم از فراخوا�
 ### نصب
 
 ```bash
-claude plugin marketplace add ayghri/mand
+claude plugin marketplace add crooy/i-have-adhd
 claude plugin install mand@mand
 ```
 
@@ -163,7 +163,7 @@ rm ~/.claude/.mand-always
 ### نصب
 
 ```bash
-codex plugin marketplace add ayghri/mand --ref main
+codex plugin marketplace add crooy/i-have-adhd --ref main
 codex plugin add mand@mand
 ```
 
@@ -227,7 +227,7 @@ Gemini CLI بازارچه (marketplace) پلاگین ندارد، بنابرای
 
 ```bash
 mkdir -p ~/.gemini/commands
-curl -fsSL https://raw.githubusercontent.com/ayghri/mand/main/skills/mand/agents/gemini.toml \
+curl -fsSL https://raw.githubusercontent.com/crooy/i-have-adhd/main/skills/mand/agents/gemini.toml \
   -o ~/.gemini/commands/mand.toml
 ```
 
@@ -236,7 +236,7 @@ curl -fsSL https://raw.githubusercontent.com/ayghri/mand/main/skills/mand/agents
 ### نصب (افزونه، همیشه فعال)
 
 ```bash
-gemini extensions install https://github.com/ayghri/mand
+gemini extensions install https://github.com/crooy/i-have-adhd
 ```
 
 این افزونه `GEMINI.md` را بارگذاری می‌کند که مهارت کامل را وارد می‌کند، بنابراین قوانین از همان پیام اول اعمال می‌شوند. `git` باید نصب باشد.
@@ -274,14 +274,14 @@ Copilot مهارت‌های عامل (Agent Skills) را به صورت بومی 
 ### نصب
 
 ```bash
-npx skills add ayghri/mand -a github-copilot        # فقط این پروژه
-npx skills add ayghri/mand -a github-copilot -g     # همه پروژه‌ها
+npx skills add crooy/i-have-adhd -a github-copilot        # فقط این پروژه
+npx skills add crooy/i-have-adhd -a github-copilot -g     # همه پروژه‌ها
 ```
 
 بدون استفاده از CLI، پوشه مهارت را در هر دایرکتوری که Copilot اسکن می‌کند کپی کنید:
 
 ```bash
-git clone https://github.com/ayghri/mand
+git clone https://github.com/crooy/i-have-adhd
 mkdir -p ~/.copilot/skills
 cp -R mand/skills/mand ~/.copilot/skills/
 ```
@@ -313,7 +313,7 @@ npx skills remove mand
 
 ### نکته فعال‌سازی
 
-Copilot گزینه `disable-model-invocation` را رعایت می‌کند: تا زمانی که مهارت را فراخوانی نکنید، هیچ قانونی اعمال نمی‌شود (مشابه Claude Code، همان‌طور که در [#60](https://github.com/ayghri/mand/pull/60) آزمایش شده است).
+Copilot گزینه `disable-model-invocation` را رعایت می‌کند: تا زمانی که مهارت را فراخوانی نکنید، هیچ قانونی اعمال نمی‌شود (مشابه Claude Code، همان‌طور که در [#60](https://github.com/crooy/i-have-adhd/pull/60) آزمایش شده است).
 
 ### همیشه فعال (اختیاری)
 
@@ -349,7 +349,7 @@ Exceptions: explain fully when asked to explain. Confirm before destructive acti
 ### نصب
 
 ```bash
-hermes skills install ayghri/mand/skills/mand
+hermes skills install crooy/i-have-adhd/skills/mand
 ```
 
 دستور `/mand` را تایپ کنید. این مهارت در `~/.hermes/skills/` نصب شده و به عنوان یک دستور اسلش در شروع نشست بعدی در دسترس قرار می‌گیرد.
@@ -357,9 +357,9 @@ hermes skills install ayghri/mand/skills/mand
 اگر ترجیح می‌دهید ابتدا مرور کنید؟ این ریپازیتوری را به عنوان منبع مهارت (یک "tap") اضافه کنید، سپس جستجو و نصب کنید:
 
 ```bash
-hermes skills tap add ayghri/mand
+hermes skills tap add crooy/i-have-adhd
 hermes skills search mand
-hermes skills install ayghri/mand/skills/mand
+hermes skills install crooy/i-have-adhd/skills/mand
 ```
 
 ### بررسی صحت نصب
@@ -380,7 +380,7 @@ hermes skills update mand
 hermes skills uninstall mand
 ```
 
-یا برای حذف کامل منبع نیز: `hermes skills tap remove ayghri/mand`.
+یا برای حذف کامل منبع نیز: `hermes skills tap remove crooy/i-have-adhd`.
 
 ### همیشه فعال (اختیاری)
 
@@ -419,7 +419,7 @@ Exceptions: explain fully when asked to explain. Confirm before destructive acti
 
 1. دستور `/plugins` را اجرا کنید.
 2. گزینه **Custom** را انتخاب کنید.
-3. آدرس `https://github.com/ayghri/mand` را پیست کرده و `Enter` را بزنید.
+3. آدرس `https://github.com/crooy/i-have-adhd` را پیست کرده و `Enter` را بزنید.
 4. گزینه **Trust and install** را انتخاب کنید.
 
 برای فراخوانی صریح مهارت، از دستور اسلش `/skill:mand` استفاده کنید.
@@ -444,7 +444,7 @@ Exceptions: explain fully when asked to explain. Confirm before destructive acti
 برای استفاده در همه پروژه‌ها:
 
 ```bash
-git clone https://github.com/ayghri/mand ~/.config/opencode/vendor/mand
+git clone https://github.com/crooy/i-have-adhd ~/.config/opencode/vendor/mand
 mkdir -p ~/.config/opencode/plugins
 cat > ~/.config/opencode/plugins/mand.js <<'EOF'
 export { default } from '../vendor/mand/.opencode/plugins/mand.mjs';
@@ -507,7 +507,7 @@ Pi این ریپازیتوری را به عنوان یک بسته بومی کش�
 ### نصب
 
 ```bash
-pi install https://github.com/ayghri/mand
+pi install https://github.com/crooy/i-have-adhd
 ```
 
 یک نشست جدید Pi شروع کنید. خروجی کوتاه و کنش‌محور را برای نشست جاری تغییر دهید:
@@ -549,7 +549,7 @@ pi list
 ### به‌روزرسانی
 
 ```bash
-pi update https://github.com/ayghri/mand
+pi update https://github.com/crooy/i-have-adhd
 ```
 
 یا همه بسته‌های Pi که پین نشده‌اند را با `pi update --extensions` به‌روزرسانی کنید.
@@ -557,7 +557,7 @@ pi update https://github.com/ayghri/mand
 ### حذف نصب
 
 ```bash
-pi remove https://github.com/ayghri/mand
+pi remove https://github.com/crooy/i-have-adhd
 ```
 
 ### همیشه فعال (اختیاری)
@@ -602,7 +602,7 @@ rm ~/.pi/agent/.mand-always
 ### نصب
 
 ```bash
-omp plugin marketplace add ayghri/mand
+omp plugin marketplace add crooy/i-have-adhd
 omp plugin install --scope user mand@mand
 ```
 
@@ -630,7 +630,7 @@ omp plugin marketplace remove mand
 ### نصب
 
 ```bash
-qwen extensions install ayghri/mand
+qwen extensions install crooy/i-have-adhd
 ```
 
 Qwen Code از مخفف GitHub پشتیبانی می‌کند و ریپازیتوری را به عنوان یک افزونه بومی نصب می‌کند. این افزونه مهارت را در پوشه `skills/` کشف می‌کند.
@@ -675,7 +675,7 @@ qwen extensions uninstall mand
 در پنل Agent، مدیر مهارت‌ها (Skills manager) را باز کرده و **Create skill from URL** (همچنین در پالت دستورات به عنوان `agent: create skill from url`) را انتخاب کنید، سپس آدرس زیر را پیست کنید:
 
 ```text
-https://github.com/ayghri/mand/blob/main/skills/mand/SKILL.md
+https://github.com/crooy/i-have-adhd/blob/main/skills/mand/SKILL.md
 ```
 
 آن را در محدوده **User** برای همه پروژه‌ها، یا در محدوده **Project** برای یک پروژه ذخیره کنید. سپس در پنل Agent دستور `/mand` را تایپ کنید.
@@ -683,7 +683,7 @@ https://github.com/ayghri/mand/blob/main/skills/mand/SKILL.md
 اگر فایل‌سیستم را ترجیح می‌دهید؟ ریپازیتوری را کلون کرده و پوشه مهارت را در دایرکتوری مهارت‌های کاربر خود رها کنید:
 
 ```bash
-git clone https://github.com/ayghri/mand
+git clone https://github.com/crooy/i-have-adhd
 mkdir -p ~/.agents/skills
 cp -R mand/skills/mand ~/.agents/skills/
 ```
@@ -736,10 +736,10 @@ Exceptions: explain fully when asked to explain. Confirm before destructive acti
 ### نصب
 
 ```bash
-npx skills add ayghri/mand                  # فقط این فضای کاری
-npx skills add ayghri/mand -g               # همه پروژه‌ها
-npx skills add ayghri/mand -a cursor -y     # فقط یک عامل خاص
-npx skills add ayghri/mand -a opencode -y
+npx skills add crooy/i-have-adhd                  # فقط این فضای کاری
+npx skills add crooy/i-have-adhd -g               # همه پروژه‌ها
+npx skills add crooy/i-have-adhd -a cursor -y     # فقط یک عامل خاص
+npx skills add crooy/i-have-adhd -a opencode -y
 ```
 
 در چت جدید عامل، دستور `/mand` را تایپ کنید.
@@ -747,7 +747,7 @@ npx skills add ayghri/mand -a opencode -y
 بدون استفاده از CLI، پوشه مهارت را در هر مسیری که عامل شما اسکن می‌کند کپی کنید:
 
 ```bash
-git clone https://github.com/ayghri/mand
+git clone https://github.com/crooy/i-have-adhd
 mkdir -p ~/.cursor/skills     # برای Cursor. برای OpenCode از .agents/skills یا مسیر خاص عامل خود استفاده کنید
 cp -R mand/skills/mand ~/.cursor/skills/
 ```

@@ -5,7 +5,7 @@
   <strong align="center">Đầu ra ngắn gọn, đi thẳng vào hành động. Không cần chẩn đoán!</strong>
 </p>
 <p align="center">
-  <a href="../../LICENSE"><img src="https://img.shields.io/github/license/ayghri/mand?style=flat" alt="Giấy phép"></a>
+  <a href="../../LICENSE"><img src="https://img.shields.io/github/license/crooy/i-have-adhd?style=flat" alt="Giấy phép"></a>
 </p>
 
 <p align="center">
