@@ -48,8 +48,8 @@ agy plugin uninstall mand
 7. 変更後は、何が動作するようになったかを目に見える形で示す。
 8. エラーは場所・原因・修正方法を淡々と伝える（大げさな表現は避ける）。
 9. リストは最大5項目までに抑える。
-10. Respond in English, whatever the input or code language.
-11. Prefer diagrams over text or code when a diagram can carry the meaning.
+10. 入力やコードの言語に関係なく、英語で応答する。
+11. 図で意味を伝えられる場合は、文章やコードよりも図を優先する。
 12. 前置き、要約、締めの挨拶は入れない。
 13. 余分な言葉を減らす。埋め草や空虚な逃げ口上は使わず、短いフレーズで構わない。
 
@@ -168,8 +168,8 @@ codex plugin marketplace remove mand
 7. 変更後は、何が動作するようになったかを目に見える形で示す。
 8. エラーは場所・原因・修正方法を淡々と伝える（大げさな表現は避ける）。
 9. リストは最大5項目までに抑える。
-10. Respond in English, whatever the input or code language.
-11. Prefer diagrams over text or code when a diagram can carry the meaning.
+10. 入力やコードの言語に関係なく、英語で応答する。
+11. 図で意味を伝えられる場合は、文章やコードよりも図を優先する。
 12. 前置き、要約、締めの挨拶は入れない。
 13. 余分な言葉を減らす。埋め草や空虚な逃げ口上は使わず、短いフレーズで構わない。
 
@@ -293,8 +293,8 @@ Copilot は設定項目の `disable-model-invocation` に従います。Claude C
 7. 変更後は、何が動作するようになったかを目に見える形で示す。
 8. エラーは場所・原因・修正方法を淡々と伝える（大げさな表現は避ける）。
 9. リストは最大5項目までに抑える。
-10. Respond in English, whatever the input or code language.
-11. Prefer diagrams over text or code when a diagram can carry the meaning.
+10. 入力やコードの言語に関係なく、英語で応答する。
+11. 図で意味を伝えられる場合は、文章やコードよりも図を優先する。
 12. 前置き、要約、締めの挨拶は入れない。
 13. 余分な言葉を減らす。埋め草や空虚な逃げ口上は使わず、短いフレーズで構わない。
 
@@ -360,8 +360,8 @@ tap も削除する場合：`hermes skills tap remove ayghri/mand`
 7. 変更後は、何が動作するようになったかを目に見える形で示す。
 8. エラーは場所・原因・修正方法を淡々と伝える（大げさな表現は避ける）。
 9. リストは最大5項目までに抑える。
-10. Respond in English, whatever the input or code language.
-11. Prefer diagrams over text or code when a diagram can carry the meaning.
+10. 入力やコードの言語に関係なく、英語で応答する。
+11. 図で意味を伝えられる場合は、文章やコードよりも図を優先する。
 12. 前置き、要約、締めの挨拶は入れない。
 13. 余分な言葉を減らす。埋め草や空虚な逃げ口上は使わず、短いフレーズで構わない。
 
@@ -681,8 +681,8 @@ Skills マネージャーから `mand` を削除するか、`~/.agents/skills/ma
 7. 変更後は、何が動作するようになったかを目に見える形で示す。
 8. エラーは場所・原因・修正方法を淡々と伝える（大げさな表現は避ける）。
 9. リストは最大5項目までに抑える。
-10. Respond in English, whatever the input or code language.
-11. Prefer diagrams over text or code when a diagram can carry the meaning.
+10. 入力やコードの言語に関係なく、英語で応答する。
+11. 図で意味を伝えられる場合は、文章やコードよりも図を優先する。
 12. 前置き、要約、締めの挨拶は入れない。
 13. 余分な言葉を減らす。埋め草や空虚な逃げ口上は使わず、短いフレーズで構わない。
 
@@ -758,8 +758,8 @@ OpenCode の場合：`~/.config/opencode/AGENTS.md`。
 7. 変更後は、何が動作するようになったかを目に見える形で示す。
 8. エラーは場所・原因・修正方法を淡々と伝える（大げさな表現は避ける）。
 9. リストは最大5項目までに抑える。
-10. Respond in English, whatever the input or code language.
-11. Prefer diagrams over text or code when a diagram can carry the meaning.
+10. 入力やコードの言語に関係なく、英語で応答する。
+11. 図で意味を伝えられる場合は、文章やコードよりも図を優先する。
 12. 前置き、要約、締めの挨拶は入れない。
 13. 余分な言葉を減らす。埋め草や空虚な逃げ口上は使わず、短いフレーズで構わない。
 

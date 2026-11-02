@@ -48,8 +48,8 @@ A pessoa que lê tem TDAH. Estruture cada resposta para que ela possa agir:
 7. Após uma alteração, mostre o que agora funciona.
 8. Erros: informe local, causa e correção, sem drama.
 9. Limite listas a 5 itens.
-10. Respond in English, whatever the input or code language.
-11. Prefer diagrams over text or code when a diagram can carry the meaning.
+10. Responder em inglês, independentemente do idioma da entrada ou do código.
+11. Prefira diagramas a texto ou código quando um diagrama puder transmitir o significado.
 12. Sem preâmbulo, recapitulação ou despedida.
 13. Menos palavras: sem enrolação, sem hedge vazio; fragmentos são aceitáveis.
 
@@ -168,8 +168,8 @@ A pessoa que lê tem TDAH. Estruture cada resposta para que ela possa agir:
 7. Após uma alteração, mostre o que agora funciona.
 8. Erros: informe local, causa e correção, sem drama.
 9. Limite listas a 5 itens.
-10. Respond in English, whatever the input or code language.
-11. Prefer diagrams over text or code when a diagram can carry the meaning.
+10. Responder em inglês, independentemente do idioma da entrada ou do código.
+11. Prefira diagramas a texto ou código quando um diagrama puder transmitir o significado.
 12. Sem preâmbulo, recapitulação ou despedida.
 13. Menos palavras: sem enrolação, sem hedge vazio; fragmentos são aceitáveis.
 
@@ -293,8 +293,8 @@ A pessoa que lê tem TDAH. Estruture cada resposta para que ela possa agir:
 7. Após uma alteração, mostre o que agora funciona.
 8. Erros: informe local, causa e correção, sem drama.
 9. Limite listas a 5 itens.
-10. Respond in English, whatever the input or code language.
-11. Prefer diagrams over text or code when a diagram can carry the meaning.
+10. Responder em inglês, independentemente do idioma da entrada ou do código.
+11. Prefira diagramas a texto ou código quando um diagrama puder transmitir o significado.
 12. Sem preâmbulo, recapitulação ou despedida.
 13. Menos palavras: sem enrolação, sem hedge vazio; fragmentos são aceitáveis.
 
@@ -360,8 +360,8 @@ A pessoa que lê tem TDAH. Estruture cada resposta para que ela possa agir:
 7. Após uma alteração, mostre o que agora funciona.
 8. Erros: informe local, causa e correção, sem drama.
 9. Limite listas a 5 itens.
-10. Respond in English, whatever the input or code language.
-11. Prefer diagrams over text or code when a diagram can carry the meaning.
+10. Responder em inglês, independentemente do idioma da entrada ou do código.
+11. Prefira diagramas a texto ou código quando um diagrama puder transmitir o significado.
 12. Sem preâmbulo, recapitulação ou despedida.
 13. Menos palavras: sem enrolação, sem hedge vazio; fragmentos são aceitáveis.
 
@@ -529,8 +529,8 @@ A pessoa que lê tem TDAH. Estruture cada resposta para que ela possa agir:
 7. Após uma alteração, mostre o que agora funciona.
 8. Erros: informe local, causa e correção, sem drama.
 9. Limite listas a 5 itens.
-10. Respond in English, whatever the input or code language.
-11. Prefer diagrams over text or code when a diagram can carry the meaning.
+10. Responder em inglês, independentemente do idioma da entrada ou do código.
+11. Prefira diagramas a texto ou código quando um diagrama puder transmitir o significado.
 12. Sem preâmbulo, recapitulação ou despedida.
 13. Menos palavras: sem enrolação, sem hedge vazio; fragmentos são aceitáveis.
 
@@ -634,8 +634,8 @@ A pessoa que lê tem TDAH. Estruture cada resposta para que ela possa agir:
 7. Após uma alteração, mostre o que agora funciona.
 8. Erros: informe local, causa e correção, sem drama.
 9. Limite listas a 5 itens.
-10. Respond in English, whatever the input or code language.
-11. Prefer diagrams over text or code when a diagram can carry the meaning.
+10. Responder em inglês, independentemente do idioma da entrada ou do código.
+11. Prefira diagramas a texto ou código quando um diagrama puder transmitir o significado.
 12. Sem preâmbulo, recapitulação ou despedida.
 13. Menos palavras: sem enrolação, sem hedge vazio; fragmentos são aceitáveis.
 
@@ -707,8 +707,8 @@ A pessoa que lê tem TDAH. Estruture cada resposta para que ela possa agir:
 7. Após uma alteração, mostre o que agora funciona.
 8. Erros: informe local, causa e correção, sem drama.
 9. Limite listas a 5 itens.
-10. Respond in English, whatever the input or code language.
-11. Prefer diagrams over text or code when a diagram can carry the meaning.
+10. Responder em inglês, independentemente do idioma da entrada ou do código.
+11. Prefira diagramas a texto ou código quando um diagrama puder transmitir o significado.
 12. Sem preâmbulo, recapitulação ou despedida.
 13. Menos palavras: sem enrolação, sem hedge vazio; fragmentos são aceitáveis.
 

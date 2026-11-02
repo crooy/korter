@@ -48,8 +48,8 @@ agy plugin uninstall mand
 7. After a change, show what now works.
 8. Errors: state location, cause, and fix. No drama.
 9. Cap lists to 5 items.
-10. Respond in English, whatever the input or code language.
-11. Prefer diagrams over text or code when a diagram can carry the meaning.
+10. پاسخ به انگلیسی، صرف‌نظر از زبان ورودی یا کد.
+11. هرگاه نمودار بتواند معنا را منتقل کند، نمودار را بر متن یا کد ترجیح بده.
 12. No preamble, no recaps, no closers.
 13. Fewer words: no filler, no empty hedging, fragments fine.
 
@@ -208,8 +208,8 @@ codex plugin marketplace remove mand
 7. After a change, show what now works.
 8. Errors: state location, cause, and fix. No drama.
 9. Cap lists to 5 items.
-10. Respond in English, whatever the input or code language.
-11. Prefer diagrams over text or code when a diagram can carry the meaning.
+10. پاسخ به انگلیسی، صرف‌نظر از زبان ورودی یا کد.
+11. هرگاه نمودار بتواند معنا را منتقل کند، نمودار را بر متن یا کد ترجیح بده.
 12. No preamble, no recaps, no closers.
 13. Fewer words: no filler, no empty hedging, fragments fine.
 
@@ -333,8 +333,8 @@ Copilot گزینه `disable-model-invocation` را رعایت می‌کند: ت�
 7. After a change, show what now works.
 8. Errors: state location, cause, and fix. No drama.
 9. Cap lists to 5 items.
-10. Respond in English, whatever the input or code language.
-11. Prefer diagrams over text or code when a diagram can carry the meaning.
+10. پاسخ به انگلیسی، صرف‌نظر از زبان ورودی یا کد.
+11. هرگاه نمودار بتواند معنا را منتقل کند، نمودار را بر متن یا کد ترجیح بده.
 12. No preamble, no recaps, no closers.
 13. Fewer words: no filler, no empty hedging, fragments fine.
 
@@ -400,8 +400,8 @@ hermes skills uninstall mand
 7. After a change, show what now works.
 8. Errors: state location, cause, and fix. No drama.
 9. Cap lists to 5 items.
-10. Respond in English, whatever the input or code language.
-11. Prefer diagrams over text or code when a diagram can carry the meaning.
+10. پاسخ به انگلیسی، صرف‌نظر از زبان ورودی یا کد.
+11. هرگاه نمودار بتواند معنا را منتقل کند، نمودار را بر متن یا کد ترجیح بده.
 12. No preamble, no recaps, no closers.
 13. Fewer words: no filler, no empty hedging, fragments fine.
 
@@ -718,8 +718,8 @@ cp -R mand/skills/mand ~/.agents/skills/
 7. After a change, show what now works.
 8. Errors: state location, cause, and fix. No drama.
 9. Cap lists to 5 items.
-10. Respond in English, whatever the input or code language.
-11. Prefer diagrams over text or code when a diagram can carry the meaning.
+10. پاسخ به انگلیسی، صرف‌نظر از زبان ورودی یا کد.
+11. هرگاه نمودار بتواند معنا را منتقل کند، نمودار را بر متن یا کد ترجیح بده.
 12. No preamble, no recaps, no closers.
 13. Fewer words: no filler, no empty hedging, fragments fine.
 
@@ -791,8 +791,8 @@ npx skills remove mand -g    # اگر به صورت سراسری نصب شده �
 7. After a change, show what now works.
 8. Errors: state location, cause, and fix. No drama.
 9. Cap lists to 5 items.
-10. Respond in English, whatever the input or code language.
-11. Prefer diagrams over text or code when a diagram can carry the meaning.
+10. پاسخ به انگلیسی، صرف‌نظر از زبان ورودی یا کد.
+11. هرگاه نمودار بتواند معنا را منتقل کند، نمودار را بر متن یا کد ترجیح بده.
 12. No preamble, no recaps, no closers.
 13. Fewer words: no filler, no empty hedging, fragments fine.
 
