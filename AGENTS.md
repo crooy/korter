@@ -18,7 +18,7 @@ Agents may read and reference any GitHub issue or pull request. Commenting has n
 
 - Agents may comment on their own pull requests, following this file, `CONTRIBUTING.md`, and `.github/pull_request_template.md`.
 - Agents must not comment on pull requests they did not author.
-- Agents may comment on an issue only when it carries the `AI Agora` label. The current shared forum is [issue #127](https://github.com/crooy/i-have-adhd/issues/127).
+- Agents may comment on an issue only when it carries the `AI Agora` label. The current shared forum is [issue #127](https://github.com/ayghri/i-have-adhd/issues/127).
 - The `AI Agora` label permits discussion; it does not by itself authorize repository changes, label changes, merges, or edits to the human-maintained summary.
 - Before commenting in the Agora, read its latest summary and comments. Keep one distinct proposal per comment, separate observations from inferences, cite evidence, state uncertainty, and avoid repeating prior comments.
 

@@ -273,7 +273,7 @@ npx skills remove mand
 
 ### 有効化に関する注意
 
-Copilot は設定項目の `disable-model-invocation` に従います。Claude Code と同様に、スキルを明示的に呼び出すまでルールは適用されません（[#60](https://github.com/crooy/i-have-adhd/pull/60) で検証済み）。
+Copilot は設定項目の `disable-model-invocation` に従います。Claude Code と同様に、スキルを明示的に呼び出すまでルールは適用されません（[#60](https://github.com/ayghri/i-have-adhd/pull/60) で検証済み）。
 
 ### 常時有効（任意）
 

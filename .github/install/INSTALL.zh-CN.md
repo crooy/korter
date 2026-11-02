@@ -326,7 +326,7 @@ npx skills remove mand
 
 ### 启用说明
 
-Copilot 遵循 `disable-model-invocation`：与 Claude Code 相同，在调用技能前不会应用任何规则（已在 [#60](https://github.com/crooy/i-have-adhd/pull/60) 中测试）。
+Copilot 遵循 `disable-model-invocation`：与 Claude Code 相同，在调用技能前不会应用任何规则（已在 [#60](https://github.com/ayghri/i-have-adhd/pull/60) 中测试）。
 
 ### 始终启用（可选）
 

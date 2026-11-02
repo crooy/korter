@@ -273,7 +273,7 @@ npx skills remove mand
 
 ### 활성화 참고 사항
 
-Copilot은 `disable-model-invocation`을 따릅니다. Claude Code와 마찬가지로 스킬을 호출하기 전에는 아무 규칙도 적용되지 않습니다([#60](https://github.com/crooy/i-have-adhd/pull/60)에서 테스트).
+Copilot은 `disable-model-invocation`을 따릅니다. Claude Code와 마찬가지로 스킬을 호출하기 전에는 아무 규칙도 적용되지 않습니다([#60](https://github.com/ayghri/i-have-adhd/pull/60)에서 테스트).
 
 ### 항상 활성화(선택 사항)
 

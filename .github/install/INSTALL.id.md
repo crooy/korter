@@ -272,7 +272,7 @@ Atau hapus folder `mand` dari direktori skill tempat ia diinstal.
 
 ### Catatan tentang aktivasi
 
-Copilot menghormati `disable-model-invocation`: tidak ada yang diterapkan sampai Anda memanggil skill tersebut, sama seperti di Claude Code (telah diuji pada [#60](https://github.com/crooy/i-have-adhd/pull/60)).
+Copilot menghormati `disable-model-invocation`: tidak ada yang diterapkan sampai Anda memanggil skill tersebut, sama seperti di Claude Code (telah diuji pada [#60](https://github.com/ayghri/i-have-adhd/pull/60)).
 
 ### Selalu Aktif (opsional)
 

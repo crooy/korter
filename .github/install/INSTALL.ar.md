@@ -394,7 +394,7 @@ npx skills remove mand
 
 ### مذكرة التنشيط
 
-يحترم Copilot `disable-model-invocation`: لا شيء ينطبق حتى تقوم باستدعاء المهارة، مثل Claude Code (تم اختباره في [#60](https://github.com/crooy/i-have-adhd/pull/60)).
+يحترم Copilot `disable-model-invocation`: لا شيء ينطبق حتى تقوم باستدعاء المهارة، مثل Claude Code (تم اختباره في [#60](https://github.com/ayghri/i-have-adhd/pull/60)).
 
 ### تشغيل دائمًا (اختياري)
 

@@ -273,7 +273,7 @@ Ou exclua a pasta `mand` do diretório de skills onde ela foi instalada.
 
 ### Observação sobre ativação
 
-O Copilot respeita `disable-model-invocation`: nada é aplicado até você invocar a skill, como no Claude Code (testado no [#60](https://github.com/crooy/i-have-adhd/pull/60)).
+O Copilot respeita `disable-model-invocation`: nada é aplicado até você invocar a skill, como no Claude Code (testado no [#60](https://github.com/ayghri/i-have-adhd/pull/60)).
 
 ### Sempre ativo (opcional)
 

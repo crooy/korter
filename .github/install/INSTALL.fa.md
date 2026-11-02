@@ -313,7 +313,7 @@ npx skills remove mand
 
 ### نکته فعال‌سازی
 
-Copilot گزینه `disable-model-invocation` را رعایت می‌کند: تا زمانی که مهارت را فراخوانی نکنید، هیچ قانونی اعمال نمی‌شود (مشابه Claude Code، همان‌طور که در [#60](https://github.com/crooy/i-have-adhd/pull/60) آزمایش شده است).
+Copilot گزینه `disable-model-invocation` را رعایت می‌کند: تا زمانی که مهارت را فراخوانی نکنید، هیچ قانونی اعمال نمی‌شود (مشابه Claude Code، همان‌طور که در [#60](https://github.com/ayghri/i-have-adhd/pull/60) آزمایش شده است).
 
 ### همیشه فعال (اختیاری)
 

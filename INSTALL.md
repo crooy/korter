@@ -402,7 +402,7 @@ Or delete the `mand` folder from the skills directory it landed in.
 
 ### Activation note
 
-Copilot respects `disable-model-invocation`: nothing applies until you invoke the skill, same as Claude Code (tested in [#60](https://github.com/crooy/i-have-adhd/pull/60)).
+Copilot respects `disable-model-invocation`: nothing applies until you invoke the skill, same as Claude Code (tested in [#60](https://github.com/ayghri/i-have-adhd/pull/60)).
 
 ### Always-on (optional)
 

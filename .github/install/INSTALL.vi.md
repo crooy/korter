@@ -273,7 +273,7 @@ Hoặc xóa thư mục `mand` khỏi thư mục skills nơi nó được cài.
 
 ### Lưu ý về kích hoạt
 
-Copilot tuân theo `disable-model-invocation`: không có gì được áp dụng cho đến khi bạn gọi skill, giống Claude Code (đã kiểm thử trong [#60](https://github.com/crooy/i-have-adhd/pull/60)).
+Copilot tuân theo `disable-model-invocation`: không có gì được áp dụng cho đến khi bạn gọi skill, giống Claude Code (đã kiểm thử trong [#60](https://github.com/ayghri/i-have-adhd/pull/60)).
 
 ### Luôn bật (không bắt buộc)
 
