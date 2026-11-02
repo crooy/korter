@@ -1,6 +1,6 @@
 # SessionStart hook fallback for Windows PowerShell. Injects the full
-# mand ruleset when the user has opted in by creating
-# $CLAUDE_CONFIG_DIR/.mand-always (default ~/.claude).
+# korter ruleset when the user has opted in by creating
+# $CLAUDE_CONFIG_DIR/.korter-always (default ~/.claude).
 # Never blocks session start: any failure exits 0.
 
 try {
@@ -9,14 +9,14 @@ try {
   } else {
     Join-Path ([Environment]::GetFolderPath("UserProfile")) ".claude"
   }
-  $flagPath = Join-Path $claudeDir ".mand-always"
+  $flagPath = Join-Path $claudeDir ".korter-always"
 
   if (-not (Test-Path -LiteralPath $flagPath -PathType Leaf)) {
     exit 0
   }
 
   $scriptDir = Split-Path -Parent $MyInvocation.MyCommand.Path
-  $skillPath = Join-Path $scriptDir "../skills/mand/SKILL.md"
+  $skillPath = Join-Path $scriptDir "../skills/korter/SKILL.md"
   if (-not (Test-Path -LiteralPath $skillPath -PathType Leaf)) {
     exit 0
   }
@@ -41,8 +41,8 @@ try {
     ""
   }
 
-  $banner = 'MAND MODE ACTIVE (always-on). The ruleset below applies to every response. ' +
-    '"stop mand" turns it off for this session; delete '
+  $banner = 'KORTER MODE ACTIVE (always-on). The ruleset below applies to every response. ' +
+    '"stop korter" turns it off for this session; delete '
   [Console]::Out.Write($banner + $flagPath + " to turn always-on off for good.`n`n" + $body + "`n")
 } catch {
   # Never block session start.

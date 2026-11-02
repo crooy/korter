@@ -1,0 +1,7 @@
+interface:
+  display_name: "korter"
+  short_description: "Terse, action-first output"
+  default_prompt: "Use $korter to make this response action-first and easy to execute."
+
+policy:
+  allow_implicit_invocation: false

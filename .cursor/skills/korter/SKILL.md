@@ -1,14 +1,14 @@
 ---
-name: mand
-description: 'Shape output terse and action-first: lead with the next action, number multi-step work, restate state across turns, suppress tangents, give specific time estimates, make wins visible. Invoke with /mand; stays on until "stop mand".'
+name: korter
+description: 'Shape output terse and action-first: lead with the next action, number multi-step work, restate state across turns, suppress tangents, give specific time estimates, make wins visible. Invoke with /korter; stays on until "stop korter".'
 disable-model-invocation: true
 license: MIT
 metadata:
-  tags: "Mand, Output Style, Productivity, Formatting"
+  tags: "Korter, Output Style, Productivity, Formatting"
   category: "productivity"
 ---
 
-# mand
+# korter
 
 The reader wants terse, action-first answers. Output is not just brief. It is shaped so the next action is always visible.
 
@@ -16,7 +16,7 @@ The reader wants terse, action-first answers. Output is not just brief. It is sh
 
 These rules apply to every response for the rest of the session, not only this one. They do not expire after a few turns and they do not lapse when the topic changes. If you are unsure whether they still apply, they do.
 
-Turn them off only when the reader says "stop mand" or "normal mode". Confirm in one line, then return to your default style.
+Turn them off only when the reader says "stop korter" or "normal mode". Confirm in one line, then return to your default style.
 
 ## Why terse helps
 

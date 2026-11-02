@@ -1,9 +1,9 @@
 {
-  "name": "mand",
+  "name": "korter",
   "version": "0.5.0",
   "description": "Shape Claude Code output terse and action-first: lead with the next action, number steps, suppress tangents, restate state, make wins visible.",
   "author": {
     "name": "Ronald Crooy",
-    "url": "https://github.com/crooy/mand"
+    "url": "https://github.com/crooy/korter"
   }
 }

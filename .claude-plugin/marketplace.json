@@ -1,14 +1,14 @@
 {
   "$schema": "https://www.schemastore.org/claude-code-marketplace.json",
-  "name": "mand",
+  "name": "korter",
   "description": "Shape Claude Code output terse and action-first. Numbered steps, no tangents.",
   "owner": {
     "name": "Ronald Crooy",
-    "url": "https://github.com/crooy/mand"
+    "url": "https://github.com/crooy/korter"
   },
   "plugins": [
     {
-      "name": "mand",
+      "name": "korter",
       "description": "Terse, action-first output shaping for Claude Code.",
       "source": "./",
       "category": "productivity"

@@ -6,7 +6,7 @@
 ### Install
 
 ```bash
-agy plugin install https://github.com/crooy/mand
+agy plugin install https://github.com/crooy/korter
 ```
 
 ### Verify
@@ -18,17 +18,17 @@ agy plugin list
 ### Update
 
 ```bash
-agy plugin uninstall mand
-agy plugin install https://github.com/crooy/mand
+agy plugin uninstall korter
+agy plugin install https://github.com/crooy/korter
 ```
 
 ### Uninstall
 
 ```bash
-agy plugin uninstall mand
+agy plugin uninstall korter
 ```
 
-Or keep it installed and turn it off: `agy plugin disable mand`.
+Or keep it installed and turn it off: `agy plugin disable korter`.
 
 ### Always-on (optional)
 
@@ -70,20 +70,20 @@ this skill. Check the exported instructions before enabling it.
 
 ### Install
 
-1. Download the [canonical SKILL.md](https://raw.githubusercontent.com/crooy/mand/main/skills/mand/SKILL.md) and save it as `SKILL.md`. Review its contents before uploading.
+1. Download the [canonical SKILL.md](https://raw.githubusercontent.com/crooy/korter/main/skills/korter/SKILL.md) and save it as `SKILL.md`. Review its contents before uploading.
 2. In AstronClaw, open **我的技能 (My skills)**, choose **新建 (New)**, and upload that `.md` file.
-3. Check that the imported skill is named `mand`. Use **启用/禁用 (Enable/Disable)** to control its availability.
+3. Check that the imported skill is named `korter`. Use **启用/禁用 (Enable/Disable)** to control its availability.
 
 Only the skill Markdown is needed. Uploading sends that file to AstronClaw;
 the repository's plugin manifests and hooks are not part of this setup.
 
 ### Verify and activate
 
-Confirm `mand` appears in **My skills**. Use **下载 (Download)** to review
+Confirm `korter` appears in **My skills**. Use **下载 (Download)** to review
 the imported instructions against the original skill, then enable it and try:
 
 ```text
-Use the mand skill for this conversation. Explain how to create an empty Git repository in a new folder.
+Use the korter skill for this conversation. Explain how to create an empty Git repository in a new folder.
 ```
 
 Check that the reply leads with the action and numbers the steps. This is a
@@ -95,10 +95,10 @@ that its response rules are being applied.
 AstronClaw supports both explicit requests and automatic skill invocation.
 Its guide does not specify whether it honors `disable-model-invocation: true`,
 so use **Disable** when you do not want the skill available. There is no need
-to rely on a `/mand` slash command.
+to rely on a `/korter` slash command.
 
 The skill instructs the assistant to keep the style for the conversation until
-you say `stop mand` or `normal mode`. That instruction does not change the
+you say `stop korter` or `normal mode`. That instruction does not change the
 platform toggle; disable the skill and start a new conversation for a fresh
 session without it.
 
@@ -106,12 +106,12 @@ session without it.
 
 Download the latest canonical `SKILL.md`. If you customized the imported copy,
 use **下载 (Download)** to keep a backup first. For a clean replacement, delete
-the old `mand` entry, repeat the import, and run the verification prompt
+the old `korter` entry, repeat the import, and run the verification prompt
 in a new conversation.
 
 ### Uninstall
 
-In **My skills**, select `mand` and choose **删除 (Delete)**, then start a
+In **My skills**, select `korter` and choose **删除 (Delete)**, then start a
 new conversation. To keep the imported copy for later, choose **Disable** instead.
 
 </details>
@@ -122,11 +122,11 @@ new conversation. To keep the imported copy for later, choose **Disable** instea
 ### Install
 
 ```bash
-claude plugin marketplace add crooy/mand
-claude plugin install mand@mand
+claude plugin marketplace add crooy/korter
+claude plugin install korter@korter
 ```
 
-Type `/mand`.
+Type `/korter`.
 
 ### Verify
 
@@ -137,8 +137,8 @@ claude plugin list
 ### Update
 
 ```bash
-claude plugin marketplace update mand
-claude plugin update mand@mand
+claude plugin marketplace update korter
+claude plugin update korter@korter
 ```
 
 The first command refreshes the marketplace listing. The second updates the installed plugin. Restart Claude Code to load it.
@@ -148,33 +148,33 @@ The first command refreshes the marketplace listing. The second updates the inst
 ### Uninstall
 
 ```bash
-claude plugin uninstall mand
-claude plugin marketplace remove mand
+claude plugin uninstall korter
+claude plugin marketplace remove korter
 ```
 
-Or keep it installed and turn it off: `claude plugin disable mand`.
+Or keep it installed and turn it off: `claude plugin disable korter`.
 
 ### Always-on (optional)
 
-A `SessionStart` hook loads the full ruleset at the start of every session, no `/mand` needed:
+A `SessionStart` hook loads the full ruleset at the start of every session, no `/korter` needed:
 
 ```bash
-touch ~/.claude/.mand-always
+touch ~/.claude/.korter-always
 ```
 
 If you use a custom Claude configuration directory, create the flag there instead:
 
 ```bash
-touch "$CLAUDE_CONFIG_DIR/.mand-always"
+touch "$CLAUDE_CONFIG_DIR/.korter-always"
 ```
 
 Back to on-demand:
 
 ```bash
-rm ~/.claude/.mand-always
+rm ~/.claude/.korter-always
 ```
 
-The hook only fires when the flag file exists, so installing the plugin changes nothing by itself. "stop mand" still turns it off for the current session.
+The hook only fires when the flag file exists, so installing the plugin changes nothing by itself. "stop korter" still turns it off for the current session.
 
 </details>
 
@@ -185,11 +185,11 @@ The hook only fires when the flag file exists, so installing the plugin changes 
 ### Install
 
 ```bash
-codex plugin marketplace add crooy/mand --ref main
-codex plugin add mand@mand
+codex plugin marketplace add crooy/korter --ref main
+codex plugin add korter@korter
 ```
 
-Invoke the skill explicitly by typing `$mand`. Codex will not activate
+Invoke the skill explicitly by typing `$korter`. Codex will not activate
 it automatically.
 
 ### Verify
@@ -201,16 +201,16 @@ codex plugin list
 ### Update
 
 ```bash
-codex plugin marketplace upgrade mand
-codex plugin remove mand
-codex plugin add mand@mand
+codex plugin marketplace upgrade korter
+codex plugin remove korter
+codex plugin add korter@korter
 ```
 
 ### Uninstall
 
 ```bash
-codex plugin remove mand
-codex plugin marketplace remove mand
+codex plugin remove korter
+codex plugin marketplace remove korter
 ```
 
 ### Always-on (optional)
@@ -250,38 +250,38 @@ Grok loads the repository's existing plugin and skill files; no separate Grok ma
 ### Install
 
 ```bash
-grok plugin install crooy/mand --trust
-grok plugin enable mand
+grok plugin install crooy/korter --trust
+grok plugin enable korter
 ```
 
-Start a new Grok session and type `/mand`. Grok honors `disable-model-invocation: true`, so nothing applies until you invoke the skill or turn on always-on.
+Start a new Grok session and type `/korter`. Grok honors `disable-model-invocation: true`, so nothing applies until you invoke the skill or turn on always-on.
 
 ### Verify
 
 ```bash
 grok plugin list
-grok plugin details mand
+grok plugin details korter
 ```
 
-Confirm `mand` is listed, enabled, and shows a skill plus hooks.
+Confirm `korter` is listed, enabled, and shows a skill plus hooks.
 
 ### Update
 
 ```bash
-grok plugin update mand
+grok plugin update korter
 ```
 
 ### Uninstall
 
 ```bash
-grok plugin uninstall mand --confirm
+grok plugin uninstall korter --confirm
 ```
 
-Or keep it installed and turn it off: `grok plugin disable mand`.
+Or keep it installed and turn it off: `grok plugin disable korter`.
 
 ### Always-on (optional)
 
-Add the block to `~/.grok/AGENTS.md`, or drop it in `~/.grok/rules/mand.md` (Grok loads both at session start):
+Add the block to `~/.grok/AGENTS.md`, or drop it in `~/.grok/rules/korter.md` (Grok loads both at session start):
 
 ```markdown
 ## Output style
@@ -316,19 +316,19 @@ Install as a **custom command** (opt-in, off until you invoke it). The command r
 
 ```bash
 mkdir -p ~/.gemini/commands
-curl -fsSL https://raw.githubusercontent.com/crooy/mand/main/skills/mand/agents/gemini.toml \
-  -o ~/.gemini/commands/mand.toml
+curl -fsSL https://raw.githubusercontent.com/crooy/korter/main/skills/korter/agents/gemini.toml \
+  -o ~/.gemini/commands/korter.toml
 ```
 
-Start a new session, type `/mand`. It stays on for that session.
+Start a new session, type `/korter`. It stays on for that session.
 
 ### Verify
 
 ```bash
-ls ~/.gemini/commands           # mand.toml present
+ls ~/.gemini/commands           # korter.toml present
 ```
 
-Or type `/` in a session and confirm `mand` is listed.
+Or type `/` in a session and confirm `korter` is listed.
 
 ### Update
 
@@ -337,7 +337,7 @@ Re-run the curl command above.
 ### Uninstall
 
 ```bash
-rm ~/.gemini/commands/mand.toml
+rm ~/.gemini/commands/korter.toml
 ```
 
 </details>
@@ -350,21 +350,21 @@ Copilot reads Agent Skills natively: the same `SKILL.md`, no conversion. It scan
 ### Install
 
 ```bash
-npx skills add crooy/mand -a github-copilot        # this project
-npx skills add crooy/mand -a github-copilot -g     # all projects
+npx skills add crooy/korter -a github-copilot        # this project
+npx skills add crooy/korter -a github-copilot -g     # all projects
 ```
 
 Without the CLI, copy the skill folder into any directory Copilot scans:
 
 ```bash
-git clone https://github.com/crooy/mand
+git clone https://github.com/crooy/korter
 mkdir -p ~/.copilot/skills
-cp -R mand/skills/mand ~/.copilot/skills/
+cp -R korter/skills/korter ~/.copilot/skills/
 ```
 
 ### Verify
 
-Type `/` in the chat input and confirm `mand` appears. Or:
+Type `/` in the chat input and confirm `korter` appears. Or:
 
 ```bash
 npx skills list
@@ -374,7 +374,7 @@ npx skills ls -g    # if installed globally
 ### Update
 
 ```bash
-npx skills update mand
+npx skills update korter
 ```
 
 Or re-copy the folder after `git pull`.
@@ -382,10 +382,10 @@ Or re-copy the folder after `git pull`.
 ### Uninstall
 
 ```bash
-npx skills remove mand
+npx skills remove korter
 ```
 
-Or delete the `mand` folder from the skills directory it landed in.
+Or delete the `korter` folder from the skills directory it landed in.
 
 ### Activation note
 
@@ -426,17 +426,17 @@ Exceptions: explain fully when asked to explain. Confirm before destructive acti
 ### Install
 
 ```bash
-hermes skills install crooy/mand/skills/mand
+hermes skills install crooy/korter/skills/korter
 ```
 
-Type `/mand`. The skill installs into `~/.hermes/skills/` and is exposed as a slash command at the next session start.
+Type `/korter`. The skill installs into `~/.hermes/skills/` and is exposed as a slash command at the next session start.
 
 Prefer to browse first? Add this repo as a skill source (a "tap"), then search and install:
 
 ```bash
-hermes skills tap add crooy/mand
-hermes skills search mand
-hermes skills install crooy/mand/skills/mand
+hermes skills tap add crooy/korter
+hermes skills search korter
+hermes skills install crooy/korter/skills/korter
 ```
 
 ### Verify
@@ -448,16 +448,16 @@ hermes skills list
 ### Update
 
 ```bash
-hermes skills update mand
+hermes skills update korter
 ```
 
 ### Uninstall
 
 ```bash
-hermes skills uninstall mand
+hermes skills uninstall korter
 ```
 
-Or remove the tap too: `hermes skills tap remove crooy/mand`.
+Or remove the tap too: `hermes skills tap remove crooy/korter`.
 
 ### Always-on (optional)
 
@@ -496,18 +496,18 @@ Start a Kimi Code session, then:
 
 1. Run `/plugins`.
 2. Choose **Custom**.
-3. Paste `https://github.com/crooy/mand` and press `Enter`.
+3. Paste `https://github.com/crooy/korter` and press `Enter`.
 4. Choose **Trust and install**.
 
-Use slash command `/skill:mand` to invoke the skill explicitly.
+Use slash command `/skill:korter` to invoke the skill explicitly.
 
 ### Update
 
-`/plugins` in Kimi Code session, cursor to **mand**, press `R`.
+`/plugins` in Kimi Code session, cursor to **korter**, press `R`.
 
 ### Uninstall
 
-`/plugins` in Kimi Code session, cursor to **mand**, press `D`.
+`/plugins` in Kimi Code session, cursor to **korter**, press `D`.
 
 
 </details>
@@ -515,62 +515,62 @@ Use slash command `/skill:mand` to invoke the skill explicitly.
 <details>
 <summary><strong>OpenCode</strong></summary>
 
-The plugin supports OpenCode V1 **1.18.29+** and V2. It registers the skill and `/mand` command, and adds optional always-on mode. Older V1 versions need an upgrade or the plugin from the previous skill release.
+The plugin supports OpenCode V1 **1.18.29+** and V2. It registers the skill and `/korter` command, and adds optional always-on mode. Older V1 versions need an upgrade or the plugin from the previous skill release.
 
 ### Install
 
 For use across projects:
 
 ```bash
-git clone https://github.com/crooy/mand ~/.config/opencode/vendor/mand
+git clone https://github.com/crooy/korter ~/.config/opencode/vendor/korter
 mkdir -p ~/.config/opencode/plugins
-cat > ~/.config/opencode/plugins/mand.js <<'EOF'
-export { default } from '../vendor/mand/.opencode/plugins/mand.mjs';
+cat > ~/.config/opencode/plugins/korter.js <<'EOF'
+export { default } from '../vendor/korter/.opencode/plugins/korter.mjs';
 EOF
 ```
 
 For an existing V1 installation, keep the `plugin` entry in `opencode.json`. If switching to the loader above, remove that entry.
 
-Start a new session and type `/mand`. The rules apply until you say `stop mand` or `normal mode`.
+Start a new session and type `/korter`. The rules apply until you say `stop korter` or `normal mode`.
 
 #### Skill and command only (without always-on)
 
 Alternatively, from a checkout, copy the skill and command into OpenCode's global directories:
 
 ```bash
-mkdir -p ~/.config/opencode/skills/mand ~/.config/opencode/commands
-cp skills/mand/SKILL.md ~/.config/opencode/skills/mand/SKILL.md
-cp .opencode/command/mand.md ~/.config/opencode/commands/mand.md
+mkdir -p ~/.config/opencode/skills/korter ~/.config/opencode/commands
+cp skills/korter/SKILL.md ~/.config/opencode/skills/korter/SKILL.md
+cp .opencode/command/korter.md ~/.config/opencode/commands/korter.md
 ```
 
 ### Verify
 
-Start OpenCode, type `/`, and confirm `mand` appears in the command list.
+Start OpenCode, type `/`, and confirm `korter` appears in the command list.
 
 ### Update
 
 ```bash
-git -C ~/.config/opencode/vendor/mand pull
+git -C ~/.config/opencode/vendor/korter pull
 ```
 
 For the copy-based install, pull your checkout and re-copy the two files.
 
 ### Uninstall
 
-Remove `~/.config/opencode/plugins/mand.js`. For the copy-based install, remove `~/.config/opencode/skills/mand/` and `~/.config/opencode/commands/mand.md`. For an existing V1 config-based install, remove its `plugin` entry.
+Remove `~/.config/opencode/plugins/korter.js`. For the copy-based install, remove `~/.config/opencode/skills/korter/` and `~/.config/opencode/commands/korter.md`. For an existing V1 config-based install, remove its `plugin` entry.
 
 ### Always-on (optional)
 
 Requires the plugin. The flag adds the complete ruleset to the system prompt on every turn:
 
 ```bash
-touch ~/.config/opencode/.mand-always
+touch ~/.config/opencode/.korter-always
 ```
 
-`stop mand` or `normal mode` asks the agent to return to its normal style for the current session. Delete the flag to stop automatic injection:
+`stop korter` or `normal mode` asks the agent to return to its normal style for the current session. Delete the flag to stop automatic injection:
 
 ```bash
-rm ~/.config/opencode/.mand-always
+rm ~/.config/opencode/.korter-always
 ```
 
 If `XDG_CONFIG_HOME` is set, replace `~/.config` in these paths with that directory.
@@ -585,21 +585,21 @@ Pi discovers this repository as a native package: `skills/` keeps the Agent Skil
 ### Install
 
 ```bash
-pi install https://github.com/crooy/mand
+pi install https://github.com/crooy/korter
 ```
 
-Start a new Pi session. Toggle mand output for the current session:
+Start a new Pi session. Toggle korter output for the current session:
 
 ```text
-/mand
+/korter
 ```
 
-The footer shows `● MAND ON` while the mode is active. Run the command again to turn it off, or be explicit:
+The footer shows `● KORTER ON` while the mode is active. Run the command again to turn it off, or be explicit:
 
 ```text
-/mand on
-/mand off
-stop mand
+/korter on
+/korter off
+stop korter
 ```
 
 Like the Claude Code hook, the extension adds the ruleset to the conversation once instead of rewriting the system prompt on every request, and adds it again after compaction drops it.
@@ -607,13 +607,13 @@ Like the Claude Code hook, the extension adds the ruleset to the conversation on
 The existing Agent Skills command remains available as an alias:
 
 ```text
-/skill:mand
+/skill:korter
 ```
 
 Start a new Pi session with the mode enabled by default:
 
 ```bash
-pi --mand
+pi --korter
 ```
 
 ### Verify
@@ -622,12 +622,12 @@ pi --mand
 pi list
 ```
 
-Confirm the GitHub package is listed, then type `/mand` and check that `● MAND ON` appears in the footer.
+Confirm the GitHub package is listed, then type `/korter` and check that `● KORTER ON` appears in the footer.
 
 ### Update
 
 ```bash
-pi update https://github.com/crooy/mand
+pi update https://github.com/crooy/korter
 ```
 
 Or update every unpinned Pi package with `pi update --extensions`.
@@ -635,7 +635,7 @@ Or update every unpinned Pi package with `pi update --extensions`.
 ### Uninstall
 
 ```bash
-pi remove https://github.com/crooy/mand
+pi remove https://github.com/crooy/korter
 ```
 
 ### Always-on (optional)
@@ -643,20 +643,20 @@ pi remove https://github.com/crooy/mand
 Create a flag in Pi's agent configuration directory:
 
 ```bash
-touch ~/.pi/agent/.mand-always
+touch ~/.pi/agent/.korter-always
 ```
 
-The extension checks the flag at every new, resumed, forked, or reloaded session. A saved choice for the current session wins over this default, so `stop mand` keeps that session disabled.
+The extension checks the flag at every new, resumed, forked, or reloaded session. A saved choice for the current session wins over this default, so `stop korter` keeps that session disabled.
 
 Back to on-demand:
 
 ```bash
-rm ~/.pi/agent/.mand-always
+rm ~/.pi/agent/.korter-always
 ```
 
 ### Config file (optional)
 
-Create `~/.pi/agent/mand.json` in Pi's agent configuration directory:
+Create `~/.pi/agent/korter.json` in Pi's agent configuration directory:
 
 ```json
 {
@@ -665,12 +665,12 @@ Create `~/.pi/agent/mand.json` in Pi's agent configuration directory:
 }
 ```
 
-- `alwaysOn`: start every session with the rules active — same as the `.mand-always` flag file, which still works
-- `hideStatus`: keep the `● MAND ON` status-bar entry hidden; the rules and the `/mand` command still work
+- `alwaysOn`: start every session with the rules active — same as the `.korter-always` flag file, which still works
+- `hideStatus`: keep the `● KORTER ON` status-bar entry hidden; the rules and the `/korter` command still work
 
-Read once at extension startup, so restart Pi after changing it. A saved choice for the current session wins over `alwaysOn`, so `stop mand` keeps that session disabled.
+Read once at extension startup, so restart Pi after changing it. A saved choice for the current session wins over `alwaysOn`, so `stop korter` keeps that session disabled.
 
-If `PI_CODING_AGENT_DIR` is set, put `.mand-always` in that directory instead. Run `/reload` or start a new session after changing the flag.
+If `PI_CODING_AGENT_DIR` is set, put `.korter-always` in that directory instead. Run `/reload` or start a new session after changing the flag.
 
 </details>
 
@@ -681,24 +681,24 @@ If `PI_CODING_AGENT_DIR` is set, put `.mand-always` in that directory instead. R
 ### Install
 
 ```bash
-omp plugin marketplace add crooy/mand
-omp plugin install --scope user mand@mand
+omp plugin marketplace add crooy/korter
+omp plugin install --scope user korter@korter
 ```
 
-Start a new OMP session and run `/mand` to toggle the mode.
+Start a new OMP session and run `/korter` to toggle the mode.
 
 ### Update
 
 ```bash
-omp plugin marketplace update mand
-omp plugin upgrade --scope user mand@mand
+omp plugin marketplace update korter
+omp plugin upgrade --scope user korter@korter
 ```
 
 ### Uninstall
 
 ```bash
-omp plugin uninstall --scope user mand@mand
-omp plugin marketplace remove mand
+omp plugin uninstall --scope user korter@korter
+omp plugin marketplace remove korter
 ```
 
 </details>
@@ -712,25 +712,25 @@ Qwen Code reads Agent Skills natively from `~/.qwen/skills/` (or `~/.agents/skil
 ### Install
 
 ```bash
-npx skills add crooy/mand -a qwen-code -y      # all projects
+npx skills add crooy/korter -a qwen-code -y      # all projects
 ```
 
 Without the CLI:
 
 ```bash
-git clone https://github.com/crooy/mand
+git clone https://github.com/crooy/korter
 mkdir -p ~/.qwen/skills
-cp -R mand/skills/mand ~/.qwen/skills/
+cp -R korter/skills/korter ~/.qwen/skills/
 ```
 
 ### Verify
 
-Start a new Qwen Code session, run `/skills` and confirm `mand` is listed. Type `/mand` to invoke it explicitly; installing does not change output until then.
+Start a new Qwen Code session, run `/skills` and confirm `korter` is listed. Type `/korter` to invoke it explicitly; installing does not change output until then.
 
 ### Update
 
 ```bash
-npx skills update mand
+npx skills update korter
 ```
 
 Or re-copy the folder after `git pull`.
@@ -738,10 +738,10 @@ Or re-copy the folder after `git pull`.
 ### Uninstall
 
 ```bash
-npx skills remove mand
+npx skills remove korter
 ```
 
-Or remove `~/.qwen/skills/mand/`.
+Or remove `~/.qwen/skills/korter/`.
 
 </details>
 
@@ -755,22 +755,22 @@ Zed's Agent reads Agent Skills natively using the same SKILL.md format without c
 In the Agent Panel, open the Skills manager and choose **Create skill from URL** (also in the command palette as `agent: create skill from url`), then paste:
 
 ```
-https://github.com/crooy/mand/blob/main/skills/mand/SKILL.md
+https://github.com/crooy/korter/blob/main/skills/korter/SKILL.md
 ```
 
-Save it in **User** scope for every project, or **Project** scope for one. Then type `/mand` in the Agent Panel.
+Save it in **User** scope for every project, or **Project** scope for one. Then type `/korter` in the Agent Panel.
 
 Prefer the filesystem? Clone the repo and drop the skill folder into your user skills directory:
 
 ```bash
-git clone https://github.com/crooy/mand
+git clone https://github.com/crooy/korter
 mkdir -p ~/.agents/skills
-cp -R mand/skills/mand ~/.agents/skills/
+cp -R korter/skills/korter ~/.agents/skills/
 ```
 
 ### Verify
 
-Open the Skills manager in the Agent Panel and confirm `mand` is listed. Or type `/` and confirm it appears.
+Open the Skills manager in the Agent Panel and confirm `korter` is listed. Or type `/` and confirm it appears.
 
 ### Update
 
@@ -778,7 +778,7 @@ Re-import from the same URL (overwrites), or re-copy the folder after `git pull`
 
 ### Uninstall
 
-Remove `mand` from the Skills manager, or delete `~/.agents/skills/mand`.
+Remove `korter` from the Skills manager, or delete `~/.agents/skills/korter`.
 
 ### Always-on (optional)
 
@@ -816,20 +816,20 @@ Works with any harness that reads agent skills. Swap `-a <agent>` for yours.
 ### Install
 
 ```bash
-npx skills add crooy/mand                  # this workspace
-npx skills add crooy/mand -g               # all projects
-npx skills add crooy/mand -a cursor -y     # one agent only
-npx skills add crooy/mand -a opencode -y
+npx skills add crooy/korter                  # this workspace
+npx skills add crooy/korter -g               # all projects
+npx skills add crooy/korter -a cursor -y     # one agent only
+npx skills add crooy/korter -a opencode -y
 ```
 
-New agent chat, type `/mand`.
+New agent chat, type `/korter`.
 
 Without the CLI, copy the skill folder into whatever path your agent scans:
 
 ```bash
-git clone https://github.com/crooy/mand
+git clone https://github.com/crooy/korter
 mkdir -p ~/.cursor/skills     # Cursor. Use .agents/skills for OpenCode, or your agent's own path
-cp -R mand/skills/mand ~/.cursor/skills/
+cp -R korter/skills/korter ~/.cursor/skills/
 ```
 
 ### Verify
@@ -842,15 +842,15 @@ npx skills ls -g    # if installed globally
 ### Update
 
 ```bash
-npx skills update mand
+npx skills update korter
 npx skills update -g    # if installed globally
 ```
 
 ### Uninstall
 
 ```bash
-npx skills remove mand
-npx skills remove mand -g    # if installed globally
+npx skills remove korter
+npx skills remove korter -g    # if installed globally
 ```
 
 ### Always-on (optional)
@@ -884,33 +884,33 @@ Exceptions: explain fully when asked to explain. Confirm before destructive acti
 ## How activation works
 
 1. **Installed, not invoked.** In Claude Code, Qwen Code, Codex, and Grok, nothing happens until you invoke the skill explicitly. Claude Code, Qwen Code, and Grok honor `disable-model-invocation: true` in `SKILL.md`; Codex honors `policy.allow_implicit_invocation: false` in `agents/openai.yaml`. Other harnesses may load every skill's description at startup and activate the skill themselves.
-2. **You invoke it explicitly.** Type `/mand` in Claude Code, Qwen Code, or Grok, or `$mand` in Codex. Rules stay on for that session. "stop mand" or "normal mode" turns them off.
-3. **You touch `~/.claude/.mand-always`** (Claude Code). A `SessionStart` hook loads the full ruleset from message one, every session.
+2. **You invoke it explicitly.** Type `/korter` in Claude Code, Qwen Code, or Grok, or `$korter` in Codex. Rules stay on for that session. "stop korter" or "normal mode" turns them off.
+3. **You touch `~/.claude/.korter-always`** (Claude Code). A `SessionStart` hook loads the full ruleset from message one, every session.
 4. **You add the always-on snippet above** (Grok, Codex, and other harnesses). Grok reads `~/.grok/AGENTS.md` and `~/.grok/rules/*.md`. Keeps the core rules in your agent's persistent context.
 
 In Claude Code, Qwen Code, Codex, and Grok, no middle ground: if you did not turn it on, it is off.
 
 ## Troubleshooting
 
-**`/mand` not in autocomplete.** Restart the agent. The plugin index is read at startup. On Grok, also run `grok plugin enable mand` and confirm the install used `--trust`.
+**`/korter` not in autocomplete.** Restart the agent. The plugin index is read at startup. On Grok, also run `grok plugin enable korter` and confirm the install used `--trust`.
 
-**Always-on flag has no effect.** Update the plugin (`claude plugin marketplace update mand`, then `claude plugin update mand@mand`) and restart. Hooks are read at startup, and the flag needs the plugin version that ships `hooks/hooks.json`. Grok does not read `~/.claude/.mand-always`; put the always-on block in `~/.grok/AGENTS.md` or `~/.grok/rules/mand.md`.
+**Always-on flag has no effect.** Update the plugin (`claude plugin marketplace update korter`, then `claude plugin update korter@korter`) and restart. Hooks are read at startup, and the flag needs the plugin version that ships `hooks/hooks.json`. Grok does not read `~/.claude/.korter-always`; put the always-on block in `~/.grok/AGENTS.md` or `~/.grok/rules/korter.md`.
 
 **`claude plugin marketplace add` fails.** Use the `owner/repo` form. A local path must point at the repo root, not `.claude-plugin/`.
 
-**`grok plugin install` does nothing visible.** Add `--trust`, then run `grok plugin enable mand`, then start a new session. Grok plugins stay off and untrusted until those two steps.
+**`grok plugin install` does nothing visible.** Add `--trust`, then run `grok plugin enable korter`, then start a new session. Grok plugins stay off and untrusted until those two steps.
 
-**Installed but replies still preamble.** Open a new session. If it still drifts, tighten the wording in `skills/mand/SKILL.md`.
+**Installed but replies still preamble.** Open a new session. If it still drifts, tighten the wording in `skills/korter/SKILL.md`.
 
-**Want different rules.** Fork, edit `skills/mand/SKILL.md`, then swap your copy in:
+**Want different rules.** Fork, edit `skills/korter/SKILL.md`, then swap your copy in:
 
 ```bash
-claude plugin uninstall mand            # drop the upstream copy first:
-claude plugin marketplace remove mand   # fork and upstream share both names
-claude plugin marketplace add <your-username>/mand
-claude plugin install mand@mand
+claude plugin uninstall korter            # drop the upstream copy first:
+claude plugin marketplace remove korter   # fork and upstream share both names
+claude plugin marketplace add <your-username>/korter
+claude plugin install korter@korter
 ```
 
-Restart, then re-invoke `/mand`.
+Restart, then re-invoke `/korter`.
 
 **Skill missing after `npx skills add`.** Start a new agent chat. Skills are indexed at session start. Confirm the folder landed where your agent scans (`~/.cursor/skills/` for Cursor, `.agents/skills/` for OpenCode) and that the frontmatter `name` matches the folder name.

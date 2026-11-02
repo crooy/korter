@@ -1,13 +1,13 @@
 {
-  "name": "mand",
+  "name": "korter",
   "version": "0.5.0",
   "description": "Terse, action-first output shaping for Codex: numbered steps, no tangents, and visible progress.",
   "author": {
     "name": "Ronald Crooy",
-    "url": "https://github.com/crooy/mand"
+    "url": "https://github.com/crooy/korter"
   },
-  "homepage": "https://github.com/crooy/mand",
-  "repository": "https://github.com/crooy/mand",
+  "homepage": "https://github.com/crooy/korter",
+  "repository": "https://github.com/crooy/korter",
   "license": "MIT",
   "keywords": [
     "output-style",
@@ -17,7 +17,7 @@
   ],
   "skills": "./skills/",
   "interface": {
-    "displayName": "mand",
+    "displayName": "korter",
     "shortDescription": "Terse, action-first output",
     "longDescription": "Shape Codex responses terse and action-first by leading with the next action, numbering multi-step work, suppressing tangents, restating state, and making progress visible.",
     "developerName": "Ronald Crooy",
@@ -25,9 +25,9 @@
     "capabilities": [
       "Instructions"
     ],
-    "websiteURL": "https://github.com/crooy/mand",
+    "websiteURL": "https://github.com/crooy/korter",
     "defaultPrompt": [
-      "Use mand for this task.",
+      "Use korter for this task.",
       "Make this answer action-first and easy to execute.",
       "Review this response for terse, action-first structure."
     ],

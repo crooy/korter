@@ -1,5 +1,5 @@
-# Gemini CLI custom command for mand.
-# Install: copy to ~/.gemini/commands/mand.toml, then type /mand.
+# Gemini CLI custom command for korter.
+# Install: copy to ~/.gemini/commands/korter.toml, then type /korter.
 # Self-contained so it works as a global command from any directory.
 
 description = "Terse, action-first output: next action leads, numbered steps, no preamble or closers."

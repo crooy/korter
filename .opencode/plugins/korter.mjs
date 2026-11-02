@@ -8,10 +8,10 @@ import { fileURLToPath } from 'node:url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const skillsDir = path.resolve(__dirname, '../../skills');
-const skillPath = path.join(skillsDir, 'mand', 'SKILL.md');
-const commandPath = path.join(__dirname, '..', 'command', 'mand.md');
+const skillPath = path.join(skillsDir, 'korter', 'SKILL.md');
+const commandPath = path.join(__dirname, '..', 'command', 'korter.md');
 
-const SKILL_ID = 'mand';
+const SKILL_ID = 'korter';
 const FALLBACK_DESCRIPTION =
   'Shape output terse and action-first for the rest of this session: lead with the next action, number ' +
   'multi-step work, restate state across turns, suppress tangents, give ' +
@@ -28,7 +28,7 @@ async function commandDefinition() {
 const flagPath = path.join(
   process.env.XDG_CONFIG_HOME || path.join(os.homedir(), '.config'),
   'opencode',
-  '.mand-always',
+  '.korter-always',
 );
 
 // Match the shared hooks' frontmatter stripping and newline handling.
@@ -43,8 +43,8 @@ function alwaysOnInjection() {
   try {
     if (!fs.existsSync(flagPath)) return null;
     const header =
-      'MAND MODE ACTIVE (always-on). The ruleset below applies to every ' +
-      'response. "stop mand" or "normal mode" turns it off for this ' +
+      'KORTER MODE ACTIVE (always-on). The ruleset below applies to every ' +
+      'response. "stop korter" or "normal mode" turns it off for this ' +
       'session; delete ' + flagPath + ' to turn always-on off for good.';
     return header + '\n\n' + rulesetBody();
   } catch {

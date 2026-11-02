@@ -1,11 +1,11 @@
 <p align="center">
-  <img src="./logo.png" alt="mand" width="140" />
+  <img src="./logo.png" alt="korter" width="140" />
 </p>
 <p align="center">
   <strong align="center">Terse, action-first outputs. No diagnosis needed!</strong>
 </p>
 <p align="center">
-  <a href="LICENSE"><img src="https://img.shields.io/github/license/crooy/mand?style=flat" alt="License"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/github/license/crooy/korter?style=flat" alt="License"></a>
 </p>
 
 
@@ -15,7 +15,7 @@
 Copy/paste into your CLI prompt:
 
 ```text
-Install the mand skill/plugin from https://github.com/crooy/mand, refer to the repo's AGENTS.md for instructions.
+Install the korter skill/plugin from https://github.com/crooy/korter, refer to the repo's AGENTS.md for instructions.
 ```
 
 Or 🔗 [check the installation instructions](INSTALL.md).
@@ -57,7 +57,7 @@ A skill for your coding assistant that stops it from burying the answer. Action 
 
 ## The rules
 
-13 rules. Full text in [SKILL.md](./skills/mand/SKILL.md).
+13 rules. Full text in [SKILL.md](./skills/korter/SKILL.md).
 
 1. Lead with the next action.
 2. Number multi-step tasks.
@@ -75,16 +75,16 @@ A skill for your coding assistant that stops it from burying the answer. Action 
 
 ## Tune it
 
-Fork, edit `skills/mand/SKILL.md`, then swap your copy in:
+Fork, edit `skills/korter/SKILL.md`, then swap your copy in:
 
 ```bash
-claude plugin uninstall mand            # drop the upstream copy first:
-claude plugin marketplace remove mand   # fork and upstream share both names
-claude plugin marketplace add <your-username>/mand
-claude plugin install mand@mand
+claude plugin uninstall korter            # drop the upstream copy first:
+claude plugin marketplace remove korter   # fork and upstream share both names
+claude plugin marketplace add <your-username>/korter
+claude plugin install korter@korter
 ```
 
-Restart your coding assistant, then re-invoke `/mand`.
+Restart your coding assistant, then re-invoke `/korter`.
 
 ## Credits
 
@@ -93,7 +93,7 @@ Derived work. Two skills, merged and reshaped:
 - **i-have-adhd** by **Ayoub Ghriss** ([@ayghri](https://github.com/ayghri)) — [github.com/ayghri/i-have-adhd](https://github.com/ayghri/i-have-adhd) (MIT). Source of the action-first response rules (1–9), the persistence model, and this fork's starting structure.
 - **caveman** by **Julius Brussee** ([@JuliusBrussee](https://github.com/JuliusBrussee)) — [github.com/JuliusBrussee/caveman](https://github.com/JuliusBrussee/caveman) (Apache-2.0). Source of the compression mechanics behind rule 13: drop filler, fragments fine, never drop negations, numbers/units/code verbatim, and "compression never grows output".
 
-mand's additions on top: rule 10 (English always for multilingual users), rule 11 (diagrams over words), rule 13's merge with action-first structure, and the "Why terse helps" framing.
+korter's additions on top: rule 10 (English always for multilingual users), rule 11 (diagrams over words), rule 13's merge with action-first structure, and the "Why terse helps" framing.
 
 Also based on ideas from J. Russell Ramsay and Anthony L. Rostain's work on practical, action-first working habits; adapted for how an LLM should respond, not how a human should organize their day.
 
